@@ -32,6 +32,8 @@ def credentials():
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('action',choices=['check-auth','create','pages','release','status'])
+    p.add_argument('--tag',default='v1.0.0')
+    p.add_argument('--notes-file',type=Path)
     args=p.parse_args();token=credentials()
     def request(path,method='GET',payload=None,data=None,content_type=None):
         url=path if path.startswith('https://') else API+path
@@ -59,9 +61,10 @@ def main():
         result=existing or request('/repos/'+REPO+'/pages','POST',{'build_type':'workflow'})
         print(json.dumps({'html_url':result.get('html_url'),'status':result.get('status'),'build_type':result.get('build_type')}))
     elif args.action=='release':
-        tag='v1.0.0'
+        tag=args.tag
         if request('/repos/'+REPO+'/releases/tags/'+tag):raise RuntimeError('Release already exists; refusing to replace assets.')
-        release=request('/repos/'+REPO+'/releases','POST',{'tag_name':tag,'target_commitish':'main','name':'v1.0.0 · AI 信息素养比赛速查','body':'轻量、可离线阅读的比赛查题资料库，含 50 个模块、25 张操作卡、53 个平台、168 道历史题和 93 条培训样题。\n\n下载 toolkit-full.zip 后打开 index.html；Agent 可读 agent/START_HERE.md。其余文件为 Agent、聊天 AI 和离线阅读用途包。每个 ZIP 附 SHA-256 校验值。\n\n只有 6 道原题答案经用户确认；候选提示与培训样题分别标记。原始视频、PPT、PDF及题图尚未上传。','draft':False,'prerelease':False})
+        notes=args.notes_file.read_text(encoding='utf-8') if args.notes_file else '轻量、可离线阅读的比赛查题资料库，含 50 个模块、25 张操作卡、53 个平台、168 道历史题和 93 条培训样题。\n\n下载 toolkit-full.zip 后打开 index.html；Agent 可读 agent/START_HERE.md。其余文件为 Agent、聊天 AI 和离线阅读用途包。每个 ZIP 附 SHA-256 校验值。\n\n只有 6 道原题答案经用户确认；候选提示与培训样题分别标记。原始视频、PPT、PDF及题图尚未上传。'
+        release=request('/repos/'+REPO+'/releases','POST',{'tag_name':tag,'target_commitish':'main','name':tag+' · AI 信息素养比赛速查','body':notes,'draft':False,'prerelease':False})
         upload=release['upload_url'].split('{')[0]
         assets=[]
         for path in sorted((ROOT/'dist').glob('*')):

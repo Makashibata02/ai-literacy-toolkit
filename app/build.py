@@ -127,7 +127,9 @@ def guides():
 
 ## 给 Agent 使用
 
-读取 AGENTS.md、agent/START_HERE.md 和 agent/task-index.md。聊天 AI 可上传 llms-full.txt；需要完整证据时再上传 agent/主题分片。无需安装运行程序也能阅读这些文件。
+把仓库链接 https://github.com/Makashibata02/ai-literacy-toolkit 发给能够浏览网页的 Agent，让它先读使用说明，列出网站与账号准备清单。收到题目后，优先联网查找当前证据，用仓库定位平台、检索方法和核对条件。
+
+也可以下载文件夹，让 Agent 读取 AGENTS.md、agent/START_HERE.md 和 agent/task-index.md。聊天 AI 可上传 llms-full.txt；需要完整证据时再上传 agent/主题分片。
 '''
     preparation=['# 账号与访问准备','',"公开检索和需要账号的操作要分别准备；以下是历史资料记录，不代表已在当前账号中实测。",'',"| 平台 | 访问方式与准备 | 核对日期 |","|---|---|---|"]
     for p in read("platforms.json"):
@@ -135,15 +137,23 @@ def guides():
     preparation.extend(['','遇到认证界面时等待用户登录；仓库不保存密码、Cookie 或令牌。临近使用时先在自己的电脑上测试入口、检索及所需功能。'])
     agent='''# Agent 使用入口
 
-目标：帮助用户找到支持答案的原始证据，不能把候选提示或旧教学示例冒充标准答案。
+目标：辅助用户准备访问条件和查证题目。优先联网查找当前证据，仓库用于定位平台、选择检索方法和提供历史参考。
 
-1. 读取 task-index.md，识别题目平台、任务和模块。
-2. 从题干提取对象、字段、时间、资源类型、逻辑关系、排序指标及选项文字。
-3. 优先读取相关操作卡及平台档案；必要时检索历史题目、来源记录。
-4. 按步骤取得原始证据；动态数量、排名、菜单和功能必须按题目要求现场核验。
-5. 同题只能在题干条件一致且选项文字一致时复用人工确认记录。换序时重新匹配文字；未确认题目不得给确定答案。
-6. 遇到登录、验证码、校园/CARSI 认证或付费墙，说明入口和所需操作，等待用户完成。
-7. 给出结论、选项文字、来源 ID、URL/页码/时间戳、查询条件及验证日期；证据不足时写“未确定”。
+## 先列出准备清单
+
+读取任务目录和相关平台档案，列出官方入口、所需账号、校园网或 CARSI 访问条件，以及建议提前试用的操作。区分无需登录的公开查询和需要账号的功能，优先准备题目或学习范围涉及的平台。访问说明的核对日期较早时，先查官方页面再下结论。
+
+## 收到题目后
+
+1. 从题干提取对象、字段、时间、资源类型、逻辑关系、排序指标及选项文字。
+2. 优先联网搜索答案的证据，先查官方页面、数据库和原始文档，打开原页核对，不只依据搜索摘要。
+3. 需要查找入口、选择字段或确定操作流程时，读取 task-index.md 及相关操作卡。历史题目和候选提示只帮助定位，不代替当前证据。
+4. 按题目条件核验数量、排名、菜单和功能；保留检索式、筛选与排序条件、查询日期。
+5. 原题人工确认记录仅适用于原题条件和选项文字；换序时重新匹配文字，条件变化时重新联网查证。
+6. 遇到登录、验证码、校园/CARSI 认证或付费墙，说明入口和所需操作，等待用户在合法会话中完成。
+7. 给出建议选项及选项文字、当前证据 URL/页码/时间戳、查询条件及验证日期；证据不足时写“未确定”。辅助判断，不代替用户作出或提交最终答案。
+
+如果无法访问 GitHub 或联网查证，说明具体限制，请用户按需提供相关文件或页面结果；不能声称已读取或已验证未访问的内容。
 
 ## 回答模板
 
@@ -163,32 +173,94 @@ python -m app kb search "CNKI 高级检索" --top-k 5
 '''
     overview=f'''# AI 信息素养比赛速查
 
-把题目变成可执行的查找路径：找到平台、选对字段、取得证据、核对选项。
+遇到需要查数据库、看平台界面或核对统计数据的题目，可以在这里找到对应的入口、检索步骤和证据位置。你可以直接搜索，也可以把资料交给 Agent，让它按步骤帮你查。
 
-本库从既有 ai-literacy-wiki 结构化资料提取，资料快照为 2026-10-12。包含 {c['modules']} 个模块、{c['tasks']} 张重点操作卡、{c['platforms']} 个合并别名后的平台档案、{c['questions']} 道历史题、{c['sources']} 个来源记录和 {c['samples']} 条培训样题。操作卡集中覆盖优先查题任务；所有模块均可追溯到来源，未覆盖的操作会明确显示缺口。
+[打开在线速查](https://makashibata02.github.io/ai-literacy-toolkit/) · [下载资料包](https://github.com/Makashibata02/ai-literacy-toolkit/releases/latest)
 
-## 立即使用
+## 打开速查页面
 
-- 人类用户：[双击离线首页](index.html) → 搜索平台或任务 → 打开操作卡。
-- Agent：[使用指引](agent/START_HERE.md) → [任务目录](agent/task-index.md) → 操作与证据。
-- 上传文件的聊天 AI：[精简总包](llms-full.txt)，或上传 agent/ 中的主题分片。
-- 纯 Markdown：[Wiki 目录](wiki/index.md)；[账号准备](docs/preparation.md)。
-- 在线页面：[GitHub Pages](https://makashibata02.github.io/ai-literacy-toolkit/)。
-- 打包下载：[GitHub Releases](https://github.com/Makashibata02/ai-literacy-toolkit/releases)。toolkit-full.zip 为完整包；agent-pack.zip、chatgpt-pack.zip、offline-reader.zip 为用途分包，均有 SHA-256 校验文件。
+1. 打开上面的在线速查；也可以下载 `toolkit-full.zip`，解压后双击 `index.html`。阅读和搜索都不用安装软件。
+2. 输入“平台名 + 想做的操作”，例如 `CNKI 高级检索`、`标准 ICS 分类`、`报告 词频`。
+3. 打开操作卡，按卡片中的输入条件、操作步骤和核对项，到对应平台查找。
+4. 想找相似题时，切换到“相似题”；想按范围浏览时，打开“50 个模块”。
 
-## 资料状态
+查文献数量或排名时，先看清题目限定的年份、文献类型、字段和排序指标，再读取当前结果。
 
-只有 {c['confirmed_answers']} 道原题答案经用户人工确认；其他题目答案仍未验证。有出处的候选提示单独展示，不能直接采纳。题目文字审核、答案确认和培训样题发布来源是不同状态。
+## 让 Agent 帮你查
 
-{c['drafts']} 个草稿来源及 {c['quarantined_sources']} 个含冲突的来源不进入默认推荐。原始视频、PPT、PDF、题图均未上传。原件链接预留在 data/curated/media.json，当前 URL 为 null，不承诺原件可下载。
+把 [仓库链接](https://github.com/Makashibata02/ai-literacy-toolkit) 发给能够浏览网页的 Agent，无需先下载。复制下面这段提示，让它先告诉你需要准备什么，再辅助查题：
 
-## 维护和验证
+```text
+请读取这个仓库的 README、agent/START_HERE.md 和相关操作卡、平台档案：
+https://github.com/Makashibata02/ai-literacy-toolkit
 
-基础命令使用 Python 标准库，不需要模型、API Key、OCR 或向量运行环境。
+先给我一份准备清单：相关网站的官方入口、哪些功能需要提前注册登录、
+是否需要校园网或 CARSI，以及建议提前试用的操作。区分公开查询和需账号的功能。
+
+之后我会发送题干和选项。请优先联网搜索，先查官方页面、数据库和原始文档；
+用仓库辅助定位平台和检索方法，不要直接把历史答案或候选提示当作当前答案。
+
+请辅助我核对选项，列出建议选项及文字、证据链接、查询条件和核对日期。
+数量、排名和界面功能要按题目条件实查。需要登录或验证码时，告诉我入口和操作，等待我完成。
+找不到可靠证据时说明还缺什么；不要编造来源，也不要代我提交答案。
+
+如果不能读取链接，请说明，我会提供相关文件。
+```
+
+拿到准备清单后，先完成需要的注册、登录和访问测试，再把完整题干与选项发给 Agent。
+
+也可以下载 `toolkit-full.zip` 或 `agent-pack.zip`，解压后在 Agent 中打开文件夹，让它先读 `AGENTS.md` 和 `agent/START_HERE.md`，然后按上面的方式查证。
+
+## 上传给聊天 AI
+
+先上传 [llms-full.txt](llms-full.txt)，请它阅读上传的资料，再按上面提示中的准备和查证步骤发送题干、选项。需要更多资料时，下载 `chatgpt-pack.zip`，按需补充 `agent/` 中的操作卡、平台、题目或来源分片。
+
+如果聊天 AI 无法浏览网站，就按它找到的步骤自行操作，再把页面结果发给它核对。
+
+## 选择下载包
+
+所有下载包都在 [Releases](https://github.com/Makashibata02/ai-literacy-toolkit/releases/latest) 中。优先选完整包，需要减少文件时再选用途分包。
+
+| 文件 | 下载后怎么用 |
+|---|---|
+| `toolkit-full.zip` | 保留完整资料。双击 `index.html` 阅读，也可以把文件夹交给 Agent。 |
+| `agent-pack.zip` | 解压后交给能读取文件的 Agent，从 `AGENTS.md` 开始。 |
+| `chatgpt-pack.zip` | 解压后选择需要的文本文件，上传到聊天 AI。 |
+| `offline-reader.zip` | 解压后双击 `index.html`，离线搜索和浏览。 |
+
+每个 ZIP 都附有 `.sha256` 校验文件。原始视频、PPT、PDF和题图暂未上传，操作卡仍保留来源位置供核对。
+
+## 使用答案前核对
+
+- 看清答案标记。目前 {c['confirmed_answers']} 道原题答案经过人工确认；其余题目需继续查证，有出处的候选提示单独展示。
+- 对比题干条件和选项文字。年份、筛选条件变化或选项换序时，重新核对，不要照抄旧选项字母。
+- 数量、排名和界面功能以题目要求的时间和实际页面为准。需要账号或机构访问时，先按 [账号准备](docs/preparation.md) 完成登录。
+
+## 继续查阅
+
+- [快速开始](docs/quickstart.md)：常见查题方式和例子。
+- [任务与模块目录](agent/task-index.md)：按任务或知识模块找资料。
+- [全部资料目录](wiki/index.md)：浏览操作卡、平台、题目和来源。
+- [维护说明](docs/maintaining.md)：本地检索命令、构建、测试及资料更新。
+
+代码采用 [MIT](LICENSE)，原创整理内容采用 [CC BY 4.0](LICENSE-CONTENT)。引用请注明 ai-literacy-wiki contributors、ai-literacy-toolkit 和资料日期；第三方资料保留原作者权利。
+'''
+    maintaining=f'''# 本地检索和维护
+
+维护前克隆仓库或下载完整包。阅读资料和使用网页搜索不需要安装依赖；运行下面的命令需要 Python 3.11 或更高版本，测试另需安装 pytest。
+
+## 检索资料
 
 ```text
 python -m app kb search "标准 ICS 分类" --top-k 5
 python -m app kb status
+```
+
+搜索默认返回 JSON，包括操作步骤、审核状态和证据。需要查看草稿或被隔离来源时，加上 `--include-drafts`。
+
+## 构建和验证
+
+```text
 python -m app kb build
 python -m app kb lint --strict
 python -m app.validate_readable
@@ -196,16 +268,24 @@ python -m pytest
 python -m app kb package --target all
 ```
 
-测试环境另装 pytest。所有网页、Wiki 和 Agent 文件由 data/curated/ 生成，禁止独立手改结论。scripts/extract.py 只读取原项目已整理字段；相同数据重复提取不覆盖，输入变化必须重新审核。
+所有网页、Wiki 和知识包从 `data/curated/` 生成。修改整理内容后重新构建，不要单独手改生成页面中的结论。
 
-## 来源、权利与引用
+## 更新资料
 
-代码 MIT；原创整理内容 CC BY 4.0。引用应注明 ai-literacy-wiki contributors、ai-literacy-toolkit 和资料日期。第三方资料、引用、商标与原件遵循原作者权利，不由本库统一重新授权。见 LICENSE、LICENSE-CONTENT 和 CITATION.cff。
+`scripts/extract.py` 只读取原项目已经整理的字段。相同来源哈希保留审核稿；哈希变化后进入草稿复核。新增的机器整理内容不能自动标为人工确认。
+
+原件地址配置在 `data/curated/media.json`。当前状态为未上传；以后补充资源地址及权限信息时，保留来源 ID 和文件哈希。
+
+## 资料范围
+
+资料快照为 2026-10-12，提取自 ai-literacy-wiki 的结构化资料。包括 {c['modules']} 个模块、{c['tasks']} 张操作卡、{c['platforms']} 个平台档案、{c['questions']} 道历史题、{c['sources']} 个来源记录和 {c['samples']} 条培训样题。
+
+{c['drafts']} 个草稿来源及 {c['quarantined_sources']} 个含冲突的来源不进入默认推荐。复核缺口见 [待复核清单](review-queue.md)，原始记录和哈希映射保留在结构化数据中。
 '''
     competition=read("competition.json")
     competition_md=['# 赛事信息（与通用方法分开）','',f'官方入口：[{competition["url"]}]({competition["url"]})',f'核对日期：{competition["checked_at"]}','',competition["note"],'']
     competition_md.extend(f'- {u["published_at"]}：{u["title"]}（{u["locator"]}）' for u in competition["updates"])
-    return {"quickstart":quick,"preparation":"\n".join(preparation)+"\n","agent":agent,"overview":overview,"competition":"\n".join(competition_md)+"\n"}
+    return {"quickstart":quick,"preparation":"\n".join(preparation)+"\n","agent":agent,"overview":overview,"maintaining":maintaining,"competition":"\n".join(competition_md)+"\n"}
 
 
 def simple_html(md):
@@ -266,11 +346,11 @@ def build():
     for item in items:
         write(site/item["detail_url"],item_html(item))
         write(ROOT/"wiki/records"/(item["id"]+".md"),item_md(item))
-    for name in ["quickstart","preparation","competition"]:
+    for name in ["quickstart","preparation","competition","maintaining"]:
         write(ROOT/"docs"/(name+".md"),g[name])
         write(site/(name+".html"),layout(name,'<article class="detail">'+simple_html(g[name])+'</article>'))
     write(ROOT/"README.md",g["overview"])
-    write(ROOT/"START_HERE.md",'# 从这里开始\n\n人类用户打开 [index.html](index.html) 或 [快速开始](docs/quickstart.md)。\n\nAgent 读取 [agent/START_HERE.md](agent/START_HERE.md) 和 [任务目录](agent/task-index.md)。\n\n资料数量与审核状态见 [README.md](README.md)。\n')
+    write(ROOT/"START_HERE.md",'# 从这里开始\n\n双击 [index.html](index.html) 搜索资料，或先看 [快速开始](docs/quickstart.md)。\n\n也可以把 [仓库链接](https://github.com/Makashibata02/ai-literacy-toolkit) 发给 Agent，让它先列访问准备清单，再优先联网辅助查题。[README](README.md) 提供可直接复制的提示词。\n\n把文件夹交给 Agent 时，让它先读 [agent/START_HERE.md](agent/START_HERE.md) 和 [任务目录](agent/task-index.md)。\n')
     write(ROOT/"AGENTS.md",'''# Agent instructions
 
 Start with START_HERE.md and agent/START_HERE.md. This is an evidence-linked quick reference, not an automatic answer service.
@@ -279,7 +359,7 @@ data/curated/ is the sole fact source. Site, Wiki, upload packs and llms-full.tx
 
 Separate question-text review from answer verification. Human-confirmed answers apply only to the original conditions and option text. Candidates and training samples are separate records. New machine-authored material is machine_reviewed, never human_reviewed without the user's confirmation.
 
-Use python -m app kb search to retrieve paths and evidence. Draft and quarantined sources are excluded by default. Validate dynamic values on the original platform. Stop at login, CAPTCHA, institutional authentication and paywalls; wait for the user's authorized session. Do not store credentials or submit competition answers automatically.
+First help the user prepare relevant official entries, accounts and institutional access, distinguishing public lookup from account-only functions. When answering a question, prioritize current online evidence from official platforms and original documents. Use this repository to identify platforms, choose search methods and consult historical references, not as a substitute for live verification. Use python -m app kb search when local files are available. Draft and quarantined sources are excluded by default. Validate dynamic values on the original platform. Stop at login, CAPTCHA, institutional authentication and paywalls; wait for the user's authorized session. Explain unavailable access honestly. Do not store credentials or submit competition answers automatically.
 
 Do not publish absolute paths, secrets, guesses or raw media. Future media links belong in data/curated/media.json. Before handoff run python -m app kb build, python -m app kb lint --strict, python -m app.validate_readable and python -m pytest.
 ''')

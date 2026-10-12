@@ -15,4 +15,6 @@
 
 ## 给 Agent 使用
 
-读取 AGENTS.md、agent/START_HERE.md 和 agent/task-index.md。聊天 AI 可上传 llms-full.txt；需要完整证据时再上传 agent/主题分片。无需安装运行程序也能阅读这些文件。
+把仓库链接 https://github.com/Makashibata02/ai-literacy-toolkit 发给能够浏览网页的 Agent，让它先读使用说明，列出网站与账号准备清单。收到题目后，优先联网查找当前证据，用仓库定位平台、检索方法和核对条件。
+
+也可以下载文件夹，让 Agent 读取 AGENTS.md、agent/START_HERE.md 和 agent/task-index.md。聊天 AI 可上传 llms-full.txt；需要完整证据时再上传 agent/主题分片。
