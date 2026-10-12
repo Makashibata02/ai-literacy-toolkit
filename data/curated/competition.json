@@ -1,0 +1,21 @@
+{
+  "id": "competition-2026",
+  "title": "2026 年赛事信息与官方入口",
+  "url": "https://csc.xxsuyang.com/",
+  "checked_at": "2026-10-12",
+  "review_status": "machine_reviewed",
+  "updates": [
+    {
+      "published_at": "2026-09-30",
+      "title": "淘汰赛彩排与比赛时间安排",
+      "locator": "官网最新公告"
+    },
+    {
+      "published_at": "2026-10-08",
+      "title": "淘汰赛赛前培训通知",
+      "locator": "官网最新公告"
+    }
+  ],
+  "note": "这里只登记已发现的公告标题；具体赛区时间、规则和可用工具以最新官方通知及赛场安排为准。通用查题方法不依赖某次赛事日程。",
+  "verification_method": "official_homepage_search"
+}

@@ -1,0 +1,1670 @@
+[
+  {
+    "id": "entity-001",
+    "kind": "platform",
+    "title": "B站",
+    "origin_ids": [
+      "entity-001"
+    ],
+    "aliases": [
+      "Bilibili",
+      "bilibili",
+      "哔哩哔哩"
+    ],
+    "url": "https://www.bilibili.com/",
+    "summary": "年轻世代聚集的文化社区与视频平台（哔哩哔哩），涵盖动画、番剧、游戏、科技、生活等分区，支持弹幕、UP主投稿、直播与多元兴趣圈层。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "B站",
+        "url": "https://www.bilibili.com/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-002",
+    "kind": "platform",
+    "title": "CNKI",
+    "origin_ids": [
+      "entity-002",
+      "entity-029"
+    ],
+    "aliases": [
+      "CNKI 中国知网",
+      "中国知网"
+    ],
+    "url": "https://www.cnki.net/",
+    "summary": "中国学术文献总库（中国知网），整合期刊、博硕士论文、会议、报纸、年鉴、专利、标准等，提供统一检索、在线阅读下载与知网节引文网络；含 CNKI AI 智能研读与辅助创作。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-cnki-advanced",
+      "task-cnki-boolean",
+      "task-cnki-exact",
+      "task-cnki-conference",
+      "task-literature-tracking",
+      "task-reference-export"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "CNKI",
+        "url": "https://www.cnki.net/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "CNKI 高级检索与结果筛选",
+      "CNKI 布尔逻辑 AND OR NOT",
+      "CNKI 精确与模糊匹配",
+      "CNKI 学术会议论文与会议信息",
+      "CNKI PubMed RSS 文献追踪与提醒",
+      "参考文献著录格式与题录导出"
+    ]
+  },
+  {
+    "id": "entity-003",
+    "kind": "platform",
+    "title": "Cambridge",
+    "origin_ids": [
+      "entity-003",
+      "entity-034"
+    ],
+    "aliases": [
+      "Cambridge Core",
+      "剑桥大学出版社",
+      "剑桥数据库"
+    ],
+    "url": "https://www.cambridge.org/core/",
+    "summary": "剑桥大学出版社学术内容平台 Cambridge Core，集期刊与电子书于一体，含剑桥史、剑桥指南等系列，提供机构订阅全文访问。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "Cambridge",
+        "url": "https://www.cambridge.org/core/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-004",
+    "kind": "platform",
+    "title": "CiteSpace",
+    "origin_ids": [
+      "entity-004"
+    ],
+    "aliases": [
+      "陈超美"
+    ],
+    "url": "https://citespace.podia.com/",
+    "summary": "基于Java的科学文献可视化与计量分析软件，用于绘制知识图谱（共被引、关键词共现、突发检测等），分析学科演进与研究前沿。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-citespace"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "CiteSpace",
+        "url": "https://citespace.podia.com/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "CiteSpace 项目、时间切片与节点类型"
+    ]
+  },
+  {
+    "id": "entity-005",
+    "kind": "platform",
+    "title": "DeepSeek",
+    "origin_ids": [
+      "entity-005"
+    ],
+    "aliases": [
+      "DeepSeek AI",
+      "深度求索"
+    ],
+    "url": "https://www.deepseek.com/",
+    "summary": "基于自研 DeepSeek 系列大模型（V3/R1 等）的通用 AI 助手，支持对话、推理、代码生成与联网搜索；提供网页版、App 与开放平台 API。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "DeepSeek",
+        "url": "https://www.deepseek.com/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-006",
+    "kind": "platform",
+    "title": "EBSCO",
+    "origin_ids": [
+      "entity-006"
+    ],
+    "aliases": [
+      "EBSCO Information Services",
+      "EBSCOhost"
+    ],
+    "url": "https://www.ebsco.com",
+    "summary": "学术数据库与电子资源服务商，提供 EBSCOhost 研究数据库、电子书、期刊包、发现服务（Discovery）与图书馆资源采购平台，覆盖各学科全文期刊与循证资源。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "EBSCO",
+        "url": "https://www.ebsco.com",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-007",
+    "kind": "platform",
+    "title": "EndNote",
+    "origin_ids": [
+      "entity-007"
+    ],
+    "aliases": [
+      "EndNote 2025"
+    ],
+    "url": "https://endnote.com",
+    "summary": "文献管理软件，支持参考文献收集、组织、引用格式生成（Cite While You Write）、PDF全文管理与获取，并可集成 Web of Science 进行统一引用管理。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "EndNote",
+        "url": "https://endnote.com",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-008",
+    "kind": "platform",
+    "title": "Excel",
+    "origin_ids": [
+      "entity-008"
+    ],
+    "aliases": [
+      "Microsoft Excel",
+      "微软 Excel",
+      "微软Excel"
+    ],
+    "url": "https://www.microsoft.com/microsoft-365/excel",
+    "summary": "Microsoft 365 套件中的电子表格软件，支持公式计算、数据透视、图表可视化、协作编辑与 Python/Copilot 数据分析，提供网页版与桌面/移动端。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-excel-clean"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "Excel",
+        "url": "https://www.microsoft.com/microsoft-365/excel",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "Excel TRIM CLEAN MID FIND 数据清洗"
+    ]
+  },
+  {
+    "id": "entity-009",
+    "kind": "platform",
+    "title": "Kimi",
+    "origin_ids": [
+      "entity-009"
+    ],
+    "aliases": [
+      "Kimi 智能助手",
+      "Moonshot AI",
+      "kimi",
+      "月之暗面"
+    ],
+    "url": "https://www.kimi.com/",
+    "summary": "Moonshot AI 开发的AI助手，支持联网搜索、深度思考、长文本对话（百万token上下文）、多模态推理，并提供通用Agent、深度研究、Kimi Code编程、建站与PPT等能力。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "Kimi",
+        "url": "https://www.kimi.com/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-010",
+    "kind": "platform",
+    "title": "MarsCode",
+    "origin_ids": [
+      "entity-010"
+    ],
+    "aliases": [
+      "Trae",
+      "豆包 MarsCode",
+      "豆包marsCode"
+    ],
+    "url": "https://www.marscode.cn/",
+    "summary": "字节跳动推出的AI编程工具（现亦称 Trae / 豆包 MarsCode），提供智能代码补全、解释、调试、云端IDE与编程助手，支持100+语言及主流IDE插件。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "MarsCode",
+        "url": "https://www.marscode.cn/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-011",
+    "kind": "platform",
+    "title": "Mendeley",
+    "origin_ids": [
+      "entity-011"
+    ],
+    "aliases": [
+      "Mendeley Reference Manager"
+    ],
+    "url": "https://www.mendeley.com/",
+    "summary": "免费的文献管理工具，可导入PDF、整理参考文献、生成 bibliography、高亮批注，并与Word插件（Mendeley Cite）配合插入引文。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "Mendeley",
+        "url": "https://www.mendeley.com/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-012",
+    "kind": "platform",
+    "title": "PubMed",
+    "origin_ids": [
+      "entity-012"
+    ],
+    "aliases": [
+      "NCBI PubMed",
+      "PUBMED"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/",
+    "summary": "生物医学文献检索数据库，收录 MEDLINE、生命科学期刊与在线图书超 4000 万条引文，并提供 MeSH 主题词、引文匹配与指向全文（PubMed Central/出版商）的链接。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-pubmed-search",
+      "task-pubmed-wildcards",
+      "task-literature-tracking"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "PubMed 标题、日期、文献类型与全文检索",
+      "PubMed 通配符、截词与自动映射核对",
+      "CNKI PubMed RSS 文献追踪与提醒"
+    ]
+  },
+  {
+    "id": "entity-013",
+    "kind": "platform",
+    "title": "QQ",
+    "origin_ids": [
+      "entity-013"
+    ],
+    "aliases": [
+      "OICQ",
+      "腾讯QQ"
+    ],
+    "url": "https://im.qq.com/",
+    "summary": "腾讯即时通讯软件，支持文字/语音/视频聊天、QQ空间、文件传输、群组与多端（Windows/macOS/移动端）同步；官网提供客户端下载与账号服务。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-qq-capture"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "QQ",
+        "url": "https://im.qq.com/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "QQ 截图、贴图与录屏功能核对"
+    ]
+  },
+  {
+    "id": "entity-014",
+    "kind": "platform",
+    "title": "SciDraw",
+    "origin_ids": [
+      "entity-014"
+    ],
+    "aliases": [
+      "scidraw.io"
+    ],
+    "url": "https://www.scidraw.io/",
+    "summary": "免费的科研矢量图（SVG）素材库，提供动物、细胞、实验器材等可编辑科学插图供下载复用（CC-BY 许可）。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "SciDraw",
+        "url": "https://www.scidraw.io/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-015",
+    "kind": "platform",
+    "title": "ScienceDirect",
+    "origin_ids": [
+      "entity-015"
+    ],
+    "aliases": [
+      "SD",
+      "ScienceDirect.com"
+    ],
+    "url": "https://www.sciencedirect.com/",
+    "summary": "爱思唯尔旗下的同行评审学术文献平台，提供期刊文章、图书章节与开放获取内容的检索与全文访问。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-sciencedirect"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "ScienceDirect",
+        "url": "https://www.sciencedirect.com/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "ScienceDirect 高级检索与全文定位"
+    ]
+  },
+  {
+    "id": "entity-016",
+    "kind": "platform",
+    "title": "TED",
+    "origin_ids": [
+      "entity-016"
+    ],
+    "aliases": [
+      "TED Talks",
+      "TED演讲"
+    ],
+    "url": "https://www.ted.com/",
+    "summary": "汇集全球思想领袖的演讲视频平台（TED Talks），覆盖科技、教育、商业、设计等领域；提供 TED-Ed 教育动画、播客与按主题检索的演讲库。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "TED",
+        "url": "https://www.ted.com/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-017",
+    "kind": "platform",
+    "title": "Taylor & Francis",
+    "origin_ids": [
+      "entity-017"
+    ],
+    "aliases": [
+      "Routledge",
+      "T&F",
+      "Taylor & Francis Online",
+      "Taylor and Francis"
+    ],
+    "url": "https://www.taylorandfrancis.com",
+    "summary": "国际学术出版集团，旗下 Taylor & Francis Online 提供 2700+ 种跨学科期刊（人文社科、科技、工程、医学）及电子书、参考工具书检索与全文访问。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "Taylor & Francis",
+        "url": "https://www.taylorandfrancis.com",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-018",
+    "kind": "platform",
+    "title": "Web of Science",
+    "origin_ids": [
+      "entity-018"
+    ],
+    "aliases": [
+      "WOS",
+      "WoS"
+    ],
+    "url": "https://www.webofscience.com/",
+    "summary": "大型学术引文索引数据库，涵盖期刊、会议录与书籍，提供被引频次、期刊分区（JCR）及科研分析工具。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "Web of Science",
+        "url": "https://www.webofscience.com/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-019",
+    "kind": "platform",
+    "title": "Wiley",
+    "origin_ids": [
+      "entity-019"
+    ],
+    "aliases": [
+      "John Wiley & Sons",
+      "Wiley Online Library"
+    ],
+    "url": "https://www.wiley.com",
+    "summary": "国际学术出版与科研信息服务平台，旗下 Wiley Online Library 提供 2000+ 种期刊、260+ 参考书及 27000 册图书的检索与全文访问，并涵盖化学数据库、质谱库等科研工具。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "Wiley",
+        "url": "https://www.wiley.com",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-020",
+    "kind": "platform",
+    "title": "Word",
+    "origin_ids": [
+      "entity-020"
+    ],
+    "aliases": [
+      "Microsoft Word",
+      "微软 Word",
+      "微软Word"
+    ],
+    "url": "https://www.microsoft.com/microsoft-365/word",
+    "summary": "Microsoft 365 套件中的文字处理软件，支持文档撰写、排版、协作编辑、模板、翻译与 Microsoft Editor 拼写语法检查，并提供网页版与桌面/移动端。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "Word",
+        "url": "https://www.microsoft.com/microsoft-365/word",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-021",
+    "kind": "platform",
+    "title": "Zotero",
+    "origin_ids": [
+      "entity-021"
+    ],
+    "aliases": [
+      "ZoteroBib",
+      "zotero"
+    ],
+    "url": "https://www.zotero.org",
+    "summary": "免费开源的文献管理工具，可一键采集网页/数据库文献、整理标注、生成 9000+ 种引用格式参考文献，并支持与 Word/LibreOffice/Google Docs 联动及多设备同步。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "Zotero",
+        "url": "https://www.zotero.org",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-022",
+    "kind": "platform",
+    "title": "arXiv",
+    "origin_ids": [
+      "entity-022"
+    ],
+    "aliases": [
+      "arXiv e-Print archive",
+      "arXiv.org"
+    ],
+    "url": "https://arxiv.org/",
+    "summary": "开放获取的学术论文预印本库，覆盖物理、数学、计算机科学、定量生物、统计等领域，支持论文提交、检索与下载（非同行评审）。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "arXiv",
+        "url": "https://arxiv.org/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-023",
+    "kind": "platform",
+    "title": "一席",
+    "origin_ids": [
+      "entity-023"
+    ],
+    "aliases": [
+      "yixi",
+      "一席演讲"
+    ],
+    "url": "https://yixi.tv",
+    "summary": "以现场演讲和网络视频为主要形式的知识分享平台，口号‘人文·科技·白日梦’，邀请各领域讲者分享真实经历与思考，每期提供演讲视频与完整文字稿。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "一席",
+        "url": "https://yixi.tv",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-024",
+    "kind": "platform",
+    "title": "万方",
+    "origin_ids": [
+      "entity-024"
+    ],
+    "aliases": [
+      "Wanfang",
+      "万方数据",
+      "万方数据知识服务平台"
+    ],
+    "url": "https://www.wanfangdata.com.cn/",
+    "summary": "万方数据知识服务平台，整合期刊、学位论文、会议、科技报告、专利、标准、成果等文献资源，提供统一检索、学术导航与万方智搜；含科研诚信与查重服务。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-wanfang-analysis",
+      "task-reference-export"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "万方",
+        "url": "https://www.wanfangdata.com.cn/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "万方 检索、筛选与可视化机构排名",
+      "参考文献著录格式与题录导出"
+    ]
+  },
+  {
+    "id": "entity-025",
+    "kind": "platform",
+    "title": "中国互联网联合辟谣平台",
+    "origin_ids": [
+      "entity-025"
+    ],
+    "aliases": [
+      "piyao",
+      "联合辟谣平台"
+    ],
+    "url": "https://www.piyao.org.cn",
+    "summary": "由中央网信办会同有关部门建立的权威网络辟谣平台，发布每日辟谣、辟谣榜、专题辟谣内容及辟谣线索，提供谣言查证与举报指引。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "中国互联网联合辟谣平台",
+        "url": "https://www.piyao.org.cn",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-026",
+    "kind": "platform",
+    "title": "中国大学MOOC",
+    "origin_ids": [
+      "entity-026"
+    ],
+    "aliases": [
+      "icourse163",
+      "慕课"
+    ],
+    "url": "https://www.icourse163.org/",
+    "summary": "承接教育部国家精品开放课程任务的在线教育平台，提供国内知名高校MOOC课程，支持选课、作业、考试与认证证书。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "中国大学MOOC",
+        "url": "https://www.icourse163.org/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-027",
+    "kind": "platform",
+    "title": "中国执行信息公开网",
+    "origin_ids": [
+      "entity-027"
+    ],
+    "aliases": [
+      "zxgk",
+      "中国执行信息公开网（court.gov.cn）"
+    ],
+    "url": "https://zxgk.court.gov.cn/",
+    "summary": "全国法院司法公开四大平台之一，公开失信被执行人、限制消费人员、终本案件、执行法律文书等信息，并提供司法拍卖公告。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "中国执行信息公开网",
+        "url": "https://zxgk.court.gov.cn/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-028",
+    "kind": "platform",
+    "title": "中国教育考试网",
+    "origin_ids": [
+      "entity-028"
+    ],
+    "aliases": [
+      "NEEA",
+      "neea"
+    ],
+    "url": "https://www.neea.edu.cn",
+    "summary": "教育部教育考试院官方网站，提供普通高考、研究生考试、四六级（CET）、计算机等级考试（NCRE）、教师资格考试、托福/雅思等考试的项目介绍、报名、成绩查询与证书验证服务。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-education-query"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "中国教育考试网",
+        "url": "https://www.neea.edu.cn",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "学信网与中国教育考试网资格信息查询"
+    ]
+  },
+  {
+    "id": "entity-030",
+    "kind": "platform",
+    "title": "中文期刊服务平台",
+    "origin_ids": [
+      "entity-030",
+      "entity-051"
+    ],
+    "aliases": [
+      "CQVIP",
+      "维普",
+      "维普中文期刊服务平台",
+      "维普网",
+      "重庆维普"
+    ],
+    "url": "https://qikan.cqvip.com",
+    "summary": "即维普（VIP）的《维普中文期刊服务平台》，以中文期刊资源为基础，提供期刊文献检索、引文追踪分析、全文保障与多终端数据同步，覆盖数百学科、上万种期刊。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-vip-fields",
+      "task-reference-export"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "中文期刊服务平台",
+        "url": "https://qikan.cqvip.com",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "维普 字段限制与布尔检索",
+      "参考文献著录格式与题录导出"
+    ]
+  },
+  {
+    "id": "entity-031",
+    "kind": "platform",
+    "title": "云展网",
+    "origin_ids": [
+      "entity-031"
+    ],
+    "aliases": [
+      "Yunzhan365",
+      "万彩云展"
+    ],
+    "url": "https://www.yunzhan365.com/",
+    "summary": "在线文档转换与电子画册制作平台，可将PDF/PPT/Word/图片生成3D仿真翻页电子书，支持模板套用、多媒体嵌入与一键分享。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-pdf-tools"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "云展网",
+        "url": "https://www.yunzhan365.com/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "PDF 合并、拆分、转换与页码核对"
+    ]
+  },
+  {
+    "id": "entity-032",
+    "kind": "platform",
+    "title": "优设导航",
+    "origin_ids": [
+      "entity-032"
+    ],
+    "aliases": [
+      "UISDC",
+      "hao.uisdc",
+      "优设网",
+      "设计导航"
+    ],
+    "url": "https://hao.uisdc.com",
+    "summary": "优设网旗下设计师导航网站，聚合 AIGC 工具、UI 设计、设计教程、素材下载、高清图库、配色方案、字体、前端开发等设计师常用站点导航。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "优设导航",
+        "url": "https://hao.uisdc.com",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-033",
+    "kind": "platform",
+    "title": "全国标准信息公共服务平台",
+    "origin_ids": [
+      "entity-033"
+    ],
+    "aliases": [
+      "国家标准信息公共服务平台"
+    ],
+    "url": "https://std.samr.gov.cn",
+    "summary": "面向社会公众的一站式标准信息服务平台，整合国家标准、备案行业标准、地方标准、团体标准、企业标准及国际国外标准，提供免费查询、全文检索、分类/高级检索，并公开标准制修订过程信息与征求意见。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-standards-ics"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "全国标准信息公共服务平台",
+        "url": "https://std.samr.gov.cn",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "标准查询：名称、标准号与 ICS CCS 分类"
+    ]
+  },
+  {
+    "id": "entity-035",
+    "kind": "platform",
+    "title": "卫健委",
+    "origin_ids": [
+      "entity-035"
+    ],
+    "aliases": [
+      "NHC",
+      "National Health Commission",
+      "国家卫生健康委员会"
+    ],
+    "url": "https://www.nhc.gov.cn",
+    "summary": "国家卫生健康委员会官方网站，发布委领导、机构职能、政策法规、工作通知、数据发布与政务服务，并提供卫生标准、机构与执业人员等政务信息查询。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-health-query"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "卫健委",
+        "url": "https://www.nhc.gov.cn",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "卫健委医卫统计与信息查询"
+    ]
+  },
+  {
+    "id": "entity-036",
+    "kind": "platform",
+    "title": "国家哲学社会科学文献中心",
+    "origin_ids": [
+      "entity-036"
+    ],
+    "aliases": [
+      "NCPSSD",
+      "国家哲社文献中心"
+    ],
+    "url": "https://www.ncpssd.cn",
+    "summary": "公益性学术文献平台，提供中文社科期刊、外文开放获取期刊、古籍、集刊、外文图书等文献的检索、阅读与下载，并整合数据库导航与学术网站导航。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "国家哲学社会科学文献中心",
+        "url": "https://www.ncpssd.cn",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-037",
+    "kind": "platform",
+    "title": "国家图书馆",
+    "origin_ids": [
+      "entity-037"
+    ],
+    "aliases": [
+      "NLC",
+      "nlc",
+      "中国国家图书馆",
+      "国家数字图书馆"
+    ],
+    "url": "https://www.nlc.cn",
+    "summary": "国家图书馆（国家数字图书馆）官网，提供文献检索、古籍特藏、电子图书/期刊/论文/报纸、音视频、国图公开课、中华古籍智慧化服务平台等数字资源与服务。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "国家图书馆",
+        "url": "https://www.nlc.cn",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-038",
+    "kind": "platform",
+    "title": "国家社科基金项目数据库",
+    "origin_ids": [
+      "entity-038"
+    ],
+    "aliases": [
+      "NOPSS",
+      "全国哲学社会科学工作办公室"
+    ],
+    "url": "https://www.nopss.gov.cn/",
+    "summary": "全国哲学社会科学工作办公室官方网站，提供国家社科基金项目查询、申报公告、结项情况等信息公开与科研创新服务管理。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-research-projects"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "国家社科基金项目数据库",
+        "url": "https://www.nopss.gov.cn/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "国家社科基金项目数据库检索"
+    ]
+  },
+  {
+    "id": "entity-039",
+    "kind": "platform",
+    "title": "国家统计局",
+    "origin_ids": [
+      "entity-039"
+    ],
+    "aliases": [
+      "NBS",
+      "National Bureau of Statistics of China"
+    ],
+    "url": "https://www.stats.gov.cn",
+    "summary": "国务院直属机构，发布国民经济和社会发展统计数据、统计年鉴与普查结果，并提供官方数据发布库（data.stats.gov.cn）供指标查询。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-stats-data"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "国家统计局",
+        "url": "https://www.stats.gov.cn",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "国家统计局 数据查询与指标口径"
+    ]
+  },
+  {
+    "id": "entity-040",
+    "kind": "platform",
+    "title": "堆友",
+    "origin_ids": [
+      "entity-040"
+    ],
+    "aliases": [
+      "D.Design",
+      "堆友 D.Design"
+    ],
+    "url": "https://d.design",
+    "summary": "阿里巴巴设计推出的一站式AI创意设计平台，集成免费可商用3D素材库与在线渲染、多风格AI绘画（AI反应堆）、AI视频生成与智能工具箱。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "堆友",
+        "url": "https://d.design",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-041",
+    "kind": "platform",
+    "title": "天工AI",
+    "origin_ids": [
+      "entity-041"
+    ],
+    "aliases": [
+      "TiangoAI",
+      "tiangong",
+      "天工",
+      "昆仑万维天工"
+    ],
+    "url": "https://www.tiangong.cn",
+    "summary": "昆仑万维推出的对话式 AI 助手与 AI 搜索引擎，支持智能问答、写作、文档/音视频阅读分析，以及金融财经与科研学术方向的高级搜索（接入权威金融数据与 arXiv 等学术资源）。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "天工AI",
+        "url": "https://www.tiangong.cn",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-042",
+    "kind": "platform",
+    "title": "学信网",
+    "origin_ids": [
+      "entity-042"
+    ],
+    "aliases": [
+      "CHSI",
+      "chsi",
+      "中国高等教育学生信息网"
+    ],
+    "url": "https://www.chsi.com.cn",
+    "summary": "教育部指定的高等教育学籍学历查询与认证网站，兼作高校招生阳光工程、研招网（硕士/博士报名调剂）、四六级成绩查询、征兵网等教育服务的统一入口。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-education-query"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "学信网",
+        "url": "https://www.chsi.com.cn",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "学信网与中国教育考试网资格信息查询"
+    ]
+  },
+  {
+    "id": "entity-043",
+    "kind": "platform",
+    "title": "小红书",
+    "origin_ids": [
+      "entity-043"
+    ],
+    "aliases": [
+      "RED",
+      "REDnote",
+      "Xiaohongshu"
+    ],
+    "url": "https://www.xiaohongshu.com",
+    "summary": "年轻人生活方式社区与内容平台，以图文/短视频笔记分享生活方式、种草与购物经验，并融合电商功能（店铺、商品购买）。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "小红书",
+        "url": "https://www.xiaohongshu.com",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-044",
+    "kind": "platform",
+    "title": "微信指数",
+    "origin_ids": [
+      "entity-044"
+    ],
+    "aliases": [
+      "WeChat Index",
+      "微信指数小程序"
+    ],
+    "url": "https://index.weixin.qq.com",
+    "summary": "基于微信大数据的移动端关键词热度指数工具，反映关键词在微信生态（搜一搜、公众号、视频号等）内的7日/30日/90日热度趋势。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-wechat-index"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "微信指数",
+        "url": "https://index.weixin.qq.com",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "微信指数 日期、关键词与异动来源"
+    ]
+  },
+  {
+    "id": "entity-045",
+    "kind": "platform",
+    "title": "微词云",
+    "origin_ids": [
+      "entity-045"
+    ],
+    "aliases": [
+      "weiciyun",
+      "词云文字云"
+    ],
+    "url": "https://www.weiciyun.com",
+    "summary": "在线词云/文字云生成器，支持大文本中文分词、词频统计与分析、智能排版与形状模板，可导出 JPG/PNG/SVG/PSD 等格式，面向设计、运营、教学与数据分析场景。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [
+      "task-word-frequency"
+    ],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "微词云",
+        "url": "https://www.weiciyun.com",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "微词云 报告全文分词与词频统计"
+    ]
+  },
+  {
+    "id": "entity-046",
+    "kind": "platform",
+    "title": "扣子",
+    "origin_ids": [
+      "entity-046"
+    ],
+    "aliases": [
+      "Coze",
+      "扣子Coze"
+    ],
+    "url": "https://www.coze.cn",
+    "summary": "字节跳动推出的一站式AI智能体与AI开发平台，支持搭建智能体、工作流、插件、视频创作、扣子编程（前后端全栈开发）及多端协作。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "扣子",
+        "url": "https://www.coze.cn",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-047",
+    "kind": "platform",
+    "title": "文心一言",
+    "origin_ids": [
+      "entity-047"
+    ],
+    "aliases": [
+      "ERNIE Bot",
+      "文心大模型",
+      "百度文心一言"
+    ],
+    "url": "https://yiyan.baidu.com/",
+    "summary": "百度研发的知识增强大语言模型产品（ERNIE Bot），具备理解、生成、逻辑、记忆四大能力，支持对话、创作、代码、图像与联网搜索；由文心大模型驱动。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "文心一言",
+        "url": "https://yiyan.baidu.com/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-048",
+    "kind": "platform",
+    "title": "智谱清言",
+    "origin_ids": [
+      "entity-048"
+    ],
+    "aliases": [
+      "ChatGLM",
+      "GLM",
+      "智谱",
+      "智谱AI"
+    ],
+    "url": "https://chatglm.cn",
+    "summary": "基于 GLM 系列大模型的生成式 AI 助手，支持智能对话、代码生成、文档/文件解析、多模态交互与联网搜索；由清华大学 KEG 技术成果转化而来。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "智谱清言",
+        "url": "https://chatglm.cn",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-049",
+    "kind": "platform",
+    "title": "有道云笔记",
+    "origin_ids": [
+      "entity-049"
+    ],
+    "aliases": [
+      "Youdao Note",
+      "有道云笔记网页版"
+    ],
+    "url": "https://note.youdao.com",
+    "summary": "网易旗下的云端笔记工具，支持多端实时同步、Markdown/文档/表格/脑图/流程图编辑、OCR扫描、AI助手与多人协作。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "有道云笔记",
+        "url": "https://note.youdao.com",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-050",
+    "kind": "platform",
+    "title": "知乎",
+    "origin_ids": [
+      "entity-050"
+    ],
+    "aliases": [
+      "Zhihu"
+    ],
+    "url": "https://www.zhihu.com",
+    "summary": "中文问答与内容社区，用户通过提问、回答、文章、专栏、想法等形式分享专业知识与经验，并提供盐选会员等付费内容。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "知乎",
+        "url": "https://www.zhihu.com",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-052",
+    "kind": "platform",
+    "title": "讯飞星火",
+    "origin_ids": [
+      "entity-052"
+    ],
+    "aliases": [
+      "Xinghuo",
+      "iFlytek Spark",
+      "星火"
+    ],
+    "url": "https://xinghuo.xfyun.cn",
+    "summary": "科大讯飞推出的认知大模型与AI助手，支持文本生成、语言理解、知识问答、逻辑推理、代码编写、多模态生成，以及智能PPT/文档生成、AI搜索与智能体创建。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "讯飞星火",
+        "url": "https://xinghuo.xfyun.cn",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-053",
+    "kind": "platform",
+    "title": "豆包",
+    "origin_ids": [
+      "entity-053"
+    ],
+    "aliases": [
+      "Doubao",
+      "豆包AI"
+    ],
+    "url": "https://www.doubao.com/",
+    "summary": "通用 AI 助手，支持对话、写作、图像/视频生成、音乐生成、文档解析（PDF/Word/Excel 等上传分析）等；提供网页版、桌面版与移动端。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "豆包",
+        "url": "https://www.doubao.com/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-054",
+    "kind": "platform",
+    "title": "通义千问",
+    "origin_ids": [
+      "entity-054"
+    ],
+    "aliases": [
+      "Qwen",
+      "Tongyi",
+      "千问"
+    ],
+    "url": "https://tongyi.aliyun.com",
+    "summary": "阿里云通义实验室推出的大语言模型与AI助手，支持文本生成、视觉理解、语音、代码与全模态交互，并提供千问Qwen系列开源模型、API与企业级服务。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "通义千问",
+        "url": "https://tongyi.aliyun.com",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-055",
+    "kind": "platform",
+    "title": "高校信息素养教育数据库",
+    "origin_ids": [
+      "entity-055"
+    ],
+    "aliases": [
+      "xxsuyang",
+      "信息素养教育数据库",
+      "信息素养数据库"
+    ],
+    "url": "https://suyang.zxhnzq.com/",
+    "summary": "面向高校师生的信息素养教育资源库，以微视频课程为主，配套题库、专家讲座与赛题解析，助力信息检索、学术写作与信息素养大赛备赛。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "高校信息素养教育数据库",
+        "url": "https://suyang.zxhnzq.com/",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  },
+  {
+    "id": "entity-056",
+    "kind": "platform",
+    "title": "高等教育智慧教育平台",
+    "origin_ids": [
+      "entity-056"
+    ],
+    "aliases": [
+      "higher.smartedu",
+      "国家高等教育智慧教育平台",
+      "智慧高教"
+    ],
+    "url": "https://higher.smartedu.cn",
+    "summary": "国家高等教育智慧教育平台，汇聚高校一流在线开放课程（MOOC）、教材、专题与虚拟仿真实验等资源，提供课程学习与教学支持服务。",
+    "access_mode": "manual",
+    "access_note": "",
+    "verified_at": "2026-09-17",
+    "review_status": "draft",
+    "task_ids": [],
+    "evidence": [
+      {
+        "source_id": "origin-web-entities",
+        "locator": "高等教育智慧教育平台",
+        "url": "https://higher.smartedu.cn",
+        "verified_at": ""
+      }
+    ],
+    "steps": [
+      "本库暂无经过整理的专门操作卡；打开官方入口，按题目限定条件核验。"
+    ]
+  }
+]

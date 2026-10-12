@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+.env
+reports/origin-safety.json
+dist/*.zip
+dist/*.sha256
+raw/
+media/

@@ -1,0 +1,22 @@
+[
+  {"query":"知网 篇名 作者单位 年度筛选", "expected":"task-cnki-advanced"},
+  {"query":"CNKI 排除或者并且", "expected":"task-cnki-boolean"},
+  {"query":"中国知网 机构精确模糊", "expected":"task-cnki-exact"},
+  {"query":"万方 机构发文量被引频次排名", "expected":"task-wanfang-analysis"},
+  {"query":"维普 学位论文专业检索字段", "expected":"task-vip-fields"},
+  {"query":"PubMed 临床试验免费全文", "expected":"task-pubmed-search"},
+  {"query":"PubMed 通配符自动映射", "expected":"task-pubmed-wildcards"},
+  {"query":"标准 ICS 分类", "expected":"task-standards-ics"},
+  {"query":"电动车标准国际标准分类", "expected":"task-standards-ics"},
+  {"query":"统计局 快递量 年度指标单位", "expected":"task-stats-data"},
+  {"query":"政府工作报告 动词词频最高", "expected":"task-word-frequency"},
+  {"query":"site filetype 官方报告", "expected":"task-search-operators"},
+  {"query":"ScienceDirect 作者全文", "expected":"task-sciencedirect"},
+  {"query":"MIT 学位论文页码", "expected":"task-thesis"},
+  {"query":"知网 会议届次论文作者", "expected":"task-cnki-conference"},
+  {"query":"PubMed RSS 邮件提醒", "expected":"task-literature-tracking"},
+  {"query":"Excel 去空格非打印字符", "expected":"task-excel-clean"},
+  {"query":"PDF 合并拆分转Word", "expected":"task-pdf-tools"},
+  {"query":"参考文献 APA MLA 导出", "expected":"task-reference-export"},
+  {"query":"CiteSpace 时间切片节点类型", "expected":"task-citespace"}
+]

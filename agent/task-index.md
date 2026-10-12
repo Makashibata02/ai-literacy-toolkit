@@ -1,0 +1,82 @@
+# 任务与模块目录
+
+先按任务定位，再读完整操作卡。没有操作卡的模块仍保留来源及审核状态。
+
+- [CNKI 高级检索与结果筛选](../wiki/records/task-cnki-advanced.md) · module-31, module-35
+- [CNKI 布尔逻辑 AND OR NOT](../wiki/records/task-cnki-boolean.md) · module-32
+- [CNKI 精确与模糊匹配](../wiki/records/task-cnki-exact.md) · module-34
+- [万方 检索、筛选与可视化机构排名](../wiki/records/task-wanfang-analysis.md) · module-31, module-35, module-50
+- [维普 字段限制与布尔检索](../wiki/records/task-vip-fields.md) · module-32, module-36
+- [PubMed 标题、日期、文献类型与全文检索](../wiki/records/task-pubmed-search.md) · module-21, module-31, module-35
+- [PubMed 通配符、截词与自动映射核对](../wiki/records/task-pubmed-wildcards.md) · module-33, module-36
+- [标准查询：名称、标准号与 ICS CCS 分类](../wiki/records/task-standards-ics.md) · module-11
+- [国家统计局 数据查询与指标口径](../wiki/records/task-stats-data.md) · module-09
+- [微词云 报告全文分词与词频统计](../wiki/records/task-word-frequency.md) · module-49
+- [搜索引擎 site filetype 与限定检索](../wiki/records/task-search-operators.md) · module-37
+- [ScienceDirect 高级检索与全文定位](../wiki/records/task-sciencedirect.md) · module-21, module-31
+- [MIT 学位论文与学术文献定位](../wiki/records/task-thesis.md) · module-23
+- [CNKI 学术会议论文与会议信息](../wiki/records/task-cnki-conference.md) · module-22
+- [CNKI PubMed RSS 文献追踪与提醒](../wiki/records/task-literature-tracking.md) · module-47
+- [Excel TRIM CLEAN MID FIND 数据清洗](../wiki/records/task-excel-clean.md) · module-48
+- [PDF 合并、拆分、转换与页码核对](../wiki/records/task-pdf-tools.md) · module-41
+- [参考文献著录格式与题录导出](../wiki/records/task-reference-export.md) · module-44
+- [CiteSpace 项目、时间切片与节点类型](../wiki/records/task-citespace.md) · module-50
+- [微信指数 日期、关键词与异动来源](../wiki/records/task-wechat-index.md) · module-29
+- [图书馆馆藏查询与索书号](../wiki/records/task-library-catalog.md) · module-30
+- [学信网与中国教育考试网资格信息查询](../wiki/records/task-education-query.md) · module-15, module-16
+- [卫健委医卫统计与信息查询](../wiki/records/task-health-query.md) · module-14
+- [国家社科基金项目数据库检索](../wiki/records/task-research-projects.md) · module-25
+- [QQ 截图、贴图与录屏功能核对](../wiki/records/task-qq-capture.md) · module-40
+
+## 全部模块
+
+- [知识模块1：AI基础知识与伦理规范](../wiki/records/doc-98aa8a4894bc9381.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块02：AI学习资源的获取与利用](../wiki/records/doc-f700b5c6a2210696.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块03：通用AI工具认知与应用](../wiki/records/doc-a7a7b8ebef715536.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块04：办公场景下的AI工具](../wiki/records/doc-8052e362c80359dc.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块05：科研场景下的AI工具](../wiki/records/doc-85fb684af344e9aa.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块06：多模态AI工具](../wiki/records/doc-15f97db5a5b5fe4d.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块07：AI开源与开放数据资源的获取与利用](../wiki/records/doc-a6c9f39b7c872ce7.md) · `draft` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块08：思政信息资源](../wiki/records/doc-8879abab576ee63f.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块09：开放数据资源](../wiki/records/doc-adff0fb1266d96f4.md) · `draft` · task-stats-data
+- [知识模块10：法律信息资源](../wiki/records/doc-d1a428cfc770a0f6.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块11：标准与商标信息资源](../wiki/records/doc-7519eae042f8f09e.md) · `machine_reviewed` · task-standards-ics
+- [知识模块12：专利和地理标志](../wiki/records/doc-260e7706ffcb0b5e.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块13：反诈防骗信息资源](../wiki/records/doc-ecc04669427e0cd5.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块14：医卫信息查询](../wiki/records/doc-cededfdf757185c2.md) · `machine_reviewed` · task-health-query
+- [知识模块15：文教信息查询](../wiki/records/doc-cf2e7a42a8a5a3a9.md) · `machine_reviewed` · task-education-query
+- [知识模块16：证书资格查询](../wiki/records/doc-b2ff80f0ed77dbb4.md) · `machine_reviewed` · task-education-query
+- [知识模块17：在线开放课程资源](../wiki/records/doc-b5a4e5a3aeeadb47.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块18：开放平台中的学习资源](../wiki/records/doc-053ae91200c26b82.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块19：免费电子书](../wiki/records/doc-16da8ad81b46b7a9.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块20：国家图书馆免费数字资源](../wiki/records/doc-cb84aa81999215c2.md) · `draft` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块21：期刊论文的检索](../wiki/records/doc-689bc0ae2370f9cb.md) · `machine_reviewed` · task-pubmed-search、task-sciencedirect
+- [知识模块22：学术会议论文及会议信息的检索](../wiki/records/doc-68489b705150812d.md) · `machine_reviewed` · task-cnki-conference
+- [知识模块23：学位论文及资源获取](../wiki/records/doc-4d964945655f57b3.md) · `machine_reviewed` · task-thesis
+- [知识模块24：OA、预印本及其他免费资源](../wiki/records/doc-64f6c94135e3ebf3.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块25：科研项目数据库](../wiki/records/doc-cfb3f649834d35c5.md) · `machine_reviewed` · task-research-projects
+- [知识模块26：学术搜索](../wiki/records/doc-881a5fad8354d22a.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块27：图片搜索](../wiki/records/doc-de9c238ffe0d9652.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块28：网址导航](../wiki/records/doc-b1a02d1d8e7987ec.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块29：网络指数](../wiki/records/doc-54a2e8cf2ca1a8fc.md) · `machine_reviewed` · task-wechat-index
+- [知识模块30：馆藏查询系统](../wiki/records/doc-9c299a88488fee50.md) · `machine_reviewed` · task-library-catalog
+- [知识模块31：高级检索](../wiki/records/doc-b63e049c8b912919.md) · `machine_reviewed` · task-cnki-advanced、task-wanfang-analysis、task-pubmed-search、task-sciencedirect
+- [知识模块32：布尔逻辑检索](../wiki/records/doc-0c7da090c862ca53.md) · `machine_reviewed` · task-cnki-boolean、task-vip-fields
+- [知识模块33：截词检索](../wiki/records/doc-71061953f3623358.md) · `draft` · task-pubmed-wildcards
+- [知识模块34：精确与模糊匹配](../wiki/records/doc-bc5c608ce4797fa1.md) · `machine_reviewed` · task-cnki-exact
+- [知识模块35：结果筛选](../wiki/records/doc-2a29cfebe551a9cd.md) · `machine_reviewed` · task-cnki-advanced、task-wanfang-analysis、task-pubmed-search
+- [知识模块36：字段限制检索](../wiki/records/doc-7cd7cbac68619f4a.md) · `machine_reviewed` · task-vip-fields、task-pubmed-wildcards
+- [知识模块37：搜索引擎的检索语法和高级搜索](../wiki/records/doc-22bee0200563f76f.md) · `machine_reviewed` · task-search-operators
+- [知识模块38：思维导图、笔记软件、问卷调查](../wiki/records/doc-51e0b25af6be55fb.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块39：OFFICE插件和浏览器插件](../wiki/records/doc-6bc58c147034afbe.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块40：截图与录屏](../wiki/records/doc-74ecaf8c8622f1d6.md) · `machine_reviewed` · task-qq-capture
+- [知识模块41：PDF文件处理](../wiki/records/doc-f91c691389bf4c43.md) · `machine_reviewed` · task-pdf-tools
+- [知识模块42：学术评价与投稿选刊](../wiki/records/doc-904bcb4b04cb3aa5.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块43：学术伦理](../wiki/records/doc-a5d71bc7268f59d9.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块44：参考文献著录格式](../wiki/records/doc-37c284e70e158a59.md) · `machine_reviewed` · task-reference-export
+- [知识模块45：论文排版](../wiki/records/doc-aa3557592c9e92f9.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块46：文献管理工具](../wiki/records/doc-d5dd52943e2b645a.md) · `machine_reviewed` · 暂无专门操作卡，阅读来源或请用户实测
+- [知识模块47：文献追踪工具](../wiki/records/doc-48eb7392b22b738e.md) · `machine_reviewed` · task-literature-tracking
+- [知识模块48：数据处理工具](../wiki/records/doc-d76af9a5e1f68182.md) · `machine_reviewed` · task-excel-clean
+- [知识模块49：数据可视化工具](../wiki/records/doc-f4b8c9edd31ed830.md) · `draft` · task-word-frequency
+- [知识模块50：文献可视化工具](../wiki/records/doc-8173bbe1d0254327.md) · `machine_reviewed` · task-wanfang-analysis、task-citespace

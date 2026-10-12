@@ -1,0 +1,27 @@
+[
+  {
+    "id": "web-pubmed-help",
+    "title": "PubMed User Guide",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/help/",
+    "verified_at": "2026-10-12",
+    "review_status": "machine_reviewed",
+    "facts": [
+      "指南包含字段、布尔检索、通配符及截词的说明。",
+      "星号可表示词或短语中的零个或多个字符；具体限制应核对当前指南。"
+    ],
+    "locator": "Wildcards and truncation; Using search field tags",
+    "verification_method": "official_page_read"
+  },
+  {
+    "id": "web-standards-search",
+    "title": "全国标准信息公共服务平台检索",
+    "url": "https://std.samr.gov.cn/search/stdPage?q=%E6%B1%BD%E8%BD%A6",
+    "verified_at": "2026-10-12",
+    "review_status": "machine_reviewed",
+    "facts": [
+      "官方检索结果展示标准号、标准状态及 ICS、CCS 分类信息。"
+    ],
+    "locator": "国家标准检索结果中的分类与状态字段",
+    "verification_method": "official_page_search"
+  }
+]

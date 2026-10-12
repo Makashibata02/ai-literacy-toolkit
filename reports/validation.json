@@ -1,0 +1,228 @@
+{
+  "status": "passed",
+  "issues": [],
+  "counts": {
+    "sources": 146,
+    "modules": 50,
+    "platforms": 53,
+    "tasks": 25,
+    "questions": 168,
+    "samples": 93,
+    "drafts": 27,
+    "quarantined_sources": 1,
+    "confirmed_answers": 6,
+    "evidence_linked_candidates": 69
+  },
+  "retrieval": {
+    "passed": 20,
+    "total": 20,
+    "cases": [
+      {
+        "query": "知网 篇名 作者单位 年度筛选",
+        "expected": "task-cnki-advanced",
+        "top3": [
+          "task-cnki-advanced",
+          "vid-b7bb6d67941f24ad",
+          "task-cnki-exact"
+        ],
+        "passed": true
+      },
+      {
+        "query": "CNKI 排除或者并且",
+        "expected": "task-cnki-boolean",
+        "top3": [
+          "task-cnki-boolean",
+          "vid-fb303ba7539cbf1e",
+          "task-cnki-exact"
+        ],
+        "passed": true
+      },
+      {
+        "query": "中国知网 机构精确模糊",
+        "expected": "task-cnki-exact",
+        "top3": [
+          "task-cnki-exact",
+          "vid-f5b84abd62ffc0e2",
+          "task-cnki-advanced"
+        ],
+        "passed": true
+      },
+      {
+        "query": "万方 机构发文量被引频次排名",
+        "expected": "task-wanfang-analysis",
+        "top3": [
+          "task-wanfang-analysis",
+          "vid-492556d39f0e6c51"
+        ],
+        "passed": true
+      },
+      {
+        "query": "维普 学位论文专业检索字段",
+        "expected": "task-vip-fields",
+        "top3": [
+          "task-vip-fields",
+          "vid-5d13a2719f93c409",
+          "vid-0613914ed908f2ce"
+        ],
+        "passed": true
+      },
+      {
+        "query": "PubMed 临床试验免费全文",
+        "expected": "task-pubmed-search",
+        "top3": [
+          "task-pubmed-search",
+          "vid-ab0bdcb28214da69",
+          "vid-93ada0b56d58ad06"
+        ],
+        "passed": true
+      },
+      {
+        "query": "PubMed 通配符自动映射",
+        "expected": "task-pubmed-wildcards",
+        "top3": [
+          "task-pubmed-wildcards",
+          "doc-34581e0a09cdffc1"
+        ],
+        "passed": true
+      },
+      {
+        "query": "标准 ICS 分类",
+        "expected": "task-standards-ics",
+        "top3": [
+          "task-standards-ics"
+        ],
+        "passed": true
+      },
+      {
+        "query": "电动车标准国际标准分类",
+        "expected": "task-standards-ics",
+        "top3": [
+          "task-standards-ics"
+        ],
+        "passed": true
+      },
+      {
+        "query": "统计局 快递量 年度指标单位",
+        "expected": "task-stats-data",
+        "top3": [
+          "task-stats-data",
+          "task-health-query"
+        ],
+        "passed": true
+      },
+      {
+        "query": "政府工作报告 动词词频最高",
+        "expected": "task-word-frequency",
+        "top3": [
+          "task-word-frequency",
+          "Q119",
+          "vid-4d9ad348c7936bab"
+        ],
+        "passed": true
+      },
+      {
+        "query": "site filetype 官方报告",
+        "expected": "task-search-operators",
+        "top3": [
+          "task-search-operators",
+          "vid-188b5eaaca3fad94",
+          "doc-22bee0200563f76f"
+        ],
+        "passed": true
+      },
+      {
+        "query": "ScienceDirect 作者全文",
+        "expected": "task-sciencedirect",
+        "top3": [
+          "task-sciencedirect",
+          "vid-da01b5107629d72a",
+          "Q140"
+        ],
+        "passed": true
+      },
+      {
+        "query": "MIT 学位论文页码",
+        "expected": "task-thesis",
+        "top3": [
+          "task-thesis",
+          "vid-01a1ae989b1ddea6",
+          "doc-4d964945655f57b3"
+        ],
+        "passed": true
+      },
+      {
+        "query": "知网 会议届次论文作者",
+        "expected": "task-cnki-conference",
+        "top3": [
+          "task-cnki-conference",
+          "doc-37c284e70e158a59",
+          "vid-4b567b7a7041523a"
+        ],
+        "passed": true
+      },
+      {
+        "query": "PubMed RSS 邮件提醒",
+        "expected": "task-literature-tracking",
+        "top3": [
+          "task-literature-tracking",
+          "vid-bb8f99ba163c3913",
+          "doc-48eb7392b22b738e"
+        ],
+        "passed": true
+      },
+      {
+        "query": "Excel 去空格非打印字符",
+        "expected": "task-excel-clean",
+        "top3": [
+          "task-excel-clean",
+          "vid-4e58b20c511d6cdd",
+          "doc-d76af9a5e1f68182"
+        ],
+        "passed": true
+      },
+      {
+        "query": "PDF 合并拆分转Word",
+        "expected": "task-pdf-tools",
+        "top3": [
+          "task-pdf-tools",
+          "doc-f91c691389bf4c43",
+          "doc-0c2c090825428d69"
+        ],
+        "passed": true
+      },
+      {
+        "query": "参考文献 APA MLA 导出",
+        "expected": "task-reference-export",
+        "top3": [
+          "task-reference-export",
+          "doc-37c284e70e158a59"
+        ],
+        "passed": true
+      },
+      {
+        "query": "CiteSpace 时间切片节点类型",
+        "expected": "task-citespace",
+        "top3": [
+          "task-citespace",
+          "vid-dc804f940069a13a",
+          "doc-0c2c090825428d69"
+        ],
+        "passed": true
+      }
+    ]
+  },
+  "html_record_count": 392,
+  "browser_search_parity": {
+    "passed": 20,
+    "total": 20,
+    "method": "shipped JavaScript executed with Node vm"
+  },
+  "pytest": {
+    "passed": 31
+  },
+  "original_safety": {
+    "tracked_files_unchanged": 2094,
+    "raw_files_unchanged": 315,
+    "git_index_unchanged": true
+  }
+}

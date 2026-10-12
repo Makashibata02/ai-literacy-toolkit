@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite ai-literacy-toolkit and its originating ai-literacy-wiki notes."
+title: "AI Literacy Toolkit"
+version: 1.0.0
+date-released: 2026-10-12
+license: CC-BY-4.0
+repository-code: "https://github.com/Makashibata02/ai-literacy-toolkit"
+authors:
+  - name: "ai-literacy-wiki contributors"

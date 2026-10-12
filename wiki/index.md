@@ -1,0 +1,408 @@
+# 速查 Wiki
+
+[使用入口](../START_HERE.md) · [任务与模块](../agent/task-index.md) · [账号准备](../docs/preparation.md)
+
+## 操作卡
+
+- [CNKI 高级检索与结果筛选](records/task-cnki-advanced.md) · `machine_reviewed`
+- [CNKI 布尔逻辑 AND OR NOT](records/task-cnki-boolean.md) · `machine_reviewed`
+- [CNKI 精确与模糊匹配](records/task-cnki-exact.md) · `machine_reviewed`
+- [万方 检索、筛选与可视化机构排名](records/task-wanfang-analysis.md) · `machine_reviewed`
+- [维普 字段限制与布尔检索](records/task-vip-fields.md) · `machine_reviewed`
+- [PubMed 标题、日期、文献类型与全文检索](records/task-pubmed-search.md) · `machine_reviewed`
+- [PubMed 通配符、截词与自动映射核对](records/task-pubmed-wildcards.md) · `machine_reviewed`
+- [标准查询：名称、标准号与 ICS CCS 分类](records/task-standards-ics.md) · `machine_reviewed`
+- [国家统计局 数据查询与指标口径](records/task-stats-data.md) · `machine_reviewed`
+- [微词云 报告全文分词与词频统计](records/task-word-frequency.md) · `machine_reviewed`
+- [搜索引擎 site filetype 与限定检索](records/task-search-operators.md) · `machine_reviewed`
+- [ScienceDirect 高级检索与全文定位](records/task-sciencedirect.md) · `machine_reviewed`
+- [MIT 学位论文与学术文献定位](records/task-thesis.md) · `machine_reviewed`
+- [CNKI 学术会议论文与会议信息](records/task-cnki-conference.md) · `machine_reviewed`
+- [CNKI PubMed RSS 文献追踪与提醒](records/task-literature-tracking.md) · `machine_reviewed`
+- [Excel TRIM CLEAN MID FIND 数据清洗](records/task-excel-clean.md) · `machine_reviewed`
+- [PDF 合并、拆分、转换与页码核对](records/task-pdf-tools.md) · `machine_reviewed`
+- [参考文献著录格式与题录导出](records/task-reference-export.md) · `machine_reviewed`
+- [CiteSpace 项目、时间切片与节点类型](records/task-citespace.md) · `machine_reviewed`
+- [微信指数 日期、关键词与异动来源](records/task-wechat-index.md) · `machine_reviewed`
+- [图书馆馆藏查询与索书号](records/task-library-catalog.md) · `machine_reviewed`
+- [学信网与中国教育考试网资格信息查询](records/task-education-query.md) · `machine_reviewed`
+- [卫健委医卫统计与信息查询](records/task-health-query.md) · `machine_reviewed`
+- [国家社科基金项目数据库检索](records/task-research-projects.md) · `machine_reviewed`
+- [QQ 截图、贴图与录屏功能核对](records/task-qq-capture.md) · `machine_reviewed`
+
+## 平台
+
+- [B站](records/entity-001.md) · `draft`
+- [CNKI](records/entity-002.md) · `draft`
+- [Cambridge](records/entity-003.md) · `draft`
+- [CiteSpace](records/entity-004.md) · `draft`
+- [DeepSeek](records/entity-005.md) · `draft`
+- [EBSCO](records/entity-006.md) · `draft`
+- [EndNote](records/entity-007.md) · `draft`
+- [Excel](records/entity-008.md) · `draft`
+- [Kimi](records/entity-009.md) · `draft`
+- [MarsCode](records/entity-010.md) · `draft`
+- [Mendeley](records/entity-011.md) · `draft`
+- [PubMed](records/entity-012.md) · `draft`
+- [QQ](records/entity-013.md) · `draft`
+- [SciDraw](records/entity-014.md) · `draft`
+- [ScienceDirect](records/entity-015.md) · `draft`
+- [TED](records/entity-016.md) · `draft`
+- [Taylor & Francis](records/entity-017.md) · `draft`
+- [Web of Science](records/entity-018.md) · `draft`
+- [Wiley](records/entity-019.md) · `draft`
+- [Word](records/entity-020.md) · `draft`
+- [Zotero](records/entity-021.md) · `draft`
+- [arXiv](records/entity-022.md) · `draft`
+- [一席](records/entity-023.md) · `draft`
+- [万方](records/entity-024.md) · `draft`
+- [中国互联网联合辟谣平台](records/entity-025.md) · `draft`
+- [中国大学MOOC](records/entity-026.md) · `draft`
+- [中国执行信息公开网](records/entity-027.md) · `draft`
+- [中国教育考试网](records/entity-028.md) · `draft`
+- [中文期刊服务平台](records/entity-030.md) · `draft`
+- [云展网](records/entity-031.md) · `draft`
+- [优设导航](records/entity-032.md) · `draft`
+- [全国标准信息公共服务平台](records/entity-033.md) · `draft`
+- [卫健委](records/entity-035.md) · `draft`
+- [国家哲学社会科学文献中心](records/entity-036.md) · `draft`
+- [国家图书馆](records/entity-037.md) · `draft`
+- [国家社科基金项目数据库](records/entity-038.md) · `draft`
+- [国家统计局](records/entity-039.md) · `draft`
+- [堆友](records/entity-040.md) · `draft`
+- [天工AI](records/entity-041.md) · `draft`
+- [学信网](records/entity-042.md) · `draft`
+- [小红书](records/entity-043.md) · `draft`
+- [微信指数](records/entity-044.md) · `draft`
+- [微词云](records/entity-045.md) · `draft`
+- [扣子](records/entity-046.md) · `draft`
+- [文心一言](records/entity-047.md) · `draft`
+- [智谱清言](records/entity-048.md) · `draft`
+- [有道云笔记](records/entity-049.md) · `draft`
+- [知乎](records/entity-050.md) · `draft`
+- [讯飞星火](records/entity-052.md) · `draft`
+- [豆包](records/entity-053.md) · `draft`
+- [通义千问](records/entity-054.md) · `draft`
+- [高校信息素养教育数据库](records/entity-055.md) · `draft`
+- [高等教育智慧教育平台](records/entity-056.md) · `draft`
+
+## 历史题目
+
+- [Q001 · 单选题在CNKI（中国知网）高级检索中，检索主题为“数字经济"与"税收"的文献，2015年-2025年，发文量最多的作者是（）。](records/Q001.md) · `human_reviewed`
+- [Q002 · 单选题智慧树平台中的国家金课，选课学生最多的课程是哪一门？（）](records/Q002.md) · `human_reviewed`
+- [Q003 · 单选题在PubMed里检索“eDoctor:machinelearningandthefutureofmedicine"这篇文献。请问文献中的Figure5为哪](records/Q003.md) · `human_reviewed`
+- [Q004 · 单选题根据国家统计局国家数据查询系统（https://data.stats.gov.cn）的"地区数据"，河南省2023年粮食单位面积产量（）（公斤/公 顷)。](records/Q004.md) · `human_reviewed`
+- [Q005 · 多选题在中央组织部主管的共产党员网上的"先进典型“栏目中，找到全国优秀共产党员的展播。其中关于张桂梅同志的事迹标题不正确 的是（）。](records/Q005.md) · `human_reviewed`
+- [Q006 · 多选题 Zotero可以添加为文献条目的文献标识符是（）](records/Q006.md) · `human_reviewed`
+- [Q007 · 多选题在Al工具千问（网页版https://www.qianwen.com/）中有"录音纪要"功能，在用这个功能做会议记录时可以选择音频语言，其中 包括（）。](records/Q007.md) · `human_reviewed`
+- [Q008 · 多选题 下列软件可以进行录屏操作的有（）：](records/Q008.md) · `human_reviewed`
+- [Q009 · 多选题 HIPPTER（https://www.hippter.com/)中的免费商用资源导航提供哪些类型的资源？（）](records/Q009.md) · `human_reviewed`
+- [Q010 · 多选题在国家社科基金项目数据库中检索可知，以下关于国家社科基金项目“终身发展视角下肥胖学龄儿童动作能力发展及身体活动促进 策略研究的说法正确的是（）。](records/Q010.md) · `human_reviewed`
+- [Q011 · 多选题科大讯飞的AI大学堂的课程栏目包括哪些内容（）](records/Q011.md) · `human_reviewed`
+- [Q012 · 多选题如需在百度检索”北京大学2025年硕士研究生招生简章"的PDF格式文档，下列哪些检索表达式是不合适的？（）](records/Q012.md) · `human_reviewed`
+- [Q013 · 多选题 在CNKI的"图书"库中检索图书，系统提供的检索字段有（）。](records/Q013.md) · `human_reviewed`
+- [Q014 · 多选题](records/Q014.md) · `human_reviewed`
+- [Q015 · 单选题在lEEE官网（https://www.ieee.org）检索可知，会议时间在2025年前五个月，与人工智能相关（用检索词"Artificiallntel](records/Q015.md) · `human_reviewed`
+- [Q016 · 单选题利用CNKI的高级检索功能检索2020-2024年间发表的，篇名中包含"AI"或者"人工智能”（精确检索），主题包括“法律"或"法规"的 中文学术期刊论文](records/Q016.md) · `human_reviewed`
+- [Q017 · 单选题从全国标准信息公共服务平台找到行业标准《学术出版规范期刊学术不端行为界定》（CY/T174一2019）并下载PDF全文。请 问：第3.1.3节"图片和音视](records/Q017.md) · `human_reviewed`
+- [Q018 · 单选题在MlT Theses中检索题名为"Managing maintenance costs of pharmaceuticalresearch and de](records/Q018.md) · `human_reviewed`
+- [Q019 · 单选题在NCBI的bookshelf数据库中找到名为《TheEthicsofHumanEnhancement:UnderstandingtheDebate》的电](records/Q019.md) · `human_reviewed`
+- [Q020 · 单选题在我国国家图书馆旗下的中华古籍资源库中可以找到清乾隆14年（1749）出版的《南岑昊氏宗谱》全文影印版，共有（）册。](records/Q020.md) · `human_reviewed`
+- [Q021 · 单选题预印本网站arXiv数学大类收录的文献起始于（）年。](records/Q021.md) · `human_reviewed`
+- [Q022 · 单选题在CNKI（中国知网）高级检索中，检索主题为"数字经济"与"税收"的文献，2015年-2025年，发文量最多的作者是（）。](records/Q022.md) · `human_reviewed`
+- [Q023 · 单选题在GitHub中有一个名为“ONNX"的项目，这个项目”LICENSES"文件夹中的文件数量是？（）](records/Q023.md) · `human_reviewed`
+- [Q024 · 单选题智慧树平台中的国家金课，选课学生最多的课程是哪一门？（）](records/Q024.md) · `human_reviewed`
+- [Q025 · 单选题 CNKI写作投稿服务平台选题分析功能可从多个维度分析选题可行性，以下哪项不属于其分析维度？](records/Q025.md) · `human_reviewed`
+- [Q026 · 单选题在万方数据库（万方数据知识服务平台，简称：万方）中检索到的文献"电气工程中的人工智能与大数据分析应用研究”，根据国 标GB/T7714-2025，其文献类](records/Q026.md) · `human_reviewed`
+- [Q027 · 单选题在CNKI中，检索2010-2020年题名含有"区块链"或"数字货币"，但不含"监管"的学位论文，以下哪个单位论文数量最多？（）](records/Q027.md) · `human_reviewed`
+- [Q028 · 单选题 根据国家卫健委网站名单查询，登记名称为"定州市嘉兴幼儿园“的的托育机构，其性质为（）。](records/Q028.md) · `human_reviewed`
+- [Q029 · 单选题在中国证券业协会网站查询可知，渤海证券股份有限公司中的刘焕章的登记编号是（）。](records/Q029.md) · `human_reviewed`
+- [Q030 · 单选题在国家知识产权局的“专利检索及分析"系统中查询可知，名为“空闲模式期间5G中的安全性上下文处理”（申请号：CN20188000 3392.3）的专利，它的](records/Q030.md) · `human_reviewed`
+- [Q031 · 单选题CNKI中《中国生物化学与分子生物学报》期刊的RSS订阅地址是（）](records/Q031.md) · `human_reviewed`
+- [Q032 · 单选题在ExCel中，现有数据表包含三列数据：第一列为“列A姓名”（内容为“张三""李四"王五"），第二列为“列B班级”（内容为“1 班""2班""1班”），第](records/Q032.md) · `human_reviewed`
+- [Q033 · 单选题根据国家统计局国家数据查询系统（https://data.stats.gov.cn）的"地区数据"，河南省2023年粮食单位面积产量（）（公斤/公 顷)。](records/Q033.md) · `human_reviewed`
+- [Q034 · ！ 单选题在PubMed里检索“eDoctor:machinelearningandthefutureofmedicine”这篇文献。请问文献中的Figure5](records/Q034.md) · `human_reviewed`
+- [Q035 · 多选题使用知乎直答进行提问时，可选择以下哪些信息源进行提问？（）](records/Q035.md) · `human_reviewed`
+- [Q036 · 多选题 在使用问卷星创建调查问卷时，可在"设计问卷-问卷设置"页面设置提交答卷控制，免费版用户可以使用以下哪些功能。（）](records/Q036.md) · `human_reviewed`
+- [Q037 · 。多选题 在国家反诈APP的"反馈与帮助"中，常见问题包含以下哪几类？](records/Q037.md) · `human_reviewed`
+- [Q038 · 多选题 下列软件可以进行录屏操作的有（）](records/Q038.md) · `human_reviewed`
+- [Q039 · 多选题在国家社科基金项目数据库中检索可知，以下关于国家社科基金项目“终身发展视角下肥胖学龄儿童动作能力发展及身体活动促进 策略研究"的说法正确的是（）。](records/Q039.md) · `human_reviewed`
+- [Q040 · 多选题Zotero可以添加为文献条目的文献标识符是（）。](records/Q040.md) · `human_reviewed`
+- [Q041 · 多选题在中央组织部主管的共产党员网上的"先进典型”栏目中，找到全国优秀共产党员的展播。其中关于张桂梅同志的事迹标题不正确 的是（）。](records/Q041.md) · `human_reviewed`
+- [Q042 · 用，包括哪些？](records/Q042.md) · `human_reviewed`
+- [Q043 · 多选题在评估LeapSpace是否适合作为科研级AI工具时，可以从官网和产品体验中重点核查哪些标准？](records/Q043.md) · `human_reviewed`
+- [Q044 · 多选题使用豆包网页版的音乐生成功能时，系统会给出提示词模板，其中可供选译的下拉菜里包括（）](records/Q044.md) · `human_reviewed`
+- [Q045 · 多选题 小恐龙公文排版助手插件支持对文字的速排版（点击"排版"按钮旁的下拉箭头），具体功能包括（）？](records/Q045.md) · `human_reviewed`
+- [Q046 · 多选题在万方数据知识服务平台（简称：万方，万方数据库）“中外标准数据库"中找到地方标准《大学生创业园服务规范》 (DB3301/T 0385一2022）可知，这](records/Q046.md) · `human_reviewed`
+- [Q047 · 多选题在ACM（Associationfor Computing Machinery）digitallibaray数据库中，查询文献“TowardsProgra](records/Q047.md) · `human_reviewed`
+- [Q048 · 多选题如需在百度检索“北京大学2025年硕士研究生招生简章"的PDF格式文档，下列哪些检索表达式是不合适的？（）](records/Q048.md) · `human_reviewed`
+- [Q049 · 多选题在CNKI学术图片AI版中检索篇名《低空经济发展水平测算与城市经济增长新动能》，该文献相关图片中包含哪些图片类型？](records/Q049.md) · `human_reviewed`
+- [Q050 · 多选题在Al工具千问（网页版https://www.qianwen.com/）中有"录音纪要"功能，在用这个功能做会议记录时可以选择音频语言，其中 包括（）。](records/Q050.md) · `human_reviewed`
+- [Q051 · 多选题 云展网办公工具集是一个免费的在线工具，其中有"图片格式转换"功能，用这个功能转换图片格式，可选的输出格式包括（）。](records/Q051.md) · `human_reviewed`
+- [Q052 · 多选题 HIPPTER（https://www.hippter.com/)中的免费商用资源导航提供哪些类型的资源？ ()](records/Q052.md) · `human_reviewed`
+- [Q053 · 多选题 在CNKI的"图书"库中检索图书，系统提供的检索字段有（）。](records/Q053.md) · `human_reviewed`
+- [Q054 · 多选题科大讯飞的AI大学堂的课程栏目包括哪些内容（）](records/Q054.md) · `human_reviewed`
+- [Q055 · 判断题 在万方数据知识服务平台（简称：万方或者万方数据库）中，将检索词用引号（“"）括起来，如"白细胞介素-6”，则有可能漏检用“白细胞素6"或”白介素-6、I](records/Q055.md) · `human_reviewed`
+- [Q056 · 判断题 在中国庭审公开网，案号为"川1703民初3924号"的案件视频时长为30分40秒。（）](records/Q056.md) · `human_reviewed`
+- [Q057 · 判断题 微信指数可以对比"云南大学"和"昆明理工大学"这两个关键词在云南省的指数数据。（）](records/Q057.md) · `human_reviewed`
+- [Q058 · 判断题 在AI工具讯飞星火网页版，进入星火科研助手 （https://paper.xfyun.cn/），在"论文作业"这个功能中，用户需要填写设定"学 历”。(](records/Q058.md) · `human_reviewed`
+- [Q059 · 判断题 在中国专利公布公告系统的高级查询中，在"申请人"字段对应的搜索框中输入：上海%大学，在"名称”字段对应的搜索框中输入： 微纳结构，以这样的条件检索，检索](records/Q059.md) · `human_reviewed`
+- [Q060 · 判断题 《历史地理大发现》 （姬文广著）这本书在福建省图书馆的索书号是K916/24。](records/Q060.md) · `human_reviewed`
+- [Q061 · 判断题 使用微词云（https：//www.weiciyun.com） 做词云图时，字体可以选择"优设标题黑"。（）](records/Q061.md) · `human_reviewed`
+- [Q062 · 判断题 Word文档中，将鼠标移至想分页的文本处，再按下【ctrl】+【shift】键可实现快速分页。（）](records/Q062.md) · `human_reviewed`
+- [Q063 · 判断题 在高校毕业生到国际组织实习任职信息服务平台中查询岗位信息时，“工作性质"分类包括：实习、志愿者、全职。（)](records/Q063.md) · `human_reviewed`
+- [Q064 · 判断题 便用维普网的高级检索功能，检索摘要中含有"中华文明"的CSSCI期刊论文，选择精确匹配，时间限定在2014-2024年间，其中 发文量最多的主题是"文化](records/Q064.md) · `human_reviewed`
+- [Q065 · 单选题在GitHub中有一个名为“ONNX"的项目，这个项目“LICENSES"文件夹中的文件数量是？（）](records/Q065.md) · `human_reviewed`
+- [Q066 · 单选题在ExCel中，现有数据表包含三列数据：第一列为“列A姓名”（内容为“张三李四王五”），第二列为“列B班级”（内容为“1 班”“2班1班”），第三列为“列](records/Q066.md) · `human_reviewed`
+- [Q067 · 单选题在ExCel中，现有数据表包含三列数据：第一列为“列A姓名”（内容为“张三“李四王五”），第二列为“列B班级”（内容为“1 班"2班"1班”），第三列为“](records/Q067.md) · `human_reviewed`
+- [Q068 · 单选题在CNKI（中国知网）高级检索中，检索主题为“数字经济"与“税收"的文献，2015年-2025年，发文量最多的作者是（）](records/Q068.md) · `human_reviewed`
+- [Q069 · 单选题用QQ的截图功能选定截取区域后，系统会弹出一个工具栏，工具栏中有一个大写A图标，这个图标对应的功能是（）。](records/Q069.md) · `human_reviewed`
+- [Q070 · 单选题在国家药品监督管理局网站中查询可知，境外生产药品“国药准字HJ20140386"的药品本位码的第四至第六位是（）。](records/Q070.md) · `human_reviewed`
+- [Q071 · 单选题在PubMed检索任意字段中关于食品安全"foodsafety"文献，如果要将所有的随机对照试验筛选出来，使用到的过滤器（筛选字 段）是（）。](records/Q071.md) · `human_reviewed`
+- [Q072 · 单选题根据全国律师执业诚信信息公示平台回答，目前律师事务所数量最多的省（自治区、直辖市）是哪个？（）](records/Q072.md) · `human_reviewed`
+- [Q073 · 单选题在全国高校课程思政教学资源服务平台上设有示范课程栏目。点击《中华文化瑰宝：苗族银饰》的课程详情页面，打开教学设计标 签栏，即可看到该课程的教学部门是（）。](records/Q073.md) · `human_reviewed`
+- [Q074 · 单选题 下列选项中哪个是中国古典文献资源导航系统（童章阁）数字人文类目下的二级类目？（）](records/Q074.md) · `human_reviewed`
+- [Q075 · 单选题 在CNKI中检索2018-2023年发表的篇名包含？"人工智能伦理“的CSSCI期刊论文，被引次数最高的论文发表于哪个期刊？ （](records/Q075.md) · `human_reviewed`
+- [Q076 · 单选题在Taylor&Francis数据库（www.tandfonline.com）的高级检索中，检索字段选择"Title”，检索词输入：Thin-FilmSo](records/Q076.md) · `human_reviewed`
+- [Q077 · 单选题在我国国家图书馆网站"古籍特藏"栏目下可以找到"西夏文献"文献库（西夏碎金），这个文献库收录的数据数量与下列哪个数字最 接近（或等于）？（）](records/Q077.md) · `human_reviewed`
+- [Q078 · 单选题在lEEEXplore（https://ieeexplore.ieee.org）数据库高级检索的documenttitle字段输入检索词：wireless](records/Q078.md) · `human_reviewed`
+- [Q079 · 单选题在PubMed中，检索2017-2024年标题或摘要含"CRISPR"但标题不含"therapy"的文献。文献类型为"ClinicalTrial"的文献数](records/Q079.md) · `human_reviewed`
+- [Q080 · 单选题在PubScholar中可l以找到“Effectsofsaltsubstitutionon cumulativebloodpressure：a secon](records/Q080.md) · `human_reviewed`
+- [Q081 · 数字最接近（或等于）？（）](records/Q081.md) · `human_reviewed`
+- [Q082 · 单选题在牛津学术数据库中找到名为"AnIntroductiontoParticleAccelerators"的电子书。请问这本书第四章的PDF全文共有多少页？](records/Q082.md) · `human_reviewed`
+- [Q083 · 1 单选题在一席找到《！AGI真来了？》演讲视频，在前10秒里，他介绍了他之前在哪工作（）？](records/Q083.md) · `human_reviewed`
+- [Q084 · 单选题2023年科学技术部监督司发布了《负责任研究行为规范指引l（2023）》，在官网提供的全文pdf文档中，正文（不包括封面和目 录）第14页最后一个字是（）](records/Q084.md) · `human_reviewed`
+- [Q085 · 单选题 在WPS或word的替换功能中，可以用（）表示分页符。](records/Q085.md) · `human_reviewed`
+- [Q086 · 单选题 国家哲学社会科学文献中心网站的文献检索系统中收录的中文社会科学引文索引I(CSSCI)来源集刊的数量与下列哪个数字最接近 (包括等于）？(）](records/Q086.md) · `human_reviewed`
+- [Q087 · 单选题在中国研究生招生信息网的“院校库"中查询可知，甘肃省由其他部委主管的招生单位有（）所。](records/Q087.md) · `human_reviewed`
+- [Q088 · 单选题 在PubMed中，若想搜索题名中完全包含短语"heartfailure”，应使用以下哪种表达？（）](records/Q088.md) · `human_reviewed`
+- [Q089 · 多选题在中山大学图书馆官方微信公众号中检索《西方百年版画艺术》一书可知，收藏这本书的分馆包括（）。](records/Q089.md) · `human_reviewed`
+- [Q090 · 多选题 四川大学图书馆网站中有一个名为"生成式人工智能专题“的网页。这个专题网页中的栏目包括（）。](records/Q090.md) · `human_reviewed`
+- [Q091 · 多选题 百度的高级搜索界面中，可以限定文档格式，可以限定的格式类型包括（）。](records/Q091.md) · `human_reviewed`
+- [Q092 · 多选题 在AI工具纳米AI（网页版）首页侧边栏，有哪些选项？](records/Q092.md) · `human_reviewed`
+- [Q093 · 多选题 知网研学平台"AI对比阅读”支持的功能包括（）。](records/Q093.md) · `human_reviewed`
+- [Q094 · 多选题假如使用AI工具研究“哪些前沿技术是推动新质生产力形成与发展的关键”这一问题，如何做到回答结果的可信和全面？](records/Q094.md) · `human_reviewed`
+- [Q095 · 多选题 下列哪几项属于云展网PDF工具提供的功能（）。](records/Q095.md) · `human_reviewed`
+- [Q096 · 多选题在ExCel中，单元格A1包含数字123456789，你想在B1中显示123-456-789，请问下列哪些函数公式可以实现这个操作？（实际 操作时在公式前](records/Q096.md) · `human_reviewed`
+- [Q097 · 多选题在360图片搜索中有"查版权"功能，查图片版权首先需要提交图片，提交图片的方式包括（）。](records/Q097.md) · `human_reviewed`
+- [Q098 · 多选题关于《NatureCommunications》上发表的研究论文"MaternalNAT10orchestratesoocytemeioticcell-c](records/Q098.md) · `human_reviewed`
+- [Q099 · 多选题在雨课堂课件中可以插入慕课视频，包括哪些（）。](records/Q099.md) · `human_reviewed`
+- [Q100 · 多选题在中国互联网联合辟谣平台的辟谣访谈中，2023年12月15日发布的访谈包括](records/Q100.md) · `human_reviewed`
+- [Q101 · 多选题在LeapSpace提问"MOF光刻胶方向的期刊有哪些？“通常无法查看哪些信息？](records/Q101.md) · `human_reviewed`
+- [Q102 · 多选题万方数据知识服务平台（简称：万方、万方数据、万方数据库）有文献追踪功能，具体通过旗下"智研平台"的订阅"功能实现。 艺术美学](records/Q102.md) · `human_reviewed`
+- [Q103 · 多选题 在ECharts（https://echarts.apache.org/zh/index.html）可视化图表库中的示例部分，带有3D效果的示例图包括（](records/Q103.md) · `human_reviewed`
+- [Q104 · 多选题 以下哪些是问卷星提供的版本服务（）。](records/Q104.md) · `human_reviewed`
+- [Q105 · 多选题关于“复旦大学”、“上海交通大学”、“华东师范大学"这几个词，通过人群画像查询在2024年到2025年5月间的百度指数数据，下列 说法错误的有（），](records/Q105.md) · `human_reviewed`
+- [Q106 · 多选题使用百度学术检索到的文献可以导出多种文献格式，以下哪几种格式是百度学术支持导出的引用格式？](records/Q106.md) · `human_reviewed`
+- [Q107 · 多选题在CNKI数据库中，检索学位年度在2000-2020年之间、主题为"信息素养”的学位论文。发文量超过150的学位授予单位有包括（](records/Q107.md) · `human_reviewed`
+- [Q108 · 多选题在“国家标准全文公开系统"中，强制性国家标准检索中，筛选条件包括（）：](records/Q108.md) · `human_reviewed`
+- [Q109 · 判断题 在联台国教科文组织数字图书馆网站中可以找到联台国教科文组织2025年发布的《生成式人工智能教育与研究应用指南》（中 文版），这个文件中文版正文第12页表](records/Q109.md) · `human_reviewed`
+- [Q110 · 判断题 在国家高等教育智慧教育平台的研究生教育"栏目中可以找到北京邮电大学在线开放课程《R语言数据分析》，这门课程第14章 内容是：庐山烟雨浙江潮。](records/Q110.md) · `human_reviewed`
+- [Q111 · 判断题 在美国专利商标局 （USPTO）的PatentPublicSearch检索可知，专利号为12326787的专利申请人是Salesforce，lnc.。](records/Q111.md) · `human_reviewed`
+- [Q112 · 判断题在 GitHub仓库Significant-Gravitas/AutoGPT的Projects 页面中，OpenProjects 数量为 1。](records/Q112.md) · `human_reviewed`
+- [Q113 · 。判断题 根据A知数分析数据，2024年西双版纳傣族自治州第三产业就业人员同比增长率约为0.4%（）](records/Q113.md) · `human_reviewed`
+- [Q114 · 判断题 在CNKI中查询可知，“多酚提取物对小剂量辐射防护作用的实验研究”与“长期低剂量辐射暴露诱发血管病变及其机制研究“是由同 一老师指导的?( )](records/Q114.md) · `human_reviewed`
+- [Q115 · 判断题 现在部分AI工具有专门的辅助写作功能，在讯飞星火（网页版）中，辅助写作功能的具体名称是"写作神器"。（）](records/Q115.md) · `human_reviewed`
+- [Q116 · 判断题 通过万方数据知识服务平台（简称：万方或万方数据库），检索主题字段同时含有"信息素养”，“图书馆"的会议文献，其中图分 类不包括“工业技术”](records/Q116.md) · `human_reviewed`
+- [Q117 · 判断题 使用智谱清言 （网页版） 的"AI画图"功能时，可以选择的风格类型包括“黑白线条”。](records/Q117.md) · `human_reviewed`
+- [Q118 · 判断题 在中国法律知识资源总库-中国法律智库平台中，要对多篇文献的深度处理，系统支持对文献综述，文章结论，研究方法等内容的 深度研究。()](records/Q118.md) · `human_reviewed`
+- [Q119 · 单选题在微词云（https://www.weiciyun.com）中通过分词筛词后导入文本，统计我国2023年政府工作报告全文，发现出现次数最多的 名词是（）。](records/Q119.md) · `human_reviewed`
+- [Q120 · 单选题利用百度学术的学术分析功能查找期刊《中国图书馆学报》的H指数，找到的数字与下列哪个最接近（包括等于）？（）](records/Q120.md) · `human_reviewed`
+- [Q121 · Cles）数量与下列哪个数字最接近（或等于）？（）](records/Q121.md) · `human_reviewed`
+- [Q122 · 单选题契丹文是我国古代契丹族使用的文字，分大字和小字两种。在我国国家图书馆网站"古籍特藏"栏目下可以找到“民族文字古籍特藏 文献库，这个文献库中收录的与"契丹文](records/Q122.md) · `human_reviewed`
+- [Q123 · 单选题使用雨课堂插件在PPT中插入单选题，选项最多可以有几个？](records/Q123.md) · `human_reviewed`
+- [Q124 · 单选题 根据国家统计局的数据查询系统（https://www.stats.gov.cn/sj/）的"年度数据"，2024年我国第一产业就业人员人数为（）万人。](records/Q124.md) · `human_reviewed`
+- [Q125 · 单选题使用中国知网可以导出文献的多种引文格式，关于引文"刘梦君，邹文龙，宗敏，等.生成式人工智能何以赋能教学一一中学生英语写作 教学实证研究[J1.中国电化教育](records/Q125.md) · `human_reviewed`
+- [Q126 · 单选题在CNKI高级检索界面，精确检索作者为黄智，主题为"染色体"的论文，2014-2024年间共有（）篇期刊论文。](records/Q126.md) · `human_reviewed`
+- [Q127 · 单选题某本期刊的ISSN号是1004-4213，关于该刊的论述错误的是（）。](records/Q127.md) · `human_reviewed`
+- [Q128 · 单选题使用智谱清言（网页版）的"清影-AI生视频"功能时，首尾帧模式支持生成的视频时长为（）。](records/Q128.md) · `human_reviewed`
+- [Q129 · 单选题 在维普网中检索可知，目前四川大学参与起草的现行国家标准数量与下列哪个数字最接近（包括等于）？（）](records/Q129.md) · `human_reviewed`
+- [Q130 · 单选题有一项名为"一种可收纳式卡车变形机器人玩具"的专利申请，这是一项什么专利？（）](records/Q130.md) · `human_reviewed`
+- [Q131 · 单选题在Wiley数据库的高级检索中，检索2020-2025年标题中含"renewableenergy"的文献，以下说法正确的是？（）。](records/Q131.md) · `human_reviewed`
+- [Q132 · 单选题联合国教科文组织发布的《生成式人工智能教育与研究应用指南》正文第12页的表格是什么？（）](records/Q132.md) · `human_reviewed`
+- [Q133 · 单选题 录制会议现场的发言语音并实时转换为文本，录制结束后进行内容整理并生成AI纪要，这样的场景需求可以通过AI工具通义千问 的（）功能来实现。](records/Q133.md) · `human_reviewed`
+- [Q134 · 单选题在OALib中查找张平凤等人发表的标题中包含"AI素养"论文，全文共（）页。](records/Q134.md) · `human_reviewed`
+- [Q135 · 单选题 以下四个关键词2026年6月26日在微信指数中热度最高的是。（）](records/Q135.md) · `human_reviewed`
+- [Q136 · 单选题在中国证券业协会网站"信息公开-公司信息"栏目的证券公司信息公示中，注册地址在深圳的机构是哪家？](records/Q136.md) · `human_reviewed`
+- [Q137 · 单选题小张同学想精准了解“职务犯罪"的最新学术理论研究观点，在中国知网-中国法律知识资源总库-中国法律智库平台的AI问答中， 取的操作是？](records/Q137.md) · `human_reviewed`
+- [Q138 · 单选题在国家药品监督管理局网站中查询可知，批准文号为国药准字H14021781的药品，其本位码后三位数是（），](records/Q138.md) · `human_reviewed`
+- [Q139 · 多选题 智慧树平台中的国家级金课“中华国学”（南开大学张荣明），一共有11章，以下哪些内容是其章节主题？（）](records/Q139.md) · `human_reviewed`
+- [Q140 · 多选题ScienceDirect中检索发表在Journal of Product &Brand Management期刊上，标题、摘要或者作者指定的关键词中出现](records/Q140.md) · `human_reviewed`
+- [Q141 · 多选题 使用腾讯ima（网页版）创建个人知识库，可以对知识库文件进行排序，提供的排序方式包括（）。](records/Q141.md) · `human_reviewed`
+- [Q142 · 多选题在CNKI中国学术会议网检索2024年召开的会议，下列说法正确的是（）。](records/Q142.md) · `human_reviewed`
+- [Q143 · 多选题在美国国家生物技术信息中心NCBl的bookshelf数据库中找到书名为《DiseaseControlPriorities:ImprovingHealth](records/Q143.md) · `human_reviewed`
+- [Q144 · 多选题在百度的高级搜索界面中，可以限定搜索关键词的位置提高检索精度，可以限定的位置有（）。](records/Q144.md) · `human_reviewed`
+- [Q145 · 多选题2010年出版的由塞缪尔.亨廷顿所著的《文明的冲突与世界秩序的重建》一书在重庆大学图书馆有6个复本，请你给出该书的馆 藏地名称。](records/Q145.md) · `human_reviewed`
+- [Q146 · 多选题在万方数据知识服务平台中模糊检索学位授予年度为2018-2023，摘要中同时含“深度学习“和“医学影像”，但题名不含“综述"的博 士学位论文。满足条件的论](records/Q146.md) · `human_reviewed`
+- [Q147 · 的项目获评年度包括（）。](records/Q147.md) · `human_reviewed`
+- [Q148 · 多选题 在iconfont网站的"图标库"中包含以下哪些图标分类（）](records/Q148.md) · `human_reviewed`
+- [Q149 · 多选题在中国互联网联合辟谣平台中进行谣言线索提交，以下说法不正确的是（）。](records/Q149.md) · `human_reviewed`
+- [Q150 · 多选题用QQ软件截图后，可以点击图钉装图标将截图钉在桌面上（也就是贴图），如果要取消贴图，可以选择的操作包括（）。](records/Q150.md) · `human_reviewed`
+- [Q151 · 多选题 对于word的替换功能，下列说法错误的是（）](records/Q151.md) · `human_reviewed`
+- [Q152 · 多选题通过万方数据知识服务平台旗下“智研平台”（https://zhiyan.wanfangdata.com.cn/）提供了"订阅"功能。在"期刊订阅"模块新增](records/Q152.md) · `human_reviewed`
+- [Q153 · 多选题 根据研招网院校库主管部门类别选择"其他部委”，有3所及以上其他部委主管高校的省（直辖市）有（）。](records/Q153.md) · `human_reviewed`
+- [Q154 · 多选题在万方数据知识服务平台中，检索出版时间为2010-2024年、主题为“鼻炎”（选择模糊匹配）的期刊论文，发文量大于70的作者 有(）。](records/Q154.md) · `human_reviewed`
+- [Q155 · 多选题 以下哪些功能是知网研学平台"AI选题分析"提供的？](records/Q155.md) · `human_reviewed`
+- [Q156 · 多选题 CNKIAI提供了辅助创作模块，点开该模块提问框下方的工具箱图标，选择扩写功能，对"摩擦纳米发电机的发展前景研究"进行 扩写，它不提供哪些方向的扩写？](records/Q156.md) · `human_reviewed`
+- [Q157 · 多选题 云展网的办公工具集中，当要实现图片转PDF时，上传了图片后，在上传的文件右侧有哪几个功能键？](records/Q157.md) · `human_reviewed`
+- [Q158 · 多选题阿里云开发者社区中的人工智能学习路线，包括哪些阶段的学习？（）](records/Q158.md) · `human_reviewed`
+- [Q159 · 判断题 国家图书馆特色资源的博士论文数据库，其高级检索功能支持通过检索论文主题的方式查找论文。（）](records/Q159.md) · `human_reviewed`
+- [Q160 · 判断题 页一席平台讲座视频"AI如何对待正在变老的人"的讲者是复旦大学申琦。（）](records/Q160.md) · `human_reviewed`
+- [Q161 · 判断题 在AI工具智谱清言 （网页版） 首页侧边栏有本地知识问答这个选项。](records/Q161.md) · `human_reviewed`
+- [Q162 · 判断题 问卷星的AI创建功能支持上传附件的数量为最多5个。（）](records/Q162.md) · `human_reviewed`
+- [Q163 · 判断题 在全国高校课程思政教学资源服务平台上设有示范课程栏目。在该栏目中可以找到中央财经大学陈斌开教授主讲的（经世济民的 经济学》，教学设计中显示该课程总学时是](records/Q163.md) · `human_reviewed`
+- [Q164 · 判断题 我国新闻出版行业标准《学术出版规范期刊学术不端行为界定》“CY/T174一2019"对期刊学术不端行为进行了界定。在收到首 次投稿期刊退稿回复之后，对论](records/Q164.md) · `human_reviewed`
+- [Q165 · 判断题 在万方数据知识服务平台中模糊检索2016-2023年题名含“碳中和"且受“国家自然科学基金“资助的期刊论文，发表在（自然资源 学报》上的论文数量是9篇。](records/Q165.md) · `human_reviewed`
+- [Q166 · 判断题 在ScienceDirect的title检索字段对应的检索框中输入：electro*，可能匹配的词汇包括electron、electrode，elect](records/Q166.md) · `human_reviewed`
+- [Q167 · 判断题 现有一数据表，单元格A1的数据是APPLE，在单元格B1输入函数MID（A1,3,2），输出的结果是PP。](records/Q167.md) · `human_reviewed`
+- [Q168 · 判断题 澳门公共图书馆古籍目录不能在奎章阁里找到？（)](records/Q168.md) · `human_reviewed`
+
+## 历史来源
+
+- [MIT-Theses找MIT学位论文](records/vid-01a1ae989b1ddea6.md) · `machine_reviewed`
+- [维普网的布尔检索](records/vid-0613914ed908f2ce.md) · `machine_reviewed`
+- [QQ截图录屏功能](records/vid-0c76d3bc9c5d1cbd.md) · `machine_reviewed`
+- [全国标准信息公共服务平台](records/vid-0f3cf9b240026ce8.md) · `draft`
+- [国家哲学社会科学文献中心](records/vid-131153ff60c680f5.md) · `draft`
+- [deepseek编程助手](records/vid-164ee06f048bbf30.md) · `machine_reviewed`
+- [AI赋能科研诚信](records/vid-1823f0c348d4a638.md) · `machine_reviewed`
+- [找国标7714认识filetype和site搜索语法](records/vid-188b5eaaca3fad94.md) · `machine_reviewed`
+- [维普网布尔检索](records/vid-220b69f78e5c4ea3.md) · `machine_reviewed`
+- [影响因子](records/vid-23bca434513871f2.md) · `draft`
+- [扣子安装智能体](records/vid-2719ee030302e209.md) · `machine_reviewed`
+- [国家统计局数据查询平台](records/vid-27532b0a1d6f8133.md) · `machine_reviewed`
+- [智谱清言做单词详解](records/vid-28bbd5d1c531663e.md) · `machine_reviewed`
+- [AI工具堆友去水印](records/vid-292301c0b12db1b6.md) · `machine_reviewed`
+- [行业标准 学术出版规范 期刊学术不端行为界定](records/vid-2bfb5f0cc638a025.md) · `machine_reviewed`
+- [图书馆馆藏查询系统](records/vid-2dbc6a1ddc02278a.md) · `machine_reviewed`
+- [清言PPT生成AIPPT](records/vid-31241d4183e8481f.md) · `machine_reviewed`
+- [反诈防骗](records/vid-31ec1083cf83f641.md) · `machine_reviewed`
+- [智谱清言创建智能体](records/vid-3208a135358a8ea7.md) · `machine_reviewed`
+- [site语法妙用](records/vid-338f72a3586c1483.md) · `machine_reviewed`
+- [豆包让照片动起来](records/vid-392264c0a3abb8b7.md) · `machine_reviewed`
+- [复制受限文本的技巧](records/vid-41ab6fbc4559c12f.md) · `draft`
+- [万方可视化分析](records/vid-492556d39f0e6c51.md) · `machine_reviewed`
+- [cnki的花式检索](records/vid-4b567b7a7041523a.md) · `machine_reviewed`
+- [CNKI和万方文献追踪](records/vid-4b8b4f42ab4aa64f.md) · `machine_reviewed`
+- [微词云统计词频](records/vid-4d9ad348c7936bab.md) · `machine_reviewed`
+- [中国教育考试网](records/vid-4e424b2bc22bea57.md) · `machine_reviewed`
+- [数据清洗，可以用excel工具](records/vid-4e58b20c511d6cdd.md) · `machine_reviewed`
+- [deepseek做动态排序柱状图](records/vid-4eb9088d4f3a297b.md) · `machine_reviewed`
+- [万方结果筛选](records/vid-5384d31df63fa222.md) · `machine_reviewed`
+- [国标7714变化](records/vid-5c1e87e2875c9704.md) · `machine_reviewed`
+- [维普的字段限制](records/vid-5d13a2719f93c409.md) · `machine_reviewed`
+- [Taylor & Francis期刊数据库](records/vid-62c18e369c8f8c79.md) · `draft`
+- [截词检索通配符](records/vid-62fabcac59c80512.md) · `draft`
+- [浏览器插件](records/vid-65b033db0283cca3.md) · `machine_reviewed`
+- [卫健委官网查询平台](records/vid-6c64cc14e449ad7f.md) · `machine_reviewed`
+- [创建天工AI智能体](records/vid-720af67519ced7ef.md) · `draft`
+- [国家图书馆数字化古籍资源](records/vid-7595ed53733593fb.md) · `draft`
+- [优设导航](records/vid-83ee387e92b4ca92.md) · `machine_reviewed`
+- [论文排版工具](records/vid-84709d522e29080a.md) · `machine_reviewed`
+- [用AI写代码](records/vid-89b99215dd1c9bfd.md) · `draft`
+- [中文演讲平台一席](records/vid-907deecd04705448.md) · `draft`
+- [没有购买，也能使用的endnote玩具](records/vid-93ada0b56d58ad06.md) · `machine_reviewed`
+- [学信网查学历学位](records/vid-97d419e18e5abc5d.md) · `machine_reviewed`
+- [通义千问代码模式](records/vid-9b992dc8a6c1e764.md) · `draft`
+- [高等教育智慧教育平台](records/vid-9dbddd03a890cf8e.md) · `draft`
+- [讯飞星火做AI图](records/vid-a0a7bff784c2d6f3.md) · `draft`
+- [zotero解析](records/vid-a21d7deb43d33314.md) · `draft`
+- [Pubmed](records/vid-ab0bdcb28214da69.md) · `machine_reviewed`
+- [中国执行信息公开网](records/vid-ab860652f32b6073.md) · `machine_reviewed`
+- [在线笔记](records/vid-ac13b16742128002.md) · `machine_reviewed`
+- [搜索引擎高级搜索](records/vid-ac48202fae949269.md) · `machine_reviewed`
+- [通义生成爆款标题](records/vid-b21ee68c41a05e1e.md) · `machine_reviewed`
+- [豆包生成AI图片](records/vid-b41090c326e797d4.md) · `machine_reviewed`
+- [CNKI中的精确与模糊](records/vid-b4459b17ded2fd9b.md) · `machine_reviewed`
+- [云展网办公工具集](records/vid-b4c67ab6b38da6a3.md) · `machine_reviewed`
+- [CNKI高级检索和结果筛选](records/vid-b7bb6d67941f24ad.md) · `machine_reviewed`
+- [获取信息，零基础学爬虫](records/vid-ba4f0e510476e24d.md) · `machine_reviewed`
+- [pubmed文献追踪](records/vid-bb8f99ba163c3913.md) · `machine_reviewed`
+- [维普网批量下载](records/vid-c0d85e22984ecc57.md) · `machine_reviewed`
+- [零基础入门AIGC的五个问题](records/vid-c241b183d9021302.md) · `machine_reviewed`
+- [kimi编写快速开发半角全角转换网页工具](records/vid-c881be89998aad2f.md) · `machine_reviewed`
+- [星火科研助手修改学术论文](records/vid-ca18219d3b8f228e.md) · `machine_reviewed`
+- [CNKI中国学术会议网](records/vid-ca42627a9659187d.md) · `machine_reviewed`
+- [信息素养知识点解读](records/vid-d9689d6b4d5d5c14.md) · `machine_reviewed`
+- [sciencedirect高级检索](records/vid-da01b5107629d72a.md) · `machine_reviewed`
+- [根据检索设置判断检索意图](records/vid-dbf5f9734d68234b.md) · `machine_reviewed`
+- [citespace界面认识](records/vid-dc804f940069a13a.md) · `machine_reviewed`
+- [deepseek做数据清洗](records/vid-ddc582162b997c1b.md) · `machine_reviewed`
+- [豆包marscode写词频统计代码](records/vid-ddd1793443f03f4b.md) · `machine_reviewed`
+- [通义万相AI绘图](records/vid-e1dd45cb19e34ad0.md) · `machine_reviewed`
+- [mendeley：免费的文献管理工具](records/vid-e22ded3d79b5ee8e.md) · `draft`
+- [微信指数，用数据为营销助力](records/vid-e464e4f5d68eb5a6.md) · `machine_reviewed`
+- [豆包marscode](records/vid-e7672a72dae3c85e.md) · `machine_reviewed`
+- [高校信息素养教育数据库使用指南](records/vid-f099b4f7dd9e6884.md) · `machine_reviewed`
+- [CNKI+RSS：文献追踪技巧](records/vid-f5081c33be95054a.md) · `machine_reviewed`
+- [CNKI查机构论文精确还是模糊](records/vid-f5b84abd62ffc0e2.md) · `machine_reviewed`
+- [认识探究精神](records/vid-f61e53aa5b1dd858.md) · `machine_reviewed`
+- [国家社科基金项目数据库](records/vid-f7289510d1266938.md) · `machine_reviewed`
+- [CNKI的布尔逻辑](records/vid-fb303ba7539cbf1e.md) · `machine_reviewed`
+- [剑桥数据库](records/vid-fc5e43cf03ac2ab8.md) · `draft`
+- [科研绘图网站SciDraw](records/vid-ff756d3a6c465958.md) · `machine_reviewed`
+- [知识模块18：开放平台中的学习资源](records/doc-053ae91200c26b82.md) · `machine_reviewed`
+- [竞赛培训模块41-50-安嘉璐](records/doc-0c2c090825428d69.md) · `machine_reviewed`
+- [知识模块32：布尔逻辑检索](records/doc-0c7da090c862ca53.md) · `machine_reviewed`
+- [知识模块06：多模态AI工具](records/doc-15f97db5a5b5fe4d.md) · `machine_reviewed`
+- [知识模块19：免费电子书](records/doc-16da8ad81b46b7a9.md) · `machine_reviewed`
+- [知识模块37：搜索引擎的检索语法和高级搜索](records/doc-22bee0200563f76f.md) · `machine_reviewed`
+- [知识模块12：专利和地理标志](records/doc-260e7706ffcb0b5e.md) · `machine_reviewed`
+- [知识模块35：结果筛选](records/doc-2a29cfebe551a9cd.md) · `machine_reviewed`
+- [竞赛培训模块21-30-赖朝新](records/doc-2e1637e6808431d5.md) · `machine_reviewed`
+- [竞赛培训模块31-40：信息检索与知识管理-查颖](records/doc-34581e0a09cdffc1.md) · `machine_reviewed`
+- [知识模块44：参考文献著录格式](records/doc-37c284e70e158a59.md) · `machine_reviewed`
+- [知识模块47：文献追踪工具](records/doc-48eb7392b22b738e.md) · `machine_reviewed`
+- [知识模块23：学位论文及资源获取](records/doc-4d964945655f57b3.md) · `machine_reviewed`
+- [知识模块38：思维导图、笔记软件、问卷调查](records/doc-51e0b25af6be55fb.md) · `machine_reviewed`
+- [知识模块29：网络指数](records/doc-54a2e8cf2ca1a8fc.md) · `machine_reviewed`
+- [2026年大学生AI+信息素养大赛校内选拔赛比赛说明](records/doc-55b8519f2a04b6b9.md) · `machine_reviewed`
+- [202606生成式AI环境下信息素养教学活动设计](records/doc-580ef3290e9f6a55.md) · `machine_reviewed`
+- [2026 AI+信息素养大赛：从洞察到实践 可信笃定前行](records/doc-599433287357b75a.md) · `machine_reviewed`
+- [20260626 生成式AI的应用实践与发展趋势_四川大学 胡琳](records/doc-64d45c2fca673d83.md) · `machine_reviewed`
+- [知识模块24：OA、预印本及其他免费资源](records/doc-64f6c94135e3ebf3.md) · `machine_reviewed`
+- [知识模块22：学术会议论文及会议信息的检索](records/doc-68489b705150812d.md) · `machine_reviewed`
+- [知识模块21：期刊论文的检索](records/doc-689bc0ae2370f9cb.md) · `machine_reviewed`
+- [知识模块39：OFFICE插件和浏览器插件](records/doc-6bc58c147034afbe.md) · `machine_reviewed`
+- [知识模块33：截词检索](records/doc-71061953f3623358.md) · `draft`
+- [知识模块40：截图与录屏](records/doc-74ecaf8c8622f1d6.md) · `machine_reviewed`
+- [知识模块11：标准与商标信息资源](records/doc-7519eae042f8f09e.md) · `machine_reviewed`
+- [知识模块36：字段限制检索](records/doc-7cd7cbac68619f4a.md) · `machine_reviewed`
+- [知识模块04：办公场景下的AI工具](records/doc-8052e362c80359dc.md) · `machine_reviewed`
+- [知识模块50：文献可视化工具](records/doc-8173bbe1d0254327.md) · `machine_reviewed`
+- [知识模块05：科研场景下的AI工具](records/doc-85fb684af344e9aa.md) · `machine_reviewed`
+- [知识模块26：学术搜索](records/doc-881a5fad8354d22a.md) · `machine_reviewed`
+- [知识模块08：思政信息资源](records/doc-8879abab576ee63f.md) · `machine_reviewed`
+- [知识模块42：学术评价与投稿选刊](records/doc-904bcb4b04cb3aa5.md) · `machine_reviewed`
+- [知识模块1：AI基础知识与伦理规范](records/doc-98aa8a4894bc9381.md) · `machine_reviewed`
+- [知识模块30：馆藏查询系统](records/doc-9c299a88488fee50.md) · `machine_reviewed`
+- [知识模块43：学术伦理](records/doc-a5d71bc7268f59d9.md) · `machine_reviewed`
+- [知识模块07：AI开源与开放数据资源的获取与利用](records/doc-a6c9f39b7c872ce7.md) · `draft`
+- [知识模块03：通用AI工具认知与应用](records/doc-a7a7b8ebef715536.md) · `machine_reviewed`
+- [知识模块45：论文排版](records/doc-aa3557592c9e92f9.md) · `machine_reviewed`
+- [知识模块09：开放数据资源](records/doc-adff0fb1266d96f4.md) · `draft`
+- [知识模块28：网址导航](records/doc-b1a02d1d8e7987ec.md) · `machine_reviewed`
+- [知识模块16：证书资格查询](records/doc-b2ff80f0ed77dbb4.md) · `machine_reviewed`
+- [知识模块17：在线开放课程资源](records/doc-b5a4e5a3aeeadb47.md) · `machine_reviewed`
+- [知识模块31：高级检索](records/doc-b63e049c8b912919.md) · `machine_reviewed`
+- [知识模块34：精确与模糊匹配](records/doc-bc5c608ce4797fa1.md) · `machine_reviewed`
+- [智汇赛场，资源护航：2026大学生“AI＋信息素养”大赛备赛攻略](records/doc-c1772c8f54665589.md) · `draft`
+- [竞赛培训模块1-10-张雪娟](records/doc-c36465639e8829fe.md) · `draft`
+- [知识模块20：国家图书馆免费数字资源](records/doc-cb84aa81999215c2.md) · `draft`
+- [知识模块14：医卫信息查询](records/doc-cededfdf757185c2.md) · `machine_reviewed`
+- [知识模块15：文教信息查询](records/doc-cf2e7a42a8a5a3a9.md) · `machine_reviewed`
+- [知识模块25：科研项目数据库](records/doc-cfb3f649834d35c5.md) · `machine_reviewed`
+- [知识模块10：法律信息资源](records/doc-d1a428cfc770a0f6.md) · `machine_reviewed`
+- [知识模块46：文献管理工具](records/doc-d5dd52943e2b645a.md) · `machine_reviewed`
+- [知识模块48：数据处理工具](records/doc-d76af9a5e1f68182.md) · `machine_reviewed`
+- [知识模块27：图片搜索](records/doc-de9c238ffe0d9652.md) · `machine_reviewed`
+- [定稿：2026年大学生AI+信息素养大赛指导教师培训_李燕](records/doc-e2d19d1ec4d9b658.md) · `machine_reviewed`
+- [知识模块13：反诈防骗信息资源](records/doc-ecc04669427e0cd5.md) · `machine_reviewed`
+- [“AI+信息素养”大赛命题范围与命题思路（20260624）](records/doc-efa61cf29c7352f7.md) · `draft`
+- [竞赛培训模块11-20-从命题逻辑看破题思路-叶颖涵](records/doc-f158636250b7b42e.md) · `draft`
+- [知识模块49：数据可视化工具](records/doc-f4b8c9edd31ed830.md) · `draft`
+- [知识模块02：AI学习资源的获取与利用](records/doc-f700b5c6a2210696.md) · `machine_reviewed`
+- [知识模块41：PDF文件处理](records/doc-f91c691389bf4c43.md) · `machine_reviewed`
+- [2026年大学生AI+信息素养大赛-赛制赛程介绍-李燕](records/doc-f9aebec32f6968aa.md) · `draft`
+- [（6.29）智驭未来-AI赋能的信息素养教育新范式](records/doc-35820677ebd77fff.md) · `draft`
+

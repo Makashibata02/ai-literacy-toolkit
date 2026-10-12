@@ -1,0 +1,7 @@
+# AI literacy toolkit
+
+Start: agent/START_HERE.md
+Task index: agent/task-index.md
+Compact upload pack: llms-full.txt
+All evidence records: wiki/index.md
+Structured truth: data/curated/

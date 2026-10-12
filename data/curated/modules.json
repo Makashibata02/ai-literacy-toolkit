@@ -1,0 +1,461 @@
+[
+  {
+    "id": "module-01",
+    "number": 1,
+    "title": "知识模块1：AI基础知识与伦理规范",
+    "source_id": "doc-98aa8a4894bc9381",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-02",
+    "number": 2,
+    "title": "知识模块02：AI学习资源的获取与利用",
+    "source_id": "doc-f700b5c6a2210696",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-03",
+    "number": 3,
+    "title": "知识模块03：通用AI工具认知与应用",
+    "source_id": "doc-a7a7b8ebef715536",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-04",
+    "number": 4,
+    "title": "知识模块04：办公场景下的AI工具",
+    "source_id": "doc-8052e362c80359dc",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-05",
+    "number": 5,
+    "title": "知识模块05：科研场景下的AI工具",
+    "source_id": "doc-85fb684af344e9aa",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-06",
+    "number": 6,
+    "title": "知识模块06：多模态AI工具",
+    "source_id": "doc-15f97db5a5b5fe4d",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-07",
+    "number": 7,
+    "title": "知识模块07：AI开源与开放数据资源的获取与利用",
+    "source_id": "doc-a6c9f39b7c872ce7",
+    "review_status": "draft",
+    "task_ids": []
+  },
+  {
+    "id": "module-08",
+    "number": 8,
+    "title": "知识模块08：思政信息资源",
+    "source_id": "doc-8879abab576ee63f",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-09",
+    "number": 9,
+    "title": "知识模块09：开放数据资源",
+    "source_id": "doc-adff0fb1266d96f4",
+    "review_status": "draft",
+    "task_ids": [
+      "task-stats-data"
+    ]
+  },
+  {
+    "id": "module-10",
+    "number": 10,
+    "title": "知识模块10：法律信息资源",
+    "source_id": "doc-d1a428cfc770a0f6",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-11",
+    "number": 11,
+    "title": "知识模块11：标准与商标信息资源",
+    "source_id": "doc-7519eae042f8f09e",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-standards-ics"
+    ]
+  },
+  {
+    "id": "module-12",
+    "number": 12,
+    "title": "知识模块12：专利和地理标志",
+    "source_id": "doc-260e7706ffcb0b5e",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-13",
+    "number": 13,
+    "title": "知识模块13：反诈防骗信息资源",
+    "source_id": "doc-ecc04669427e0cd5",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-14",
+    "number": 14,
+    "title": "知识模块14：医卫信息查询",
+    "source_id": "doc-cededfdf757185c2",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-health-query"
+    ]
+  },
+  {
+    "id": "module-15",
+    "number": 15,
+    "title": "知识模块15：文教信息查询",
+    "source_id": "doc-cf2e7a42a8a5a3a9",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-education-query"
+    ]
+  },
+  {
+    "id": "module-16",
+    "number": 16,
+    "title": "知识模块16：证书资格查询",
+    "source_id": "doc-b2ff80f0ed77dbb4",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-education-query"
+    ]
+  },
+  {
+    "id": "module-17",
+    "number": 17,
+    "title": "知识模块17：在线开放课程资源",
+    "source_id": "doc-b5a4e5a3aeeadb47",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-18",
+    "number": 18,
+    "title": "知识模块18：开放平台中的学习资源",
+    "source_id": "doc-053ae91200c26b82",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-19",
+    "number": 19,
+    "title": "知识模块19：免费电子书",
+    "source_id": "doc-16da8ad81b46b7a9",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-20",
+    "number": 20,
+    "title": "知识模块20：国家图书馆免费数字资源",
+    "source_id": "doc-cb84aa81999215c2",
+    "review_status": "draft",
+    "task_ids": []
+  },
+  {
+    "id": "module-21",
+    "number": 21,
+    "title": "知识模块21：期刊论文的检索",
+    "source_id": "doc-689bc0ae2370f9cb",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-pubmed-search",
+      "task-sciencedirect"
+    ]
+  },
+  {
+    "id": "module-22",
+    "number": 22,
+    "title": "知识模块22：学术会议论文及会议信息的检索",
+    "source_id": "doc-68489b705150812d",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-cnki-conference"
+    ]
+  },
+  {
+    "id": "module-23",
+    "number": 23,
+    "title": "知识模块23：学位论文及资源获取",
+    "source_id": "doc-4d964945655f57b3",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-thesis"
+    ]
+  },
+  {
+    "id": "module-24",
+    "number": 24,
+    "title": "知识模块24：OA、预印本及其他免费资源",
+    "source_id": "doc-64f6c94135e3ebf3",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-25",
+    "number": 25,
+    "title": "知识模块25：科研项目数据库",
+    "source_id": "doc-cfb3f649834d35c5",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-research-projects"
+    ]
+  },
+  {
+    "id": "module-26",
+    "number": 26,
+    "title": "知识模块26：学术搜索",
+    "source_id": "doc-881a5fad8354d22a",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-27",
+    "number": 27,
+    "title": "知识模块27：图片搜索",
+    "source_id": "doc-de9c238ffe0d9652",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-28",
+    "number": 28,
+    "title": "知识模块28：网址导航",
+    "source_id": "doc-b1a02d1d8e7987ec",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-29",
+    "number": 29,
+    "title": "知识模块29：网络指数",
+    "source_id": "doc-54a2e8cf2ca1a8fc",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-wechat-index"
+    ]
+  },
+  {
+    "id": "module-30",
+    "number": 30,
+    "title": "知识模块30：馆藏查询系统",
+    "source_id": "doc-9c299a88488fee50",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-library-catalog"
+    ]
+  },
+  {
+    "id": "module-31",
+    "number": 31,
+    "title": "知识模块31：高级检索",
+    "source_id": "doc-b63e049c8b912919",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-cnki-advanced",
+      "task-wanfang-analysis",
+      "task-pubmed-search",
+      "task-sciencedirect"
+    ]
+  },
+  {
+    "id": "module-32",
+    "number": 32,
+    "title": "知识模块32：布尔逻辑检索",
+    "source_id": "doc-0c7da090c862ca53",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-cnki-boolean",
+      "task-vip-fields"
+    ]
+  },
+  {
+    "id": "module-33",
+    "number": 33,
+    "title": "知识模块33：截词检索",
+    "source_id": "doc-71061953f3623358",
+    "review_status": "draft",
+    "task_ids": [
+      "task-pubmed-wildcards"
+    ]
+  },
+  {
+    "id": "module-34",
+    "number": 34,
+    "title": "知识模块34：精确与模糊匹配",
+    "source_id": "doc-bc5c608ce4797fa1",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-cnki-exact"
+    ]
+  },
+  {
+    "id": "module-35",
+    "number": 35,
+    "title": "知识模块35：结果筛选",
+    "source_id": "doc-2a29cfebe551a9cd",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-cnki-advanced",
+      "task-wanfang-analysis",
+      "task-pubmed-search"
+    ]
+  },
+  {
+    "id": "module-36",
+    "number": 36,
+    "title": "知识模块36：字段限制检索",
+    "source_id": "doc-7cd7cbac68619f4a",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-vip-fields",
+      "task-pubmed-wildcards"
+    ]
+  },
+  {
+    "id": "module-37",
+    "number": 37,
+    "title": "知识模块37：搜索引擎的检索语法和高级搜索",
+    "source_id": "doc-22bee0200563f76f",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-search-operators"
+    ]
+  },
+  {
+    "id": "module-38",
+    "number": 38,
+    "title": "知识模块38：思维导图、笔记软件、问卷调查",
+    "source_id": "doc-51e0b25af6be55fb",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-39",
+    "number": 39,
+    "title": "知识模块39：OFFICE插件和浏览器插件",
+    "source_id": "doc-6bc58c147034afbe",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-40",
+    "number": 40,
+    "title": "知识模块40：截图与录屏",
+    "source_id": "doc-74ecaf8c8622f1d6",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-qq-capture"
+    ]
+  },
+  {
+    "id": "module-41",
+    "number": 41,
+    "title": "知识模块41：PDF文件处理",
+    "source_id": "doc-f91c691389bf4c43",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-pdf-tools"
+    ]
+  },
+  {
+    "id": "module-42",
+    "number": 42,
+    "title": "知识模块42：学术评价与投稿选刊",
+    "source_id": "doc-904bcb4b04cb3aa5",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-43",
+    "number": 43,
+    "title": "知识模块43：学术伦理",
+    "source_id": "doc-a5d71bc7268f59d9",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-44",
+    "number": 44,
+    "title": "知识模块44：参考文献著录格式",
+    "source_id": "doc-37c284e70e158a59",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-reference-export"
+    ]
+  },
+  {
+    "id": "module-45",
+    "number": 45,
+    "title": "知识模块45：论文排版",
+    "source_id": "doc-aa3557592c9e92f9",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-46",
+    "number": 46,
+    "title": "知识模块46：文献管理工具",
+    "source_id": "doc-d5dd52943e2b645a",
+    "review_status": "machine_reviewed",
+    "task_ids": []
+  },
+  {
+    "id": "module-47",
+    "number": 47,
+    "title": "知识模块47：文献追踪工具",
+    "source_id": "doc-48eb7392b22b738e",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-literature-tracking"
+    ]
+  },
+  {
+    "id": "module-48",
+    "number": 48,
+    "title": "知识模块48：数据处理工具",
+    "source_id": "doc-d76af9a5e1f68182",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-excel-clean"
+    ]
+  },
+  {
+    "id": "module-49",
+    "number": 49,
+    "title": "知识模块49：数据可视化工具",
+    "source_id": "doc-f4b8c9edd31ed830",
+    "review_status": "draft",
+    "task_ids": [
+      "task-word-frequency"
+    ]
+  },
+  {
+    "id": "module-50",
+    "number": 50,
+    "title": "知识模块50：文献可视化工具",
+    "source_id": "doc-8173bbe1d0254327",
+    "review_status": "machine_reviewed",
+    "task_ids": [
+      "task-wanfang-analysis",
+      "task-citespace"
+    ]
+  }
+]

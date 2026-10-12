@@ -1,0 +1,1654 @@
+[
+  {
+    "id": "task-cnki-advanced",
+    "kind": "task",
+    "title": "CNKI 高级检索与结果筛选",
+    "aliases": [
+      "中国知网",
+      "篇名",
+      "作者",
+      "作者单位",
+      "CSSCI",
+      "北大核心",
+      "年度",
+      "被引",
+      "机构论文"
+    ],
+    "module_ids": [
+      "module-31",
+      "module-35"
+    ],
+    "platform_ids": [
+      "entity-002"
+    ],
+    "summary": "确认题目要求的文献类型、篇名/主题、作者或机构、年份与来源类别。；进入高级检索，先选文献类型，再将条件分别填入对应字段。",
+    "entry_url": "https://www.cnki.net/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "确认题目要求的文献类型、篇名/主题、作者或机构、年份与来源类别。",
+      "进入高级检索，先选文献类型，再将条件分别填入对应字段。",
+      "核对精确/模糊匹配与条件间逻辑；执行检索后复查已选筛选条件。",
+      "若题目要求最多、最新或被引最高，按指定指标排序，记录检索式和当前结果。"
+    ],
+    "checks": [
+      "文献类型、字段、年份与题目完全一致。",
+      "数量和排名取现场结果；不同筛选项之间的逻辑不能凭直觉判断。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-b7bb6d67941f24ad",
+        "locator": "00:57",
+        "excerpt": "将检索字段改为“篇名”，输入“新能源”检索。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-b7bb6d67941f24ad",
+        "locator": "01:48",
+        "excerpt": "勾选来源类别北大核心、CSSCI后结果4513条。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-b7bb6d67941f24ad",
+        "locator": "02:57",
+        "excerpt": "高级检索需先选择“学术期刊”文献类型才能设置来源类别。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-f5b84abd62ffc0e2",
+        "locator": "00:23",
+        "excerpt": "这个题目考察的知识点是 CNKI 的高级检索。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-f5b84abd62ffc0e2",
+        "locator": "00:54",
+        "excerpt": "在高级检索界面，检索字段、检索词、时间范围、来源类别都可以设置。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-f5b84abd62ffc0e2",
+        "locator": "03:23",
+        "excerpt": "这个题目的答案是 AD。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "aac3bae342102cf97faf33785d2fd707386c01312fc93c3a4ba35c46aa6c04fb"
+  },
+  {
+    "id": "task-cnki-boolean",
+    "kind": "task",
+    "title": "CNKI 布尔逻辑 AND OR NOT",
+    "aliases": [
+      "知网",
+      "并且",
+      "或者",
+      "排除",
+      "布尔",
+      "星号",
+      "加号",
+      "减号"
+    ],
+    "module_ids": [
+      "module-32"
+    ],
+    "platform_ids": [
+      "entity-002"
+    ],
+    "summary": "把题目拆成必须同时满足、满足其一及排除三个条件组。；在高级检索各行设置字段与检索词，检查行间 AND/OR/NOT。",
+    "entry_url": "https://www.cnki.net/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "把题目拆成必须同时满足、满足其一及排除三个条件组。",
+      "在高级检索各行设置字段与检索词，检查行间 AND/OR/NOT。",
+      "同一字段的语法以当前平台提示为准，不把其他数据库语法直接复制过来。",
+      "记录完整表达式，核对结果标题是否符合全部限定条件。"
+    ],
+    "checks": [
+      "注意 OR 的分组范围及同一来源类别多选的关系。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-fb303ba7539cbf1e",
+        "locator": "00:13",
+        "excerpt": "这是 CNKI 的高级检索界面。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-0c7da090c862ca53",
+        "locator": "正文",
+        "excerpt": "要求了解与、或、非三种布尔逻辑检索的含义，并能熟练应用CNKI、万方、维普、ScienceDirect、Wiley、Taylor&Francis、PubMed、IEEE Xplore、ACM等常用中英文数据库中的布尔检索表达方式。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-0c7da090c862ca53",
+        "locator": "正文",
+        "excerpt": "样题：在万方高级检索中将文献类型设为学位论文，篇名输入“乙肝 OR 乙型肝炎”，关键词输入“治疗 AND 评估”，摘要输入“慢性 NOT 模型”，查看结果数量。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "001c4ced6e5dde5453c3a35ed98a0f2901ad3a02afcb3fd61a88298562fce2fd"
+  },
+  {
+    "id": "task-cnki-exact",
+    "kind": "task",
+    "title": "CNKI 精确与模糊匹配",
+    "aliases": [
+      "精确",
+      "模糊",
+      "匹配",
+      "机构",
+      "单位",
+      "篇名",
+      "中国知网"
+    ],
+    "module_ids": [
+      "module-34"
+    ],
+    "platform_ids": [
+      "entity-002"
+    ],
+    "summary": "先确定题目限定的是完整字段值还是包含某关键词。；对比当前界面精确和模糊选项，再设置所需字段。",
+    "entry_url": "https://www.cnki.net/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "先确定题目限定的是完整字段值还是包含某关键词。",
+      "对比当前界面精确和模糊选项，再设置所需字段。",
+      "检查命中记录实际字段，区分名称变体、简称和同名项。"
+    ],
+    "checks": [
+      "不能仅凭结果数量判断精确检索是否设置正确。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-b4459b17ded2fd9b",
+        "locator": "00:28",
+        "excerpt": "在CNKI首页点击高级检索，选择学术期刊，检索点选作者单位，输入武汉大学，时间2021，来源类别CSSCI。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-b4459b17ded2fd9b",
+        "locator": "02:58",
+        "excerpt": "篇名输入“关键技术突破”精确匹配得36条。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-bc5c608ce4797fa1",
+        "locator": "正文",
+        "excerpt": "了解CNKI、维普、万方等数据库中不同检索字段下精确匹配与模糊匹配的区别。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-bc5c608ce4797fa1",
+        "locator": "正文",
+        "excerpt": "外文数据库一般用半角双引号实现精确匹配，也就是输入的检索词会被当作词组或者短语处理，不被系统拆分。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-bc5c608ce4797fa1",
+        "locator": "正文",
+        "excerpt": "探索：在CNKI的高级检索中，通过实践理解精确匹配在不同检索字段（如标题、作者单位）下含义的不同。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "4dd862c1e9dee3d32258e7005f2b77f75b901001a2ef97ae76b9be7e440851ab"
+  },
+  {
+    "id": "task-wanfang-analysis",
+    "kind": "task",
+    "title": "万方 检索、筛选与可视化机构排名",
+    "aliases": [
+      "万方数据",
+      "高级检索",
+      "题名",
+      "机构",
+      "发文量",
+      "被引频次",
+      "可视化",
+      "排名"
+    ],
+    "module_ids": [
+      "module-31",
+      "module-35",
+      "module-50"
+    ],
+    "platform_ids": [
+      "entity-024"
+    ],
+    "summary": "进入高级检索，限定文献类型、题名及题目要求的时间范围。；在结果中应用来源类别等筛选，记录筛选后的检索范围。",
+    "entry_url": "https://www.wanfangdata.com.cn/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "进入高级检索，限定文献类型、题名及题目要求的时间范围。",
+      "在结果中应用来源类别等筛选，记录筛选后的检索范围。",
+      "打开可视化分析，选择机构等分析维度。",
+      "核对统计指标是发文量还是被引频次，并读取当前排名。"
+    ],
+    "checks": [
+      "分析维度和统计指标必须分别核对，旧教学排名仅作示例。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-492556d39f0e6c51",
+        "locator": "00:09",
+        "excerpt": "在万方数据知识服务平台中检索2015至2024年题名含“农产品”的北大核心论文。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-492556d39f0e6c51",
+        "locator": "01:02",
+        "excerpt": "进入万方高级检索界面，文献类型勾选期刊论文，检索字段选择题名，检索词输入“农产品”。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-492556d39f0e6c51",
+        "locator": "01:35",
+        "excerpt": "点击结果数量右侧的图标进入可视化分析界面。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-5384d31df63fa222",
+        "locator": "00:15",
+        "excerpt": "题目要求在万方中查找中国科技大学2010至2020年发表的CSSCI期刊论文。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-5384d31df63fa222",
+        "locator": "01:21",
+        "excerpt": "点击检索框右侧的“高级检索”，进入高级检索界面。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-5384d31df63fa222",
+        "locator": "01:34",
+        "excerpt": "检索点选择“作者单位”，检索词输入“中国科技大学”，匹配方式选“模糊”。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "520eecf62b1ce7772e187aaa02cf7b4e411d87f7b82eb7c7b768ce3a057b6121"
+  },
+  {
+    "id": "task-vip-fields",
+    "kind": "task",
+    "title": "维普 字段限制与布尔检索",
+    "aliases": [
+      "中文期刊服务平台",
+      "专业检索",
+      "字段代码",
+      "题名",
+      "篇名",
+      "作者单位",
+      "学位论文",
+      "会议论文"
+    ],
+    "module_ids": [
+      "module-32",
+      "module-36"
+    ],
+    "platform_ids": [
+      "entity-030"
+    ],
+    "summary": "区分维普网与中文期刊服务平台，选择题目指定的资源类型。；查看该资源类型当前可用字段，不把期刊字段套到学位或会议资源。",
+    "entry_url": "https://www.cqvip.com/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "区分维普网与中文期刊服务平台，选择题目指定的资源类型。",
+      "查看该资源类型当前可用字段，不把期刊字段套到学位或会议资源。",
+      "在高级或专业检索中组合字段和布尔关系，字段代码以当前帮助为准。",
+      "复查检索式和命中记录。"
+    ],
+    "checks": [
+      "同一品牌下不同产品的字段及语法可能不同。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-5d13a2719f93c409",
+        "locator": "02:47",
+        "excerpt": "所以这个题目的正确答案是 B、C。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-0613914ed908f2ce",
+        "locator": "00:09",
+        "excerpt": "在维普网中可以使用布尔检索。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-0613914ed908f2ce",
+        "locator": "01:10",
+        "excerpt": "第一个检索字段选择\"篇名\"输入检索表达式。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "218ec50c09155e73a2ce359b44242dd12e8a10da49fd7ed895e4ada67b98dec5"
+  },
+  {
+    "id": "task-pubmed-search",
+    "kind": "task",
+    "title": "PubMed 标题、日期、文献类型与全文检索",
+    "aliases": [
+      "NCBI",
+      "Title",
+      "Advanced",
+      "Clinical Trial",
+      "Free Full Text",
+      "PMC",
+      "医学文献",
+      "糖尿病",
+      "临床试验",
+      "免费全文"
+    ],
+    "module_ids": [
+      "module-21",
+      "module-31",
+      "module-35"
+    ],
+    "platform_ids": [
+      "entity-012"
+    ],
+    "summary": "确认题目的标题/主题、发表日期、文献类型与全文条件。；在 Advanced 选择适当字段，组合检索词与日期。",
+    "entry_url": "https://pubmed.ncbi.nlm.nih.gov/advanced/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "确认题目的标题/主题、发表日期、文献类型与全文条件。",
+      "在 Advanced 选择适当字段，组合检索词与日期。",
+      "执行检索并应用所需筛选，查看已生效筛选条件。",
+      "打开题录核对标题与标识符；通过全文链接查看全文来源。"
+    ],
+    "checks": [
+      "PubMed 题录与 PMC 全文不是同一个资源；数量以现场为准。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-ab0bdcb28214da69",
+        "locator": "00:06",
+        "excerpt": "PubMed是美国国立医学图书馆旗下的学术搜索平台，内容涵盖生物、医学等相关学科。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-ab0bdcb28214da69",
+        "locator": "01:02",
+        "excerpt": "文献全文经Free Full Text（PMC标识）链接打开，该文共30页。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-ab0bdcb28214da69",
+        "locator": "02:54",
+        "excerpt": "在高级检索中字段选Title、输入Diabetes，生成表达式后检索，并设时间范围与文献类型为Clinical Trial。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "1c7f0d7351fb86cd5351a34ad157253f84145ba7623752d8c117cc658913b7e7"
+  },
+  {
+    "id": "task-pubmed-wildcards",
+    "kind": "task",
+    "title": "PubMed 通配符、截词与自动映射核对",
+    "aliases": [
+      "通配符",
+      "截词",
+      "wildcard",
+      "truncation",
+      "星号",
+      "自动词语匹配",
+      "ATM"
+    ],
+    "module_ids": [
+      "module-33",
+      "module-36"
+    ],
+    "platform_ids": [
+      "entity-012"
+    ],
+    "summary": "打开官方 User Guide 的 Wildcards and truncation 小节。；用星号表示词或短语中的零个或多个字符，并检查当前指南中的限制。",
+    "entry_url": "https://pubmed.ncbi.nlm.nih.gov/help/#wildcards-and-truncation",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "打开官方 User Guide 的 Wildcards and truncation 小节。",
+      "用星号表示词或短语中的零个或多个字符，并检查当前指南中的限制。",
+      "查看检索详情，核对字段与词语映射；不要套用其他库的通配规则。"
+    ],
+    "checks": [
+      "官方帮助核对日期为 2026-10-12；实际查询仍须检查检索详情。"
+    ],
+    "evidence": [
+      {
+        "source_id": "web-pubmed-help",
+        "locator": "Wildcards and truncation; Using search field tags",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/help/",
+        "verified_at": "2026-10-12",
+        "excerpt": "指南包含字段、布尔检索、通配符及截词的说明。；星号可表示词或短语中的零个或多个字符；具体限制应核对当前指南。"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "b1c60a4c6bb381729fac28979a53435866033789e993584c0cfc19ba9514c952"
+  },
+  {
+    "id": "task-standards-ics",
+    "kind": "task",
+    "title": "标准查询：名称、标准号与 ICS CCS 分类",
+    "aliases": [
+      "标准",
+      "ICS",
+      "CCS",
+      "国际标准分类",
+      "中国标准分类",
+      "电动车",
+      "电动汽车",
+      "标准号",
+      "国家标准",
+      "行业标准",
+      "地方标准"
+    ],
+    "module_ids": [
+      "module-11"
+    ],
+    "platform_ids": [
+      "entity-033"
+    ],
+    "summary": "确认题目指定国家、行业或地方标准，以及名称关键词和标准状态。；打开官方标准检索，输入名称或标准号，设置页面提供的限定条件。",
+    "entry_url": "https://std.samr.gov.cn/gb/search/gbAdvancedSearch",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "确认题目指定国家、行业或地方标准，以及名称关键词和标准状态。",
+      "打开官方标准检索，输入名称或标准号，设置页面提供的限定条件。",
+      "查看命中标准的详情或结果记录中的 ICS 和 CCS，逐条记录。",
+      "比较题目选项；确认是在问 ICS 还是 CCS，并核对有效状态和查询日期。"
+    ],
+    "checks": [
+      "ICS 与 CCS 是两套分类，不互相替代；一个检索词可能命中多项标准。"
+    ],
+    "evidence": [
+      {
+        "source_id": "doc-7519eae042f8f09e",
+        "locator": "正文",
+        "excerpt": "具体要求包括通过国家标准全文公开系统查询国家标准，以及通过全国标准信息公共服务平台查询国家标准、地方标准、行业标准并获取信息。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-7519eae042f8f09e",
+        "locator": "正文",
+        "excerpt": "可用 CNKI、万方数据知识服务平台、维普网检索标准，并可通过国家知识产权局商标局商标查询系统查询商标信息。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "web-standards-search",
+        "locator": "国家标准检索结果中的分类与状态字段",
+        "url": "https://std.samr.gov.cn/search/stdPage?q=%E6%B1%BD%E8%BD%A6",
+        "verified_at": "2026-10-12",
+        "excerpt": "官方检索结果展示标准号、标准状态及 ICS、CCS 分类信息。"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "98308cb15d2336bfadf077b161f33ec3f4fbe3276808c648bebbe72d9e976d77"
+  },
+  {
+    "id": "task-stats-data",
+    "kind": "task",
+    "title": "国家统计局 数据查询与指标口径",
+    "aliases": [
+      "统计数据",
+      "国家数据",
+      "年度",
+      "季度",
+      "月度",
+      "指标",
+      "地区",
+      "快递量",
+      "下载",
+      "统计年鉴"
+    ],
+    "module_ids": [
+      "module-09"
+    ],
+    "platform_ids": [
+      "entity-039"
+    ],
+    "summary": "选择题目指定的数据来源和数据频率，按指标关键词查询。；核对指标名称、时间范围、地区和计量单位。",
+    "entry_url": "https://data.stats.gov.cn/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "选择题目指定的数据来源和数据频率，按指标关键词查询。",
+      "核对指标名称、时间范围、地区和计量单位。",
+      "在表格或图表中读取当前数据；不要沿用历史视频里的年份范围或数量。",
+      "若下载需要登录，等待用户完成登录，再按页面可用格式导出。"
+    ],
+    "checks": [
+      "原视频笔记的示例答案存在冲突，本卡仅保留查询方法。",
+      "注意累计值、当期值、单位与数据修订日期。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-27532b0a1d6f8133",
+        "locator": "00:24",
+        "excerpt": "该平台的官方名称是国家统计局数据发布库。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "9443c5594f4ed4b25d3c09699d8a1e4fdc41002b368f2815a46899a1aa9d85b2"
+  },
+  {
+    "id": "task-word-frequency",
+    "kind": "task",
+    "title": "微词云 报告全文分词与词频统计",
+    "aliases": [
+      "词频",
+      "统计",
+      "政府工作报告",
+      "动词",
+      "成语",
+      "分词",
+      "筛词",
+      "全文",
+      "最高频"
+    ],
+    "module_ids": [
+      "module-49"
+    ],
+    "platform_ids": [
+      "entity-045"
+    ],
+    "summary": "从题目指定的官方页面获取指定年份、版本的报告全文。；打开在线分词，粘贴文本或导入文件；记录预处理范围。",
+    "entry_url": "https://www.weiciyun.com/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "从题目指定的官方页面获取指定年份、版本的报告全文。",
+      "打开在线分词，粘贴文本或导入文件；记录预处理范围。",
+      "按题目要求选择动词、成语等词类或筛词条件。",
+      "按词频排序并读取当前统计结果，保留文本来源与分词设置。"
+    ],
+    "checks": [
+      "年份、全文范围、分词与筛词设置改变都会影响答案。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-4d9ad348c7936bab",
+        "locator": "00:41",
+        "excerpt": "用百度搜索，很容易找到微词云官网。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-4d9ad348c7936bab",
+        "locator": "00:46",
+        "excerpt": "进入微词云的在线分词页面，输入要做分词的文本。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-4d9ad348c7936bab",
+        "locator": "01:04",
+        "excerpt": "中国政府网网站上有二十大报告全文，可复制后粘贴到微词云的文本框。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-ddd1793443f03f4b",
+        "locator": "00:23",
+        "excerpt": "用字节跳动旗下的豆包 Mars Code 来搞定这个任务，不用安装编程环境，因为它不仅可以作为 IDE 插件，而且还是一个云端的 IDE，登录一个网址即可在线编程。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-ddd1793443f03f4b",
+        "locator": "01:11",
+        "excerpt": "我们先来看个简单的，写一段统计英文词频的代码。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-ddd1793443f03f4b",
+        "locator": "01:49",
+        "excerpt": "在对话框中输入提示词：让用户输入一段英文文本，统计文本中的词频，显示排名前 10 的单词和相应的词频数据，从高到低排序。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "96dc7663dd85f487b482c612026796faa21a8feaef64fd1319cfd3d241b4f323"
+  },
+  {
+    "id": "task-search-operators",
+    "kind": "task",
+    "title": "搜索引擎 site filetype 与限定检索",
+    "aliases": [
+      "搜索引擎",
+      "site",
+      "filetype",
+      "站内搜索",
+      "PDF",
+      "官网",
+      "检索语法"
+    ],
+    "module_ids": [
+      "module-37"
+    ],
+    "platform_ids": [],
+    "summary": "提取题目的独特标题或短语，优先在官方域名范围检索。；用 site: 限定域名，需找特定文件类型时加入 filetype:。",
+    "entry_url": "",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "提取题目的独特标题或短语，优先在官方域名范围检索。",
+      "用 site: 限定域名，需找特定文件类型时加入 filetype:。",
+      "打开原始结果并核对正文、日期和发布主体，不把搜索摘要直接作为答案。"
+    ],
+    "checks": [
+      "搜索没有命中不能证明内容不存在。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-188b5eaaca3fad94",
+        "locator": "00:38",
+        "excerpt": "国标 7714 是一份 28 页的 PDF 全文。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-188b5eaaca3fad94",
+        "locator": "01:02",
+        "excerpt": "在关键词后加空格和 \"filetype:PDF\" 可限定结果为 PDF 文件。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-188b5eaaca3fad94",
+        "locator": "01:30",
+        "excerpt": "加 \"site:EDU.cn\" 将结果来源限定为教育网。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-338f72a3586c1483",
+        "locator": "01:01",
+        "excerpt": "site 是搜索引擎的高级搜索语法，作用是限制检索结果的来源、提升查准率。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-22bee0200563f76f",
+        "locator": "正文",
+        "excerpt": "要求了解filetype、site、inurl等检索语法及应用场景，熟练其规则，并了解百度、搜狗、360等主流搜索引擎的高级搜索入口与具体用法。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-22bee0200563f76f",
+        "locator": "正文",
+        "excerpt": "参考资源指出，百度、搜狗、360搜索、微软必应四个搜索引擎都有高级搜索功能，在各自搜索结果页右上角“设置”菜单下可找到入口。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "e6e79844713d0685d122e1a9a5235b2f0c47d2d569835c38e6ef7dbfee3da27f"
+  },
+  {
+    "id": "task-sciencedirect",
+    "kind": "task",
+    "title": "ScienceDirect 高级检索与全文定位",
+    "aliases": [
+      "Elsevier",
+      "爱思唯尔",
+      "Advanced Search",
+      "作者",
+      "期刊",
+      "出版年",
+      "全文"
+    ],
+    "module_ids": [
+      "module-21",
+      "module-31"
+    ],
+    "platform_ids": [
+      "entity-015"
+    ],
+    "summary": "进入 Advanced Search，按题目选择标题、作者、期刊或时间条件。；执行检索后核对出版信息与文献类型。",
+    "entry_url": "https://www.sciencedirect.com/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "进入 Advanced Search，按题目选择标题、作者、期刊或时间条件。",
+      "执行检索后核对出版信息与文献类型。",
+      "进入题录或全文页面，按题目定位段落、页面或单词。",
+      "全文需订阅或机构认证时等待用户提供合法访问会话。"
+    ],
+    "checks": [
+      "题录可访问不代表全文可下载；PDF 页码与印刷页码需区分。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-da01b5107629d72a",
+        "locator": "01:44",
+        "excerpt": "看到这个 Advanced Search 没有，点击就可以进入 ScienceDirect 的这个高级检索界面。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-da01b5107629d72a",
+        "locator": "02:38",
+        "excerpt": "其实，篇名这个检索字段埋得比较深，点击这时候 Show all fields 才能看到。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-da01b5107629d72a",
+        "locator": "02:53",
+        "excerpt": "输入 Health Management，而且为这两个单词加上半角双引号，表示这是一个短语，不能拆分。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "52eb9f723f2f616c86ef8251fb6c358908f55c5566045555aa8b3ac8891568a0"
+  },
+  {
+    "id": "task-thesis",
+    "kind": "task",
+    "title": "MIT 学位论文与学术文献定位",
+    "aliases": [
+      "MIT",
+      "Theses",
+      "DSpace",
+      "学位论文",
+      "麻省理工",
+      "论文标题",
+      "作者",
+      "PDF",
+      "页码",
+      "单词"
+    ],
+    "module_ids": [
+      "module-23"
+    ],
+    "platform_ids": [],
+    "summary": "使用题目给出的准确标题、作者或标识符定位论文。；核对学位、年份、机构与版本，进入全文。",
+    "entry_url": "https://dspace.mit.edu/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "使用题目给出的准确标题、作者或标识符定位论文。",
+      "核对学位、年份、机构与版本，进入全文。",
+      "按题目要求定位页码或段落，区分 PDF 文件页序与文内页码。",
+      "记录全文链接及具体定位。"
+    ],
+    "checks": [
+      "不要只凭搜索结果标题相似就认定同一论文。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-01a1ae989b1ddea6",
+        "locator": "00:10",
+        "excerpt": "麻省理工图书馆的 DSpace 中有一个名为 MIT DSpace 的资源库。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-01a1ae989b1ddea6",
+        "locator": "00:47",
+        "excerpt": "用百度搜索 \"MIT DSpace\" 找到其官网。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-01a1ae989b1ddea6",
+        "locator": "01:10",
+        "excerpt": "在 MIT DSpace 搜索框输入论文标题即可检索。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-4d964945655f57b3",
+        "locator": "正文",
+        "excerpt": "具体要求：能够从CNKI、万方、维普等学位论文数据库中找到指定的信息；能够从国家图书馆博士论文数据库中找到指定资源；能够从MIT Theses中获取指定学位论文全文。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-4d964945655f57b3",
+        "locator": "正文",
+        "excerpt": "国家图书馆博士论文数据库可以免费检索，可检索标题中包含“大数据”的博士学位论文并统计结果数量。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-4d964945655f57b3",
+        "locator": "正文",
+        "excerpt": "MIT Theses可以获取大部分学位论文的全文，可查找两篇题目中包含“education”的学位论文并获取全文。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "15802710982c8453e73006105d92eba6a9a45e5a5b915fd3f297b676d1a3dd1a"
+  },
+  {
+    "id": "task-cnki-conference",
+    "kind": "task",
+    "title": "CNKI 学术会议论文与会议信息",
+    "aliases": [
+      "中国知网",
+      "会议论文",
+      "会议名称",
+      "会议届次",
+      "作者",
+      "会议网"
+    ],
+    "module_ids": [
+      "module-22"
+    ],
+    "platform_ids": [
+      "entity-002"
+    ],
+    "summary": "选择会议资源，输入会议名称及题目指定届次或年份。；核对会议详情与论文集范围，再查询论文或作者。",
+    "entry_url": "https://www.cnki.net/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "选择会议资源，输入会议名称及题目指定届次或年份。",
+      "核对会议详情与论文集范围，再查询论文或作者。",
+      "若需要发文最多作者，限定同一论文集后查看统计或逐条核对。"
+    ],
+    "checks": [
+      "同名不同届会议不能合并统计。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-ca42627a9659187d",
+        "locator": "00:42",
+        "excerpt": "CNKI 中国学术会议网是一个网站，上面有各种学术会议的信息。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-ca42627a9659187d",
+        "locator": "00:52",
+        "excerpt": "这个网站比较容易找到，百度一下应该能找到。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-ca42627a9659187d",
+        "locator": "01:08",
+        "excerpt": "注意左侧导航中的“论文征稿”，点击可以看到详情，截稿日期在这，2025年8月31日，单选 A。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-68489b705150812d",
+        "locator": "正文",
+        "excerpt": "具体要求：能够根据需求查找会议及会议文献；能从CNKI、万方、维普等数据库检索会议论文；能从IEEE官网查找IEEE会议信息；能从CNKI中国学术会议网查找学术会议信息。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-68489b705150812d",
+        "locator": "正文",
+        "excerpt": "学习建议：深度体验CNKI、万方的会议论文数据库，这两个数据库检索是免费的；可进入IEEE官网会议栏目查找“人工智能”方面的会议信息。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "a427fe19b014111912693c88e8bb766a8ab34c695fccd7a4126a976bfdd5cfce"
+  },
+  {
+    "id": "task-literature-tracking",
+    "kind": "task",
+    "title": "CNKI PubMed RSS 文献追踪与提醒",
+    "aliases": [
+      "RSS",
+      "文献追踪",
+      "订阅",
+      "邮件提醒",
+      "新文献",
+      "My NCBI"
+    ],
+    "module_ids": [
+      "module-47"
+    ],
+    "platform_ids": [
+      "entity-002",
+      "entity-012"
+    ],
+    "summary": "先建立可重复的检索式并记录条件。；根据平台可用功能建立 RSS、保存检索或提醒。",
+    "entry_url": "https://pubmed.ncbi.nlm.nih.gov/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "先建立可重复的检索式并记录条件。",
+      "根据平台可用功能建立 RSS、保存检索或提醒。",
+      "需个人账号时等待用户登录，再核对订阅内容和更新条件。"
+    ],
+    "checks": [
+      "区分 RSS 链接、检索链接与邮件提醒功能。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-f5081c33be95054a",
+        "locator": "00:08",
+        "excerpt": "RSS 阅读器插件用来跟踪文献。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-f5081c33be95054a",
+        "locator": "02:36",
+        "excerpt": "在 CNKI 中《经济研究》页面有一个 RSS 订阅的图标，右键复制链接地址即可。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-f5081c33be95054a",
+        "locator": "02:09",
+        "excerpt": "在浏览器扩展中心搜索 RSS，找到后直接安装即可。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-bb8f99ba163c3913",
+        "locator": "00:28",
+        "excerpt": "PubMed文献追踪有两种玩法：邮箱接收提醒和RSS。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-bb8f99ba163c3913",
+        "locator": "00:39",
+        "excerpt": "检索结果页下方Create Alert用于创建邮箱提醒，Create RSS用于创建RSS Feed。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-bb8f99ba163c3913",
+        "locator": "00:50",
+        "excerpt": "第一步注册NCBI账号（用户名、密码、邮箱）。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-48eb7392b22b738e",
+        "locator": "正文",
+        "excerpt": "具体要求：了解文献追踪的含义（跟踪期刊、学科、机构、学者的最新科研成果）；了解常用的文献追踪方式（邮箱订阅、主题订阅和RSS）；掌握PUBMED、CNKI、万方的文献追踪方式。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-48eb7392b22b738e",
+        "locator": "正文",
+        "excerpt": "在CNKI检索结果页点击“主题定制”即可跟踪该主题，在CNKI首页“我的CNKI”中查看；在CNKI期刊详情页点击“RSS订阅”即可看到该期刊的RSS地址。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-48eb7392b22b738e",
+        "locator": "正文",
+        "excerpt": "在PUBMED检索结果页的检索框下方有“Create RSS”和“Create alert”选项，点击按提示操作即可（需提前注册）。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "69fa3b5a09891ff1b7fd89bb2410a02447ca3f649c3f3b763f6952658a211bf4"
+  },
+  {
+    "id": "task-excel-clean",
+    "kind": "task",
+    "title": "Excel TRIM CLEAN MID FIND 数据清洗",
+    "aliases": [
+      "去空格",
+      "换行",
+      "非打印字符",
+      "提取",
+      "字符串",
+      "数据清洗",
+      "TRIM",
+      "CLEAN",
+      "MID",
+      "FIND"
+    ],
+    "module_ids": [
+      "module-48"
+    ],
+    "platform_ids": [
+      "entity-008"
+    ],
+    "summary": "保留原列，在新列测试清洗公式。；用 TRIM 处理常见多余空格，用 CLEAN 处理常见非打印字符。",
+    "entry_url": "",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "保留原列，在新列测试清洗公式。",
+      "用 TRIM 处理常见多余空格，用 CLEAN 处理常见非打印字符。",
+      "需要提取子串时，用 FIND 定位，再用 MID 截取。",
+      "以题目示例逐条核对输出，再填充到其他行。"
+    ],
+    "checks": [
+      "先检查字符类型和边界，不能假定所有空白都由同一公式清除。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-4e58b20c511d6cdd",
+        "locator": "00:56",
+        "excerpt": "用TRIM函数去除多余空格。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-4e58b20c511d6cdd",
+        "locator": "02:02",
+        "excerpt": "用CLEAN函数删除所有非打印字符，包括手动换行符。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-d76af9a5e1f68182",
+        "locator": "正文",
+        "excerpt": "熟练掌握 Excel 在数据处理中的应用，重点关注 LEFT、RIGHT、MID、FIND、TRIM、REPLACE、SUBSTITUTE、CONCAT、&、CLEAN、VLOOKUP、COUNTIF、COUNTIFS、SUMIF、SUMIFS、IF、INDEX、MATCH 等函数。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-d76af9a5e1f68182",
+        "locator": "正文",
+        "excerpt": "探索：从百度 AI Studio、阿里云天池、OpenDataLab、OpenML 或 UCI Machine Learning Repository（Classic 版或 Beta 版）下载一个表格型数据集，查看其字段名称、样本数量、数据格式和缺失值情况。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "7eba63abe468ffbbdb082b1ae1cb8f65c315a73f03d19f82d2984ceb772c1e80"
+  },
+  {
+    "id": "task-pdf-tools",
+    "kind": "task",
+    "title": "PDF 合并、拆分、转换与页码核对",
+    "aliases": [
+      "PDF",
+      "合并",
+      "拆分",
+      "转Word",
+      "压缩",
+      "另存为",
+      "文件转换"
+    ],
+    "module_ids": [
+      "module-41"
+    ],
+    "platform_ids": [
+      "entity-031"
+    ],
+    "summary": "按题目确认合并、拆分、转换等目标和输出格式。；在 Office 中可使用另存为 PDF；在线工具选择对应功能。",
+    "entry_url": "https://www.yunzhan365.com/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "按题目确认合并、拆分、转换等目标和输出格式。",
+      "在 Office 中可使用另存为 PDF；在线工具选择对应功能。",
+      "查看当前界面的可选项、限制与输出结果，逐项对照题目。"
+    ],
+    "checks": [
+      "功能支持范围和限制以现场页面及实际文件为准。"
+    ],
+    "evidence": [
+      {
+        "source_id": "doc-f91c691389bf4c43",
+        "locator": "正文",
+        "excerpt": "具体要求：熟练掌握Word、Excel、PPT转PDF的方法；熟练掌握云展网中与PDF相关的在线工具。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-f91c691389bf4c43",
+        "locator": "正文",
+        "excerpt": "学习指导：Word、Excel、PPT内置转PDF功能，点击“另存为”即可看到；并深度使用云展网的PDF合并、拆分、压缩、加密、添加页面与文件转换功能。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-b4c67ab6b38da6a3",
+        "locator": "02:12",
+        "excerpt": "云展网办公工具集有PDF合并在线工具，可合并多个PDF与图片为一个PDF。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-b4c67ab6b38da6a3",
+        "locator": "02:56",
+        "excerpt": "该多选题正确答案为ABCD全选。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "26d344cb4fd476b1998ced620d2f68d9b31bcdb0a8d803b3591eb8df5ee94410"
+  },
+  {
+    "id": "task-reference-export",
+    "kind": "task",
+    "title": "参考文献著录格式与题录导出",
+    "aliases": [
+      "参考文献",
+      "GB/T",
+      "7714",
+      "APA",
+      "MLA",
+      "导出",
+      "著录格式",
+      "引用"
+    ],
+    "module_ids": [
+      "module-44"
+    ],
+    "platform_ids": [
+      "entity-002",
+      "entity-024",
+      "entity-030"
+    ],
+    "summary": "确认题目指定的格式及版本，或查看目标期刊的投稿要求。；在数据库选中文献，打开题录导出并查看实际支持的格式。",
+    "entry_url": "https://www.cnki.net/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "确认题目指定的格式及版本，或查看目标期刊的投稿要求。",
+      "在数据库选中文献，打开题录导出并查看实际支持的格式。",
+      "核对文献类型、作者、年份、页码与标识符。",
+      "不把教学材料中的格式版本当作所有平台已支持的证明。"
+    ],
+    "checks": [
+      "按题目要求选定版本；导出后仍需逐项检查。"
+    ],
+    "evidence": [
+      {
+        "source_id": "doc-37c284e70e158a59",
+        "locator": "正文",
+        "excerpt": "要求掌握GB/T7714-2025、APA、MLA等参考文献著录格式，能查询确定指定期刊要求的格式，并能在CNKI、万方、维普中按指定格式导出文献题录。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-37c284e70e158a59",
+        "locator": "正文",
+        "excerpt": "样题解析：对照国家标准著录即可，也可从CNKI、万方等学术数据库中导出相应格式。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-5c1e87e2875c9704",
+        "locator": "03:10",
+        "excerpt": "2025 版最大的变化是参考文献覆盖范围扩大，从以图书期刊为主的纸质文献时代，逐步转向覆盖预印本、数据集、网站网页等数字科研资源的新时代。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "eb089fc21bd4998fd0214a8d75b1324a1a9cbb855b867ba51aba50d79b0ae853"
+  },
+  {
+    "id": "task-citespace",
+    "kind": "task",
+    "title": "CiteSpace 项目、时间切片与节点类型",
+    "aliases": [
+      "Projects",
+      "Time Slicing",
+      "Node Types",
+      "作者合作",
+      "机构合作",
+      "关键词",
+      "共现",
+      "文献可视化"
+    ],
+    "module_ids": [
+      "module-50"
+    ],
+    "platform_ids": [
+      "entity-004"
+    ],
+    "summary": "创建项目并指定数据源与数据目录。；设置分析起止时间和时间切片。",
+    "entry_url": "",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "创建项目并指定数据源与数据目录。",
+      "设置分析起止时间和时间切片。",
+      "选择题目要求的节点类型，再运行分析。",
+      "核对图例与分析维度，记录参数配置。"
+    ],
+    "checks": [
+      "作者、机构、关键词等节点类型对应不同问题。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-dc804f940069a13a",
+        "locator": "00:40",
+        "excerpt": "Projects 项目区，这个区域的主要作用是管理需要分析的项目，要做文献分析你要先建一个项目。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-8173bbe1d0254327",
+        "locator": "正文",
+        "excerpt": "具体要求为了解 CiteSpace、VOSViewer 等文献可视化工具，熟练掌握赛特新思的文献调研分析功能，以及 CNKI、CNKI AI、万方、维普的文献可视化分析功能。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "faf4a749f6b142d82d058e6ed61e8c243c3db35d4654541f520bfc77cfa2ccd1"
+  },
+  {
+    "id": "task-wechat-index",
+    "kind": "task",
+    "title": "微信指数 日期、关键词与异动来源",
+    "aliases": [
+      "指数",
+      "环比",
+      "异动来源",
+      "日期",
+      "京东",
+      "热度",
+      "网络指数"
+    ],
+    "module_ids": [
+      "module-29"
+    ],
+    "platform_ids": [
+      "entity-044"
+    ],
+    "summary": "在微信内进入微信指数，搜索题目指定关键词。；选择题目指定日期或时间范围，查看对应曲线和信息。",
+    "entry_url": "",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "在微信内进入微信指数，搜索题目指定关键词。",
+      "选择题目指定日期或时间范围，查看对应曲线和信息。",
+      "按当前界面查看异动来源或环比，记录页面值与日期。"
+    ],
+    "checks": [
+      "此类数值随日期和平台更新变化，需授权会话内实测。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-e464e4f5d68eb5a6",
+        "locator": "00:33",
+        "excerpt": "这张图是“后浪”这个关键词的微信指数。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-e464e4f5d68eb5a6",
+        "locator": "03:08",
+        "excerpt": "在微信搜索框中输入“微信指数”，找到微信指数的小程序。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-54a2e8cf2ca1a8fc",
+        "locator": "正文",
+        "excerpt": "具体要求：了解百度指数、微信指数、抖音指数（原巨量算数）；能够利用网络指数数据分析问题。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-54a2e8cf2ca1a8fc",
+        "locator": "正文",
+        "excerpt": "样题：根据百度搜索数据，2021年网民对“火锅”关注量最多的省份是广东（答案D）；解析通过百度指数限定时间范围并分析地域分布得出。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "a445a3a35061fdef3dcd064aa12b8ed887871295f6ab1ea30451790898a8efc5"
+  },
+  {
+    "id": "task-library-catalog",
+    "kind": "task",
+    "title": "图书馆馆藏查询与索书号",
+    "aliases": [
+      "馆藏",
+      "图书馆",
+      "书名",
+      "索书号",
+      "馆藏地",
+      "OPAC",
+      "借阅"
+    ],
+    "module_ids": [
+      "module-30"
+    ],
+    "platform_ids": [],
+    "summary": "进入题目指定图书馆的馆藏查询系统。；以书名、作者或 ISBN 检索并核对版次。",
+    "entry_url": "",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "进入题目指定图书馆的馆藏查询系统。",
+      "以书名、作者或 ISBN 检索并核对版次。",
+      "查看馆藏位置、索书号和当前馆藏状态，记录对应馆藏条目。"
+    ],
+    "checks": [
+      "不能把不同版次或不同图书馆的记录混用。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-2dbc6a1ddc02278a",
+        "locator": "01:36",
+        "excerpt": "把书名和作者这两个检索条件都设置进去，可精确检索到纸本与电子书两条结果。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-2dbc6a1ddc02278a",
+        "locator": "02:10",
+        "excerpt": "可使用二次检索功能，检索字段选择作者，检索词输入周建芳，系统直接给出该书题录数据。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-2dbc6a1ddc02278a",
+        "locator": "02:39",
+        "excerpt": "在清华大学图书馆首页的『水木搜索』框输入书名，要找的图书在此处并标注了馆藏地。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-9c299a88488fee50",
+        "locator": "正文",
+        "excerpt": "具体要求：能在国内外图书馆网站首页找到馆藏查询系统的入口，了解中图分类号、索书号，并能在系统中找到指定文献的索书号、馆藏地、在馆情况等信息。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-9c299a88488fee50",
+        "locator": "正文",
+        "excerpt": "通常一个图书馆会提供多种馆藏查询入口，包括官网、微信公众号、移动图书馆 APP，可任选几个图书馆尝试找到入口并检索文献信息。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-9c299a88488fee50",
+        "locator": "正文",
+        "excerpt": "样题解析：找到各图书馆的馆藏书目查询入口，检索字段选择“标题”，检索词输入“白银资本”或英文原名，找到结果后验证作者信息。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "916a7f5460a7ec3131b1dad0d4d1162f90f70ea9fb0f14bdae95fcb1f5f287e2"
+  },
+  {
+    "id": "task-education-query",
+    "kind": "task",
+    "title": "学信网与中国教育考试网资格信息查询",
+    "aliases": [
+      "学历",
+      "学位",
+      "考试",
+      "证书",
+      "资格",
+      "教资",
+      "公告",
+      "报名"
+    ],
+    "module_ids": [
+      "module-15",
+      "module-16"
+    ],
+    "platform_ids": [
+      "entity-042",
+      "entity-028"
+    ],
+    "summary": "识别题目查询的是学历学位、考试证书还是公告。；进入对应官方平台，按公告年份、地区或证书类型定位。",
+    "entry_url": "https://www.chsi.com.cn/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "识别题目查询的是学历学位、考试证书还是公告。",
+      "进入对应官方平台，按公告年份、地区或证书类型定位。",
+      "核对字段和正文；涉及个人信息的查询由用户在自己的账号中完成。"
+    ],
+    "checks": [
+      "学历学位查询与考试资格公告使用的入口不同。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-97d419e18e5abc5d",
+        "locator": "02:31",
+        "excerpt": "在学信网首页菜单进入学历查询，选择“零散查询”，输入证书编号、姓名和验证码后点击免费查询。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-97d419e18e5abc5d",
+        "locator": "02:38",
+        "excerpt": "点击免费查询后，系统会要求输入手机号接收验证码，验证通过即可查看信息。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-4e424b2bc22bea57",
+        "locator": "00:46",
+        "excerpt": "点击考试名称即可进入对应的考试主页。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-4e424b2bc22bea57",
+        "locator": "00:56",
+        "excerpt": "在考试主页点击“大纲教材”可下载考试大纲。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-cf2e7a42a8a5a3a9",
+        "locator": "正文",
+        "excerpt": "能够利用中国教育考试网（neea.edu.cn）查询包括大学英语四六级考试、全国计算机等级考试、中小学教师资格考试在内的多种考试信息。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-cf2e7a42a8a5a3a9",
+        "locator": "正文",
+        "excerpt": "能够通过研招网（yz.chsi.com.cn）查询研究生（硕士和博士）招生相关信息。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-cf2e7a42a8a5a3a9",
+        "locator": "正文",
+        "excerpt": "能够通过国家大学生就业服务平台（ncss.cn）及下属的两个平台查找就业和创业信息。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "c812485f2eeb89dbc69c32772876d76f828bc2eb43244e75c5ea1ce297382ba9"
+  },
+  {
+    "id": "task-health-query",
+    "kind": "task",
+    "title": "卫健委医卫统计与信息查询",
+    "aliases": [
+      "卫生健康",
+      "卫健委",
+      "卫生统计",
+      "医疗",
+      "数据",
+      "公报",
+      "年度"
+    ],
+    "module_ids": [
+      "module-14"
+    ],
+    "platform_ids": [
+      "entity-035"
+    ],
+    "summary": "进入国家卫生健康委员会官网，定位题目指定栏目或统计发布。；按年份及标题查找官方正文或附件。",
+    "entry_url": "https://www.nhc.gov.cn/",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "进入国家卫生健康委员会官网，定位题目指定栏目或统计发布。",
+      "按年份及标题查找官方正文或附件。",
+      "核对统计指标、单位与发布年份，记录表号或段落。"
+    ],
+    "checks": [
+      "统计年份与公报发布时间不一定相同。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-6c64cc14e449ad7f",
+        "locator": "02:40",
+        "excerpt": "设置查询条件：所在省份选择四川省，医师姓名和所在医疗机构分别输入康燕和四川大学华西医院。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-6c64cc14e449ad7f",
+        "locator": "02:50",
+        "excerpt": "选择验证码，然后点击查询。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-cededfdf757185c2",
+        "locator": "正文",
+        "excerpt": "了解卫健委官网首页左侧服务栏目提供的医卫信息查询服务项目，能够查医生的资质信息。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-cededfdf757185c2",
+        "locator": "正文",
+        "excerpt": "能够通过国家药品监督管理局网站上的查询系统（nmpa.gov.cn 的 datasearch 入口）查询药品、化妆品、医疗器械相关信息。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-cededfdf757185c2",
+        "locator": "正文",
+        "excerpt": "掌握 CHKD AI（chkd.cnki.net/ai/）等与科研相关的 AI 工具或 AI 功能。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "32251ac3afdf2eec40e8a9277e0f8d6f807d5c4c58eef10d0f32a15e9b8547b7"
+  },
+  {
+    "id": "task-research-projects",
+    "kind": "task",
+    "title": "国家社科基金项目数据库检索",
+    "aliases": [
+      "社科",
+      "基金",
+      "项目",
+      "立项",
+      "负责人",
+      "单位",
+      "年度",
+      "批准号"
+    ],
+    "module_ids": [
+      "module-25"
+    ],
+    "platform_ids": [
+      "entity-038"
+    ],
+    "summary": "打开项目官方查询入口，确认基金类别及项目年度。；按题目给出的项目名、负责人、单位或批准号检索。",
+    "entry_url": "",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "打开项目官方查询入口，确认基金类别及项目年度。",
+      "按题目给出的项目名、负责人、单位或批准号检索。",
+      "核对完整条目及限定条件，保存检索式和当前结果。"
+    ],
+    "checks": [
+      "不同基金类别、年度和项目状态不能合并判断。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-f7289510d1266938",
+        "locator": "00:15",
+        "excerpt": "国家社科基金项目数据库是全国哲学社会科学办公室推出的项目查询平台。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-f7289510d1266938",
+        "locator": "02:15",
+        "excerpt": "在右侧成果查询区，结项时间选择 2022 年，出版社输入科学出版社。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "vid-f7289510d1266938",
+        "locator": "02:46",
+        "excerpt": "这个题目的正确答案是 AC。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-cfb3f649834d35c5",
+        "locator": "正文",
+        "excerpt": "能够在国家社科基金项目数据库找到具体国家社科项目立项信息和结项信息。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-cfb3f649834d35c5",
+        "locator": "正文",
+        "excerpt": "能够在国家自然科学基金大数据知识管理服务门户找到指定的立项项目、结题项目、科研成果。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-cfb3f649834d35c5",
+        "locator": "正文",
+        "excerpt": "探索：在国家社科基金项目数据库中检索本校最近4年的国家社科立项信息和结项信息；在国家自然科学基金大数据知识管理服务门户中查找2023年结题的深度学习方面的自科项目成果。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "10b05dbaba265da81cfce4e8739d06c33bef809812722d27e9b7afb8c63944cd"
+  },
+  {
+    "id": "task-qq-capture",
+    "kind": "task",
+    "title": "QQ 截图、贴图与录屏功能核对",
+    "aliases": [
+      "截图",
+      "贴图",
+      "录屏",
+      "快捷键",
+      "图像",
+      "工具栏"
+    ],
+    "module_ids": [
+      "module-40"
+    ],
+    "platform_ids": [
+      "entity-013"
+    ],
+    "summary": "在实际安装的 QQ 版本中打开截图或录屏工具。；查看工具栏及菜单，按题目要求测试贴图、标注或录屏选项。",
+    "entry_url": "",
+    "inputs": "从题干提取平台、对象、字段、时间、类型、排序指标及需要比较的选项文字。",
+    "steps": [
+      "在实际安装的 QQ 版本中打开截图或录屏工具。",
+      "查看工具栏及菜单，按题目要求测试贴图、标注或录屏选项。",
+      "记录软件版本和实际观察，不用旧版本教学菜单推断当前功能。"
+    ],
+    "checks": [
+      "界面功能随客户端版本变化，应实测后作答。"
+    ],
+    "evidence": [
+      {
+        "source_id": "vid-0c76d3bc9c5d1cbd",
+        "locator": "01:05",
+        "excerpt": "用鼠标框选截图区域即可截图。",
+        "verified_at": "2026-09-18"
+      },
+      {
+        "source_id": "doc-74ecaf8c8622f1d6",
+        "locator": "正文",
+        "excerpt": "具体要求为掌握 QQ 的截图、贴图、录屏等功能，并能够熟练使用软件 LICEcap 把屏幕操作录制成 GIF 动图。",
+        "verified_at": "2026-09-18"
+      }
+    ],
+    "review_status": "machine_reviewed",
+    "reviewed_at": "2026-10-12",
+    "dynamic_note": "数量、排名、页面菜单及功能限制需在题目指定时间和当前授权会话中核验。",
+    "authored_by": "Codex editorial extraction",
+    "source_hash": "07e80ef6b4af908ac44d8082803772754a32dbf4c21d9c1ad9d79abebc5e1ff9"
+  }
+]

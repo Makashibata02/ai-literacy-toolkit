@@ -1,0 +1,17 @@
+{
+  "data_sha256": "b548f16f96e770c60357fb82be5e50f13e3a5722feaaa778811185e1faf58456",
+  "counts": {
+    "sources": 146,
+    "modules": 50,
+    "platforms": 53,
+    "tasks": 25,
+    "questions": 168,
+    "samples": 93,
+    "drafts": 27,
+    "quarantined_sources": 1,
+    "confirmed_answers": 6,
+    "evidence_linked_candidates": 69
+  },
+  "generated_from": "data/curated",
+  "snapshot_date": "2026-10-12"
+}
