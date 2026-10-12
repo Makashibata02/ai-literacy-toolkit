@@ -24,7 +24,7 @@ def link(url,label):
 def layout(title,body,prefix=""):
     return f'''<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="AI 信息素养比赛速查：操作方法、证据与历史题目"><title>{esc(title)} · AI 信息素养速查</title><link rel="icon" href="{prefix}assets/favicon.svg"><link rel="stylesheet" href="{prefix}assets/style.css"></head>
-<body><a class="skip" href="#main">跳到正文</a><header><a class="brand" href="{prefix}index.html"><span class="mark">AI</span><span>信息素养<span class="brand-sub">比赛速查</span></span></a><nav><a href="{prefix}index.html#tasks">按任务查找</a><a href="{prefix}index.html#platforms">平台</a><a href="{prefix}index.html#questions">相似题</a><a href="{prefix}preparation.html">账号准备</a><a href="{prefix}quickstart.html">快速开始</a></nav></header><main id="main">{body}</main><footer>资料快照 2026-10-12 · 机器整理保留证据 · 原始媒体尚未上传<br>原创整理署名 ai-literacy-wiki contributors · {link('https://github.com/Makashibata02/ai-literacy-toolkit','GitHub 仓库')}</footer></body></html>'''
+<body><a class="skip" href="#main">跳到正文</a><header><a class="brand" href="{prefix}index.html"><span class="mark">AI</span><span>信息素养<span class="brand-sub">比赛速查</span></span></a><nav><a href="{prefix}index.html#tasks">按任务查找</a><a href="{prefix}modules.html">50 个模块</a><a href="{prefix}index.html#platforms">平台</a><a href="{prefix}index.html#questions">相似题</a><a href="{prefix}preparation.html">账号准备</a><a href="{prefix}quickstart.html">快速开始</a></nav></header><main id="main">{body}</main><footer>资料快照 2026-10-12 · 机器整理保留证据 · 原始媒体尚未上传<br>原创整理署名 ai-literacy-wiki contributors · {link('https://github.com/Makashibata02/ai-literacy-toolkit','GitHub 仓库')}</footer></body></html>'''
 
 
 def evidence_html(refs,prefix=""):
@@ -251,6 +251,17 @@ def build():
 <section class="workspace" aria-label="查找资料"><div class="section-heading"><div><div class="eyebrow">从题目里的关键词开始</div><h2>找到你的查题路径</h2></div><a href="preparation.html">先检查账号与访问 →</a></div><label class="searchbox" for="q"><span>⌕</span><input id="q" type="search" placeholder="例如：CNKI 高级检索、标准 ICS 分类、报告词频" autocomplete="off"><kbd>/</kbd></label><div class="examples"><span>试试</span><button data-query="CNKI 高级检索">CNKI 高级检索</button><button data-query="标准 ICS 分类">标准 ICS 分类</button><button data-query="报告 词频">报告词频</button><button data-query="PubMed 通配符">PubMed 通配符</button></div><div class="filters"><div class="tabs" role="group" aria-label="资料类型"><button data-kind="task" class="active">操作卡</button><button data-kind="platform">平台</button><button data-kind="question">相似题</button><button data-kind="source">来源资料</button><button data-kind="">全部</button></div><label><input id="drafts" type="checkbox"> 包含待复核资料</label></div><p id="status" class="muted" aria-live="polite"></p><div id="results" class="results"></div><noscript><p>浏览器未启用 JavaScript，请使用 <a href="../wiki/index.md">Markdown 目录</a> 阅读。</p></noscript></section>
 <section class="closing"><div><h2>查得到出处，才有把握。</h2><p>机器整理、人工确认、候选提示各有标记。遇到需要登录的平台，由你完成授权访问。</p></div><a href="competition.html">赛事官方信息 →</a></section><script src="search-index.js"></script><script src="assets/app.js"></script>'''
     write(site/"index.html",layout("首页",body))
+    homepage=(site/'index.html').read_text(encoding='utf-8').replace('<div id="results" class="results"></div>','<div id="results" class="results"></div><button id="show-more" class="button more-button" hidden>显示更多</button>')
+    write(site/'index.html',homepage)
+    module_body='<article class="detail"><div class="eyebrow">命题范围与覆盖</div><h1>50 个知识模块</h1><p class="lead">每个模块保留来源。重点任务可直接打开操作卡；暂无专门操作卡的模块请阅读来源，并按需要在平台实测。</p><div class="module-list">'
+    task_map={t['id']:t for t in read('tasks.json')}
+    for m in read('modules.json'):
+        module_body+=f'<section><h2>{esc(m["title"])}</h2><p>{REVIEW[m["review_status"]]} · <a href="records/{esc(m["source_id"])}.html">阅读来源 →</a></p>'
+        if m['task_ids']:
+            module_body+='<ul>'+''.join(f'<li><a href="records/{esc(tid)}.html">{esc(task_map[tid]["title"])}</a></li>' for tid in m['task_ids'])+'</ul>'
+        else:module_body+='<p class="muted">暂无专门操作卡，方法覆盖待补充。</p>'
+        module_body+='</section>'
+    write(site/'modules.html',layout('50 个模块',module_body+'</div></article>'))
     write(ROOT/"index.html",'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=site/index.html"><title>打开速查</title></head><body><a href="site/index.html">打开离线速查页面</a></body></html>\n')
     for item in items:
         write(site/item["detail_url"],item_html(item))
