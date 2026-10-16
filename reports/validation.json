@@ -218,11 +218,16 @@
     "method": "shipped JavaScript executed with Node vm"
   },
   "pytest": {
-    "passed": 31
+    "passed": 34
   },
   "original_safety": {
     "tracked_files_unchanged": 2094,
     "raw_files_unchanged": 315,
     "git_index_unchanged": true
+  },
+  "notice_updates": {
+    "recorded_at": "2026-10-16",
+    "count": 2,
+    "original_source_hashes_preserved": true
   }
 }

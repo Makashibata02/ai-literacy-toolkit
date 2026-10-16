@@ -46,6 +46,15 @@ def tokens(query):
     return list(dict.fromkeys(out))
 
 
+def notices_for(row):
+    """Match reviewed editorial fields, never historical raw transcripts."""
+    text = " ".join(str(row.get(k, "")) for k in
+                    ["title", "summary", "stem", "rationale", "steps", "knowledge_points"])
+    return [n for n in read("notices.json")
+            if row.get("id") in n.get("target_ids", []) + n.get("module_ids", [])
+            or any(term in text for term in n.get("match_terms", []))]
+
+
 def make_items():
     tasks = read("tasks.json")
     sources = read("sources.json")
@@ -62,12 +71,21 @@ def make_items():
         refs = [{"source_id": row["id"], "locator": r.get("locator") or r.get("timestamp") or "正文", "excerpt": r.get("snippet", "")} for r in row.get("traceable_refs", [])]
         items.append({**{k:row.get(k) for k in ["id", "title", "summary", "steps", "knowledge_points", "review_status", "quarantine_reason", "context_note"]}, "kind": "source", "aliases": [*(row.get("keywords") or []), *(row.get("synonyms") or [])], "evidence": refs, "category": row.get("classification", {}).get("category", "来源"), "checks": [row["context_note"]]})
     for item in items:
+        item["current_notices"] = notices_for(item)
+        # Original curated evidence and source hashes remain intact. Only the
+        # compiled operational steps use the corrected entry.
+        for notice in item["current_notices"]:
+            for old in notice.get("superseded_entries", []):
+                item["steps"] = [re.sub(r"(?<![\w.-])" + re.escape(old),
+                                        lambda _: notice["entry_url"], s)
+                                 for s in (item.get("steps") or [])]
         item["detail_url"] = "records/" + item["id"] + ".html"
         item["search_title"] = normalize(item["title"])
         item["search_aliases"] = normalize(" ".join(item.get("aliases") or []))
-        item["search_body"] = normalize(" ".join([item.get("summary", ""), *(item.get("steps") or []), *(item.get("knowledge_points") or []), *[e.get("excerpt", "") for e in item.get("evidence", [])]]))
+        notice_text = " ".join(n["text"] for n in item["current_notices"])
+        item["search_body"] = normalize(" ".join([item.get("summary", ""), notice_text, *(item.get("steps") or []), *(item.get("knowledge_points") or []), *[e.get("excerpt", "") for e in item.get("evidence", [])]]))
         original_text = " ".join([item["title"], *(item.get("aliases") or []), item.get("summary", ""), *(item.get("steps") or []), *(item.get("knowledge_points") or []), *[e.get("excerpt", "") for e in item.get("evidence", [])]])
-        item["search_latin"] = sorted(set(re.findall(r"[a-z]+[a-z0-9]*", unicodedata.normalize("NFKC", original_text).lower())))
+        item["search_latin"] = sorted(set(re.findall(r"[a-z]+[a-z0-9]*", unicodedata.normalize("NFKC", original_text + " " + notice_text).lower())))
     return items
 
 
@@ -151,6 +169,18 @@ def lint():
     ids = [r["id"] for r in [*sources.values(),*web.values(),*tasks,*questions,*read("platforms.json"),*read("modules.json"),*read("samples.json")]]
     if len(set(ids)) != len(ids):
         issues.append("duplicate_id")
+    notice_ids=[]
+    for n in read('notices.json'):
+        notice_ids.append(n['id'])
+        if n.get('original_text_sha256') != hashlib.sha256(n['original_text'].encode()).hexdigest():
+            issues.append('notice_hash_mismatch:'+n['id'])
+        if n.get('review_status') not in STATES or not n.get('source_label') or not n.get('recorded_at'):
+            issues.append('notice_without_provenance:'+n['id'])
+        for target in n.get('target_ids',[])+n.get('module_ids',[])+n.get('preparation_excluded_ids',[]):
+            if target not in ids:
+                issues.append('unknown_notice_target:'+target)
+    if len(set(notice_ids))!=len(notice_ids) or set(notice_ids)&set(ids):
+        issues.append('duplicate_notice_id')
     for t in tasks:
         if not t.get("evidence") or not t.get("steps") or t.get("review_status") not in STATES:
             issues.append("task_without_review_or_evidence:"+t["id"])

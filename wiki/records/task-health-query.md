@@ -2,6 +2,17 @@
 
 ID: `task-health-query` · 类型：操作卡 · 审核：`machine_reviewed`
 
+### 模块 14：药监局数据查询入口变更
+
+知识模块 14：国家药品监督管理局数据查询系统网址已变更，请使用新入口开展药品、化妆品和医疗器械检索。
+
+更新后入口：[https://datasearch.nmpa.gov.cn/datasearch/home-index.html](https://datasearch.nmpa.gov.cn/datasearch/home-index.html)
+
+请提前在浏览器中测试新入口；站内查询功能尚未实测。
+
+来源：用户提供的赛事通知，第 2 条；收录日期：2026-10-16。
+
+
 进入国家卫生健康委员会官网，定位题目指定栏目或统计发布。；按年份及标题查找官方正文或附件。
 
 官方入口：[https://www.nhc.gov.cn/](https://www.nhc.gov.cn/)

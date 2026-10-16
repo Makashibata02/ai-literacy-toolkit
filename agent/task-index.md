@@ -2,6 +2,23 @@
 
 先按任务定位，再读完整操作卡。没有操作卡的模块仍保留来源及审核状态。
 
+### 模块 14：药监局数据查询入口变更
+
+知识模块 14：国家药品监督管理局数据查询系统网址已变更，请使用新入口开展药品、化妆品和医疗器械检索。
+
+更新后入口：[https://datasearch.nmpa.gov.cn/datasearch/home-index.html](https://datasearch.nmpa.gov.cn/datasearch/home-index.html)
+
+请提前在浏览器中测试新入口；站内查询功能尚未实测。
+
+来源：用户提供的赛事通知，第 2 条；收录日期：2026-10-16。
+
+### 模块 25：国家社科基金项目数据库条目免备考
+
+国家社科基金项目数据库已无法正常访问。本次省赛淘汰赛不再设置该知识点相关考题，无需针对该条目备考。仅适用于国家社科基金项目数据库，不代表模块 25 全部免考；国家自然科学基金等其他条目不受此通知影响。
+
+来源：用户提供的赛事通知，第 3 条；收录日期：2026-10-16。
+
+
 - [CNKI 高级检索与结果筛选](../wiki/records/task-cnki-advanced.md) · module-31, module-35
 - [CNKI 布尔逻辑 AND OR NOT](../wiki/records/task-cnki-boolean.md) · module-32
 - [CNKI 精确与模糊匹配](../wiki/records/task-cnki-exact.md) · module-34
@@ -24,8 +41,8 @@
 - [微信指数 日期、关键词与异动来源](../wiki/records/task-wechat-index.md) · module-29
 - [图书馆馆藏查询与索书号](../wiki/records/task-library-catalog.md) · module-30
 - [学信网与中国教育考试网资格信息查询](../wiki/records/task-education-query.md) · module-15, module-16
-- [卫健委医卫统计与信息查询](../wiki/records/task-health-query.md) · module-14
-- [国家社科基金项目数据库检索](../wiki/records/task-research-projects.md) · module-25
+- [卫健委医卫统计与信息查询](../wiki/records/task-health-query.md) · module-14 · 更新：知识模块 14：国家药品监督管理局数据查询系统网址已变更，请使用新入口开展药品、化妆品和医疗器械检索。
+- [国家社科基金项目数据库检索](../wiki/records/task-research-projects.md) · module-25 · 更新：国家社科基金项目数据库已无法正常访问。本次省赛淘汰赛不再设置该知识点相关考题，无需针对该条目备考。仅适用于国家社科基金项目数据库，不代表模块 25 全部免考；国家自然科学基金等其他条目不受此通知影响。
 - [QQ 截图、贴图与录屏功能核对](../wiki/records/task-qq-capture.md) · module-40
 
 ## 全部模块

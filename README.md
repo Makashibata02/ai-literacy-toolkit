@@ -4,6 +4,24 @@
 
 [打开在线速查](https://makashibata02.github.io/ai-literacy-toolkit/) · [下载资料包](https://github.com/Makashibata02/ai-literacy-toolkit/releases/latest)
 
+## 备考更新（收录 2026-10-16）
+
+### 模块 14：药监局数据查询入口变更
+
+知识模块 14：国家药品监督管理局数据查询系统网址已变更，请使用新入口开展药品、化妆品和医疗器械检索。
+
+更新后入口：[https://datasearch.nmpa.gov.cn/datasearch/home-index.html](https://datasearch.nmpa.gov.cn/datasearch/home-index.html)
+
+请提前在浏览器中测试新入口；站内查询功能尚未实测。
+
+来源：用户提供的赛事通知，第 2 条；收录日期：2026-10-16。
+
+### 模块 25：国家社科基金项目数据库条目免备考
+
+国家社科基金项目数据库已无法正常访问。本次省赛淘汰赛不再设置该知识点相关考题，无需针对该条目备考。仅适用于国家社科基金项目数据库，不代表模块 25 全部免考；国家自然科学基金等其他条目不受此通知影响。
+
+来源：用户提供的赛事通知，第 3 条；收录日期：2026-10-16。
+
 ## 打开速查页面
 
 1. 打开上面的在线速查；也可以下载 `toolkit-full.zip`，解压后双击 `index.html`。阅读和搜索都不用安装软件。
@@ -20,6 +38,8 @@
 ```text
 请读取这个仓库的 README、agent/START_HERE.md 和相关操作卡、平台档案：
 https://github.com/Makashibata02/ai-literacy-toolkit
+
+先阅读 README 中的备考更新及 docs/competition.md，按通知适用的赛次和条目安排备考，使用更新后的入口。
 
 先给我一份准备清单：相关网站的官方入口、哪些功能需要提前注册登录、
 是否需要校园网或 CARSI，以及建议提前试用的操作。区分公开查询和需账号的功能。

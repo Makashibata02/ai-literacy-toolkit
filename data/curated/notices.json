@@ -1,0 +1,67 @@
+[
+  {
+    "id": "notice-nmpa-entry-20261016",
+    "title": "模块 14：药监局数据查询入口变更",
+    "recorded_at": "2026-10-16",
+    "published_at": null,
+    "source_type": "user_provided_competition_notice",
+    "source_label": "用户提供的赛事通知，第 2 条",
+    "source_url": null,
+    "review_status": "machine_reviewed",
+    "module_ids": [
+      "module-14"
+    ],
+    "target_ids": [
+      "doc-cededfdf757185c2",
+      "task-health-query"
+    ],
+    "match_terms": [
+      "国家药品监督管理局"
+    ],
+    "text": "知识模块 14：国家药品监督管理局数据查询系统网址已变更，请使用新入口开展药品、化妆品和医疗器械检索。",
+    "original_text": "知识模块 14，国家药品监督管理局数据查询系统网址已发生变更，更新后访问地址为：https://datasearch.nmpa.gov.cn/datasearch/home-index.html 请各位参赛选手以该最新网址为准开展检索操作；",
+    "entry_url": "https://datasearch.nmpa.gov.cn/datasearch/home-index.html",
+    "superseded_entries": [
+      "https://www.nmpa.gov.cn/datasearch/home-index.html",
+      "nmpa.gov.cn/datasearch"
+    ],
+    "access_check": "请提前在浏览器中测试新入口；站内查询功能尚未实测。",
+    "preparation_entry": "国家药品监督管理局数据查询系统",
+    "original_text_sha256": "d2de8221aa4f08ac1101bc109220f247d815ca1c73db037ef30d5f3b11d4caf1",
+    "verification_attempt": {
+      "attempted_at": "2026-10-16",
+      "method": "automated_fetch",
+      "http_status": 412,
+      "query_function_verified": false
+    }
+  },
+  {
+    "id": "notice-social-fund-excluded-20261016",
+    "title": "模块 25：国家社科基金项目数据库条目免备考",
+    "recorded_at": "2026-10-16",
+    "published_at": null,
+    "source_type": "user_provided_competition_notice",
+    "source_label": "用户提供的赛事通知，第 3 条",
+    "source_url": null,
+    "review_status": "machine_reviewed",
+    "module_ids": [
+      "module-25"
+    ],
+    "target_ids": [
+      "doc-cfb3f649834d35c5",
+      "task-research-projects",
+      "entity-038",
+      "vid-f7289510d1266938"
+    ],
+    "match_terms": [
+      "国家社科基金"
+    ],
+    "scope": "本次省赛淘汰赛，仅国家社科基金项目数据库条目",
+    "text": "国家社科基金项目数据库已无法正常访问。本次省赛淘汰赛不再设置该知识点相关考题，无需针对该条目备考。仅适用于国家社科基金项目数据库，不代表模块 25 全部免考；国家自然科学基金等其他条目不受此通知影响。",
+    "original_text": "知识模块 25，原国家社科基金项目数据库现已无法正常访问。本次省赛淘汰赛命题将规避该知识点，不再设置相关考题，请参赛同学无需针对该条目进行备考；",
+    "preparation_excluded_ids": [
+      "entity-038"
+    ],
+    "original_text_sha256": "21d2f135c0a94d2973ef231a3f9fa2a471899d8a49ecb8ceb216d9148b28c040"
+  }
+]

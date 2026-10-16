@@ -7,7 +7,7 @@ import re
 import zipfile
 from pathlib import Path
 
-from .core import ROOT, DATA, counts, data_digest, make_items, read, write, write_json
+from .core import ROOT, DATA, counts, data_digest, make_items, notices_for, read, write, write_json
 
 LABELS={"task":"操作卡","platform":"平台","source":"历史来源","question":"历史题目","sample":"培训样题"}
 REVIEW={"machine_reviewed":"机器整理","human_reviewed":"题目文字已复核","draft":"待复核"}
@@ -36,9 +36,26 @@ def evidence_html(refs,prefix=""):
     return '<ul class="evidence">'+''.join(lines)+'</ul>'
 
 
+def notices_md(notices):
+    lines=[]
+    for n in notices:
+        lines.extend([f'### {n["title"]}', '', n['text'], ''])
+        if n.get('entry_url'):
+            lines.extend([f'更新后入口：[{n["entry_url"]}]({n["entry_url"]})', '', n['access_check'], ''])
+        lines.extend([f'来源：{n["source_label"]}；收录日期：{n["recorded_at"]}。', ''])
+    return '\n'.join(lines)
+
+
+def notices_html(notices):
+    return ''.join('<aside class="notice"><strong>'+esc(n['title'])+'</strong><p>'+esc(n['text'])+'</p>'
+                   +(('<p>'+link(n['entry_url'],'打开更新后入口 ↗')+'</p><p>'+esc(n['access_check'])+'</p>') if n.get('entry_url') else '')
+                   +'<small>'+esc(n['source_label']+' · 收录 '+n['recorded_at'])+'</small></aside>' for n in notices)
+
+
 def item_html(item):
     kind=item["kind"]
     text=f'<div class="eyebrow">{LABELS.get(kind,kind)} · {REVIEW.get(item.get("review_status"),"待复核")}</div><h1>{esc(item["title"])}</h1>'
+    text+=notices_html(item.get('current_notices',[]))
     if item.get("quarantine_reason"):
         text+=f'<aside class="warning">隔离复核：{esc(item["quarantine_reason"])}</aside>'
     if kind=="question":
@@ -78,6 +95,8 @@ def item_html(item):
 
 def item_md(item):
     lines=[f'# {item["title"]}',"",f'ID: `{item["id"]}` · 类型：{LABELS[item["kind"]]} · 审核：`{item.get("review_status","draft")}`',""]
+    if item.get('current_notices'):
+        lines.extend([notices_md(item['current_notices']), ''])
     if item.get("quarantine_reason"):
         lines.extend(["> 隔离复核："+item["quarantine_reason"],""])
     lines.extend([item.get("summary",item.get("stem","")),""])
@@ -110,6 +129,8 @@ def item_md(item):
 
 def guides():
     c=counts()
+    notices=read('notices.json')
+    update_md='## 备考更新（收录 '+max(n['recorded_at'] for n in notices)+'）\n\n'+notices_md(notices)
     quick='''# 快速开始
 
 1. 双击首页 index.html；也可以在 GitHub Pages 在线阅读。
@@ -132,8 +153,15 @@ def guides():
 也可以下载文件夹，让 Agent 读取 AGENTS.md、agent/START_HERE.md 和 agent/task-index.md。聊天 AI 可上传 llms-full.txt；需要完整证据时再上传 agent/主题分片。
 '''
     preparation=['# 账号与访问准备','',"公开检索和需要账号的操作要分别准备；以下是历史资料记录，不代表已在当前账号中实测。",'',"| 平台 | 访问方式与准备 | 核对日期 |","|---|---|---|"]
+    excluded={pid for n in notices for pid in n.get('preparation_excluded_ids',[])}
     for p in read("platforms.json"):
+        if p['id'] in excluded:
+            continue
         preparation.append(f'| [{p["title"]}]({p["url"]}) | {p["access_note"].replace("|","/")} | {p["verified_at"]} |')
+    for n in notices:
+        if n.get('preparation_entry'):
+            preparation.append(f'| [{n["preparation_entry"]}]({n["entry_url"]}) | 新入口；请提前测试。{n["access_check"]} | {n["recorded_at"]}（通知收录） |')
+    preparation.extend(['',update_md])
     preparation.extend(['','遇到认证界面时等待用户登录；仓库不保存密码、Cookie 或令牌。临近使用时先在自己的电脑上测试入口、检索及所需功能。'])
     agent='''# Agent 使用入口
 
@@ -193,6 +221,8 @@ python -m app kb search "CNKI 高级检索" --top-k 5
 ```text
 请读取这个仓库的 README、agent/START_HERE.md 和相关操作卡、平台档案：
 https://github.com/Makashibata02/ai-literacy-toolkit
+
+先阅读 README 中的备考更新及 docs/competition.md，按通知适用的赛次和条目安排备考，使用更新后的入口。
 
 先给我一份准备清单：相关网站的官方入口、哪些功能需要提前注册登录、
 是否需要校园网或 CARSI，以及建议提前试用的操作。区分公开查询和需账号的功能。
@@ -285,7 +315,12 @@ python -m app kb package --target all
     competition=read("competition.json")
     competition_md=['# 赛事信息（与通用方法分开）','',f'官方入口：[{competition["url"]}]({competition["url"]})',f'核对日期：{competition["checked_at"]}','',competition["note"],'']
     competition_md.extend(f'- {u["published_at"]}：{u["title"]}（{u["locator"]}）' for u in competition["updates"])
-    return {"quickstart":quick,"preparation":"\n".join(preparation)+"\n","agent":agent,"overview":overview,"maintaining":maintaining,"competition":"\n".join(competition_md)+"\n"}
+    competition_md.extend(['',update_md])
+    quick=quick.replace('## 四个查题例子',update_md+'\n## 四个查题例子')
+    overview=overview.replace('## 打开速查页面',update_md+'\n## 打开速查页面')
+    agent=agent.replace('## 先列出准备清单',update_md+'\n## 先列出准备清单')
+    agent=agent.replace('读取任务目录和相关平台档案，', '先读取赛事更新，按适用赛次及具体条目安排备考。历史步骤与最新通知冲突时，优先采用最新通知；不要要求准备已被排除的条目，也不要扩大免考范围。读取任务目录和相关平台档案，')
+    return {"quickstart":quick,"preparation":"\n".join(preparation)+"\n","agent":agent,"overview":overview,"maintaining":maintaining,"competition":"\n".join(competition_md).rstrip()+"\n"}
 
 
 def simple_html(md):
@@ -330,6 +365,7 @@ def build():
 <section class="numbers" aria-label="资料统计"><div><strong>{c['tasks']}</strong><span>重点操作卡</span></div><div><strong>{c['modules']}</strong><span>知识模块</span></div><div><strong>{c['platforms']}</strong><span>平台与工具</span></div><div><strong>{c['questions']}</strong><span>历史题目</span></div></section>
 <section class="workspace" aria-label="查找资料"><div class="section-heading"><div><div class="eyebrow">从题目里的关键词开始</div><h2>找到你的查题路径</h2></div><a href="preparation.html">先检查账号与访问 →</a></div><label class="searchbox" for="q"><span>⌕</span><input id="q" type="search" placeholder="例如：CNKI 高级检索、标准 ICS 分类、报告词频" autocomplete="off"><kbd>/</kbd></label><div class="examples"><span>试试</span><button data-query="CNKI 高级检索">CNKI 高级检索</button><button data-query="标准 ICS 分类">标准 ICS 分类</button><button data-query="报告 词频">报告词频</button><button data-query="PubMed 通配符">PubMed 通配符</button></div><div class="filters"><div class="tabs" role="group" aria-label="资料类型"><button data-kind="task" class="active">操作卡</button><button data-kind="platform">平台</button><button data-kind="question">相似题</button><button data-kind="source">来源资料</button><button data-kind="">全部</button></div><label><input id="drafts" type="checkbox"> 包含待复核资料</label></div><p id="status" class="muted" aria-live="polite"></p><div id="results" class="results"></div><noscript><p>浏览器未启用 JavaScript，请使用 <a href="../wiki/index.md">Markdown 目录</a> 阅读。</p></noscript></section>
 <section class="closing"><div><h2>查得到出处，才有把握。</h2><p>机器整理、人工确认、候选提示各有标记。遇到需要登录的平台，由你完成授权访问。</p></div><a href="competition.html">赛事官方信息 →</a></section><script src="search-index.js"></script><script src="assets/app.js"></script>'''
+    body=body.replace('<section class="workspace"',notices_html(read('notices.json'))+'<section class="workspace"',1)
     write(site/"index.html",layout("首页",body))
     homepage=(site/'index.html').read_text(encoding='utf-8').replace('<div id="results" class="results"></div>','<div id="results" class="results"></div><button id="show-more" class="button more-button" hidden>显示更多</button>')
     write(site/'index.html',homepage)
@@ -337,6 +373,7 @@ def build():
     task_map={t['id']:t for t in read('tasks.json')}
     for m in read('modules.json'):
         module_body+=f'<section><h2>{esc(m["title"])}</h2><p>{REVIEW[m["review_status"]]} · <a href="records/{esc(m["source_id"])}.html">阅读来源 →</a></p>'
+        module_body+=notices_html(notices_for(m))
         if m['task_ids']:
             module_body+='<ul>'+''.join(f'<li><a href="records/{esc(tid)}.html">{esc(task_map[tid]["title"])}</a></li>' for tid in m['task_ids'])+'</ul>'
         else:module_body+='<p class="muted">暂无专门操作卡，方法覆盖待补充。</p>'
@@ -355,6 +392,8 @@ def build():
 
 Start with START_HERE.md and agent/START_HERE.md. This is an evidence-linked quick reference, not an automatic answer service.
 
+Read docs/competition.md before preparing accounts or study tasks. Apply notices only to their stated competition stage and specific resource; do not extend an exclusion to the whole module. Current notices override conflicting historical operational guidance. Original source evidence and answer verification states remain historical records.
+
 data/curated/ is the sole fact source. Site, Wiki, upload packs and llms-full.txt are compiled by python -m app kb build. Never infer conclusions from raw ASR/OCR. Preserve source IDs, hashes and review provenance. Identical source hashes must not overwrite reviewed fields; changed hashes require draft status and re-review.
 
 Separate question-text review from answer verification. Human-confirmed answers apply only to the original conditions and option text. Candidates and training samples are separate records. New machine-authored material is machine_reviewed, never human_reviewed without the user's confirmation.
@@ -364,8 +403,10 @@ First help the user prepare relevant official entries, accounts and institutiona
 Do not publish absolute paths, secrets, guesses or raw media. Future media links belong in data/curated/media.json. Before handoff run python -m app kb build, python -m app kb lint --strict, python -m app.validate_readable and python -m pytest.
 ''')
     task_index=['# 任务与模块目录','',"先按任务定位，再读完整操作卡。没有操作卡的模块仍保留来源及审核状态。",'']
+    task_index.extend([notices_md(read('notices.json')), ''])
     for task in read("tasks.json"):
-        task_index.append(f'- [{task["title"]}](../wiki/records/{task["id"]}.md) · '+', '.join(task['module_ids']))
+        note=' · 更新：'+'；'.join(n['text'] for n in notices_for(task)) if notices_for(task) else ''
+        task_index.append(f'- [{task["title"]}](../wiki/records/{task["id"]}.md) · '+', '.join(task['module_ids'])+note)
     task_index.extend(['','## 全部模块',''])
     for m in read("modules.json"):
         task_index.append(f'- [{m["title"]}](../wiki/records/{m["source_id"]}.md) · `{m["review_status"]}` · '+('、'.join(m['task_ids']) if m['task_ids'] else '暂无专门操作卡，阅读来源或请用户实测'))
@@ -399,7 +440,7 @@ Do not publish absolute paths, secrets, guesses or raw media. Future media links
     # Training samples keep independent status and never merge into history answers.
     sample_md=['# 培训材料样题（独立附录）','',"材料中出现的答案不等于当前比赛标准答案。缺失选项或来自草稿的条目标为待核对。",'']
     for s in read("samples.json"):
-        sample_md.extend([f'## {s["id"]}', '', s['stem'], '', f'状态：`{s["review_status"]}` · 完整性：{s["complete"]}', '', *[f'- {k}. {v}' for k,v in s['options'].items()], '', f'材料记载答案：{s["answer"] or "缺失"}', s['rationale'], f'来源：[{s["source_id"]}](../wiki/records/{s["source_id"]}.md) · {s["locator"]}', s['context_note'], ''])
+        sample_md.extend([f'## {s["id"]}', '', notices_md(notices_for(s)), s['stem'], '', f'状态：`{s["review_status"]}` · 完整性：{s["complete"]}', '', *[f'- {k}. {v}' for k,v in s['options'].items()], '', f'材料记载答案：{s["answer"] or "缺失"}', s['rationale'], f'来源：[{s["source_id"]}](../wiki/records/{s["source_id"]}.md) · {s["locator"]}', s['context_note'], ''])
     write(ROOT/"docs/training-samples.md",'\n'.join(sample_md)+'\n')
     gaps=['# 覆盖与待复核清单','',f'已覆盖 {c["modules"]} 个模块，其中 {c["tasks"]} 张操作卡覆盖重点任务。','']
     gaps.extend(f'- {s["id"]} · {s["title"]}：'+(s.get('quarantine_reason') or '原稿为 draft；保留问题说明，不纳入默认推荐。') for s in read('sources.json') if s['review_status']=='draft' or s.get('quarantine_reason'))
